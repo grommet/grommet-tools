@@ -1,4 +1,4 @@
-import React,  {Component} from 'react';
+import React from 'react';
 
 import {
   Anchor,
@@ -11,24 +11,23 @@ import {
   Heading
 } from 'grommet'
 
- export default class GridCard extends Component{
-  render(){
+function GridCard(props){
     return(
       <Card background='rgb(255,255,255)'>
         <Box margin={{horizontal:'medium', top: 'large'}}>
-          {this.props.icon}
+          {props.icon}
         </Box>
         <CardHeader>
-          <Heading margin={{horizontal:'medium', vertical: 'xsmall'}}>{this.props.heading}</Heading>
+          <Heading margin={{horizontal:'medium', vertical: 'xsmall'}}>{props.heading}</Heading>
         </CardHeader>
         <CardBody>
           <Paragraph alignSelf='start' margin={{horizontal:'medium', vertical: 'xsmall'}}>
-            {this.props.text}
+            {props.text}
           </Paragraph>
         </CardBody>
         <Box
           round="medium"
-          background={this.props.buttonColor}
+          background={props.buttonColor}
           margin={{horizontal:'medium', vertical: 'small'}}
           alignSelf='start'
           width='auto'
@@ -37,11 +36,11 @@ import {
             margin='small'
             color='rgb(0,0,0)'
             >
-            Open {this.props.heading}
+            Open {props.heading}
           </Anchor>
         </Box>
         <CardFooter
-        background={this.props.buttonColor}
+        background={props.buttonColor}
         margin={{top:'xlarge'}}
         alignContent='end'
         justify='end'>
@@ -54,5 +53,5 @@ import {
         </CardFooter>
       </Card>
     )
-  }
 }
+export default GridCard;

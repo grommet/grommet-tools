@@ -10,6 +10,7 @@ import {
   Paragraph,
   Grid,
   Card,
+  CardBody,
   Button,
   Form,
   FormField,
@@ -38,14 +39,14 @@ function App() {
   return (
     <Grommet className="App" theme={grommetToolsTheme}>
 
-      <Header height='72px'>
+      <Header height='xsmall'>
         <Box 
           justify='start' 
           direction='row' 
           gap='small'
           >
           <Box margin={{'left': 'medium'}}  align='center'>
-            <GrommetIcon size='36px' color="brand"/>
+            <GrommetIcon size='small' color="brand"/>
           </Box>
           <Anchor margin='xsmall' href="#" label="Grommet Tools"/>
         </Box>
@@ -55,16 +56,9 @@ function App() {
             direction="row" 
             justify='center' 
             round
-            height='36px'
-            width='336px'
-            flex={{
-              grow: 336,
-              shrink: 100
-              }}
             >
-            <FormField margin={{'bottom': '0px', 'left': '2px', 'top': '0px'}} border={false} name="search input">
+            <FormField margin={{'bottom': '0px','top': '0px'}} border={false} name="search input">
               <TextInput
-                margin={{'bottom': '10px', 'left': '0px', 'top': '0px'}}
                 a11yTitle ="search bar"
                 placeholder="Search Tools"/>
             </FormField>
@@ -85,23 +79,18 @@ function App() {
       </Header>
 
       <Main>
-        <Box
+        <Heading 
           margin={{
-            top:'xlarge',
+            top:'marginXL',
             left:'xlarge',
             right:'xlarge',
             bottom:'0px',
           }}
-          width='medium'
-          >
-            <Heading 
-              margin='0px'
-              size='100px'>
-              Grommet 
-              Tools
-            </Heading>
-          </Box>
-        <Box height='5px' background="linear-gradient(111.57deg, #FFF06C -6.47%, #FFCF50 22.58%, #FFA650 49.44%, #FFD8D8 77.04%, #49E2FF 106.08%, #75FFCE 132.95%)">
+          size='xlarge'>
+          Grommet 
+          Tools
+        </Heading>
+        <Box height='5px' background='gradient'>
 
         </Box>
         <Box direction='row-responsive' justify='between'>
@@ -134,61 +123,61 @@ function App() {
             >
             <Box>
               <Card>
-                <Box margin='small'>
-                  <ClearOption color='DesignerYellow' size='60px'/>
-                </Box>
+                <CardBody margin='small'>
+                  <ClearOption color='DesignerYellow' size='large'/>
+                </CardBody>
               </Card>
             </Box>
             <Box>
               <Card>
-                <Box margin='small'>
-                  <CloudUpload color='PublisherPink' size='60px'/>
-                </Box>
+                <CardBody margin='small'>
+                  <CloudUpload color='PublisherPink' size='large'/>
+                </CardBody>
               </Card>
             </Box>
             <Box>
               <Card>
-                <Box margin='small'>
-                  <Configure color='ThemerOrange' size='60px'/>
-                </Box>
+                <CardBody margin='small'>
+                  <Configure color='ThemerOrange' size='large'/>
+                </CardBody>
               </Card>
             </Box>
             <Box>
               <Card>
-                <Box margin='small'>
-                  <BarChart color='TabularGreen' size='60px'/>
-                </Box>
+                <CardBody margin='small'>
+                  <BarChart color='TabularGreen' size='large'/>
+                </CardBody>
               </Card>
             </Box>
             <Box>
               <Card>
-                <Box margin='small'>
-                  <Camera color='ImagerOrange' size='60px'/>
-                </Box>
+                <CardBody margin='small'>
+                  <Camera color='ImagerOrange' size='large'/>
+                </CardBody>
               </Card>
             </Box>
             <Box>
-            <Card>
-              <Box margin='small'>
-                <Selection color='SlidesBlue' size='60px'/>
-              </Box>
-            </Card>
-          </Box>
+              <Card>
+                <CardBody margin='small'>
+                  <Selection color='SlidesBlue' size='large'/>
+                </CardBody>
+              </Card>
+            </Box>
           </Box>
         </Box>  
 
-        <Box background="linear-gradient(111.57deg, #FFF06C -6.47%, #FFCF50 22.58%, #FFA650 49.44%, #FFD8D8 77.04%, #49E2FF 106.08%, #75FFCE 132.95%)">
+        <Box background='gradient'>
             <Heading
               margin={{
                 horizontal:'xlarge',
                 top: 'large',
                 bottom:'small'}}
-              size='72px'
+              size='large'
               >
               Grommet Tool Suite
             </Heading>
             <Grid
-              columns={{count: 3, size: "small"}}
+              columns='middle'
               gap="medium"
               rows='auto'
               margin={{horizontal:'xlarge', vertical: 'small'}}
@@ -289,10 +278,7 @@ function App() {
           <Image src='RockinGremlin.svg' fit='fill'/>
         </Box>
 
-        <Box background="linear-gradient(111.57deg,
-          #FFF06C -6.47%, #FFCF50 22.58%,
-          #FFA650 49.44%, #FFD8D8 77.04%,
-          #49E2FF 106.08%, #75FFCE 132.95%)"
+        <Box background='gradient'
           height='20px'
           margin='0px'>
         </Box>

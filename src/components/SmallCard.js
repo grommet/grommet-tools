@@ -1,13 +1,6 @@
-import React,  {Component} from 'react';
-import {
-  Box,
-  Text
-} from 'grommet'
-
-
-
-export default class SmallCard extends Component{
-  render(){
+import React from 'react';
+import {Box, Text} from  'grommet';
+function SmallCard(props){
     return(
       <Box
         height='xsmall'
@@ -18,19 +11,18 @@ export default class SmallCard extends Component{
         align='center'
         alignContent='center'
         elevation='medium'
-
         >
         <Box alignSelf='center'>
-          {this.props.icon}
+          {props.icon}
         </Box>
-        <Text 
-          alignSelf='center' 
+        <Text
+          alignSelf='center'
           size='small'
-          color={this.props.textColor}
+          color={props.textColor}
           >
-            {this.props.text}
+            {props.text}
         </Text>
       </Box>
     )
   }
-}
+export default SmallCard;

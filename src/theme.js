@@ -1,6 +1,13 @@
 export const grommetToolsTheme = {
     global: {
+      edgeSize: {
+        marginXL: '200px'
+      },
+      size: {
+        middle: '500px'
+      },
       colors: {
+        'gradient': 'linear-gradient(111.57deg, #FFF06C -6.47%, #FFCF50 22.58%, #FFA650 49.44%, #FFD8D8 77.04%, #49E2FF 106.08%, #75FFCE 132.95%)',
         'DesignerYellow': '#FDEF74',
         'ThemerOrange': '#F9D36E',
         'ImagerOrange': '#F4AD68',
@@ -34,6 +41,12 @@ export const grommetToolsTheme = {
     anchor: {
       color: 'black',
     },
+    box: {
+      size: {
+        headerSize: '36px',
+        xlarge: '200px'
+      }
+    },
     textInput: {
       input:{
         font:{
@@ -45,5 +58,38 @@ export const grommetToolsTheme = {
       border: {
         position: null
       }
-    }
+    },
+    icon: {
+      size: {
+        small: '36px',
+        large: '60px',
+      },
+    },
+    heading: {
+      level: {
+        "1": {
+          "font": {},
+          "small": {
+            "size": "34px",
+            "height": "40px",
+            "maxWidth": "816px"
+          },
+          "medium": {
+            "size": "56px",
+            "height": "56px",
+            "maxWidth": "1200px"
+          },
+          "large": {
+            "size": "72px",
+            "height": "88px",
+            "maxWidth": "1968px"
+          },
+          "xlarge": {
+            "size": "100px",
+            "height": "120px",
+            "maxWidth": "2736px"
+          }
+        }
+      }
+    },
   };
