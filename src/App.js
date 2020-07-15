@@ -281,7 +281,6 @@ function App() {
           height="noCodeBox"
         >
           <Text
-            margin={{}}
             size="xxlarge"
             level="2"
             alignSelf="center"
