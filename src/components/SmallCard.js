@@ -4,8 +4,6 @@ import {
   Text
 } from 'grommet'
 
-
-
 export default class SmallCard extends Component{
   render(){
     return(
