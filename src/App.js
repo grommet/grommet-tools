@@ -37,7 +37,6 @@ import SmallCard from './components/SmallCard.js';
 function App() {
   return (
     <Grommet className="App" theme={grommetToolsTheme}>
-
       <Header height='72px'>
         <Box 
           justify='start' 
