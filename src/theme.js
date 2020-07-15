@@ -2,9 +2,13 @@ export const grommetToolsTheme = {
   global: {
     edgeSize: {
       marginXL: '200px',
+      animationBox: '380px',
     },
     size: {
       middle: '500px',
+      gradient1: '5px',
+      gradient3: '20px',
+      noCodeBox: '527px',
     },
     colors: {
       gradient:

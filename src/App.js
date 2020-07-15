@@ -87,14 +87,14 @@ function App() {
         >
           Grommet Tools
         </Heading>
-        <Box height="5px" background="gradient"></Box>
+        <Box height="gradient1" background="gradient"></Box>
         <Box direction="row-responsive" justify="between">
           <Box
             margin={{
               top: 'small',
               left: 'xlarge',
               right: 'xlarge',
-              bottom: '380px',
+              bottom: 'animationBox',
             }}
             width="medium"
           >
@@ -268,17 +268,17 @@ function App() {
               />
             </Box>
           </Box>
-          <Image src="RockinGremlin.svg" fit="fill" />
+          <Image src="RockinGremlin.svg" fit="contain" />
         </Box>
 
-        <Box background="gradient" height="20px" margin="0px"></Box>
+        <Box background="gradient" height="gradient3" margin="0px"></Box>
 
         <Box
           background="noCodeBackground"
           direction="column"
           margin="0px"
           justify="center"
-          height="527px"
+          height="noCodeBox"
         >
           <Text
             margin={{}}
