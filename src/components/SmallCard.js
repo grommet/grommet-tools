@@ -1,5 +1,6 @@
 import React from 'react';
 import {Box, Text} from  'grommet';
+
 function SmallCard(props){
     return(
       <Box
