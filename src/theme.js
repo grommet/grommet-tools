@@ -5,7 +5,7 @@ export const grommetToolsTheme = {
       animationBox: '380px',
     },
     size: {
-      middle: '500px',
+      cards: '500px',
       gradient1: '5px',
       gradient3: '20px',
       noCodeBox: '527px',
@@ -73,23 +73,12 @@ export const grommetToolsTheme = {
   heading: {
     level: {
       '1': {
-        font: {},
-        small: {
-          size: '34px',
-          height: '40px',
-          maxWidth: '816px',
-        },
-        medium: {
-          size: '56px',
-          height: '56px',
-          maxWidth: '1200px',
-        },
-        large: {
+        customMedium: {
           size: '72px',
           height: '88px',
           maxWidth: '1968px',
         },
-        xlarge: {
+        customLarge: {
           size: '100px',
           height: '120px',
           maxWidth: '2736px',

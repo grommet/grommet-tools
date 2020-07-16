@@ -54,7 +54,6 @@ function App() {
           >
             <FormField
               margin={{ bottom: '0px', top: '0px' }}
-              border={false}
               name="search input"
             >
               <TextInput a11yTitle="search bar" placeholder="Search Tools" />
@@ -83,7 +82,7 @@ function App() {
             right: 'xlarge',
             bottom: '0px',
           }}
-          size="xlarge"
+          size="customLarge"
         >
           Grommet Tools
         </Heading>
@@ -166,12 +165,12 @@ function App() {
               top: 'large',
               bottom: 'small',
             }}
-            size="large"
+            size="customMedium"
           >
             Grommet Tool Suite
           </Heading>
           <Grid
-            columns="middle"
+            columns="cards"
             gap="medium"
             rows="auto"
             margin={{ horizontal: 'xlarge', vertical: 'small' }}
