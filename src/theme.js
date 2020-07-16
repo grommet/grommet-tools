@@ -3,12 +3,14 @@ export const grommetToolsTheme = {
     edgeSize: {
       marginXL: '200px',
       animationBox: '380px',
+      none: '0px',
     },
     size: {
       cards: '500px',
       gradient1: '5px',
       gradient3: '20px',
       noCodeBox: '527px',
+      none: '0px',
     },
     colors: {
       gradient:
@@ -47,12 +49,6 @@ export const grommetToolsTheme = {
   anchor: {
     color: 'black',
   },
-  box: {
-    size: {
-      headerSize: '36px',
-      xlarge: '200px',
-    },
-  },
   formField: {
     border: {
       position: null,
@@ -60,8 +56,8 @@ export const grommetToolsTheme = {
   },
   icon: {
     size: {
-      small: '36px',
-      large: '60px',
+      customSmall: '36px',
+      customLarge: '60px',
     },
   },
   heading: {

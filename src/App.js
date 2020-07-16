@@ -41,14 +41,14 @@ function App() {
       <Header height="xsmall">
         <Box justify="start" direction="row" gap="small">
           <Box margin={{ left: 'medium' }} align="center">
-            <GrommetIcon size="small" color="brand" />
+            <GrommetIcon size="customSmall" color="brand" />
           </Box>
           <Anchor margin="xsmall" href="#" label="Grommet Tools" />
         </Box>
         <Form>
           <Box background="lightGrey" direction="row" justify="center" round>
             <FormField
-              margin={{ bottom: '0px', top: '0px' }}
+              margin={{ bottom: 'none', top: 'none' }}
               name="search input"
             >
               <TextInput a11yTitle="search bar" placeholder="Search Tools" />
@@ -75,7 +75,7 @@ function App() {
             top: 'marginXL',
             left: 'xlarge',
             right: 'xlarge',
-            bottom: '0px',
+            bottom: 'none',
           }}
           size="customLarge"
         >
@@ -111,42 +111,42 @@ function App() {
             <Box>
               <Card>
                 <CardBody margin="small">
-                  <ClearOption color="DesignerYellow" size="large" />
+                  <ClearOption color="DesignerYellow" size="customLarge" />
                 </CardBody>
               </Card>
             </Box>
             <Box>
               <Card>
                 <CardBody margin="small">
-                  <CloudUpload color="PublisherPink" size="large" />
+                  <CloudUpload color="PublisherPink" size="customLarge" />
                 </CardBody>
               </Card>
             </Box>
             <Box>
               <Card>
                 <CardBody margin="small">
-                  <Configure color="ThemerOrange" size="large" />
+                  <Configure color="ThemerOrange" size="customLarge" />
                 </CardBody>
               </Card>
             </Box>
             <Box>
               <Card>
                 <CardBody margin="small">
-                  <BarChart color="TabularGreen" size="large" />
+                  <BarChart color="TabularGreen" size="customLarge" />
                 </CardBody>
               </Card>
             </Box>
             <Box>
               <Card>
                 <CardBody margin="small">
-                  <Camera color="ImagerOrange" size="large" />
+                  <Camera color="ImagerOrange" size="customLarge" />
                 </CardBody>
               </Card>
             </Box>
             <Box>
               <Card>
                 <CardBody margin="small">
-                  <Selection color="SlidesBlue" size="large" />
+                  <Selection color="SlidesBlue" size="customLarge" />
                 </CardBody>
               </Card>
             </Box>
@@ -226,7 +226,7 @@ function App() {
             top: 'xlarge',
             left: 'xlarge',
             right: 'xlarge',
-            bottom: '0px',
+            bottom: 'none',
           }}
           direction="row"
         >
@@ -265,12 +265,12 @@ function App() {
           <Image src="RockinGremlin.svg" fit="contain" />
         </Box>
 
-        <Box background="gradient" height="gradient3" margin="0px"></Box>
+        <Box background="gradient" height="gradient3" margin="none"></Box>
 
         <Box
           background="noCodeBackground"
           direction="column"
-          margin="0px"
+          margin="none"
           justify="center"
           height="noCodeBox"
         >
