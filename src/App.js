@@ -46,12 +46,7 @@ function App() {
           <Anchor margin="xsmall" href="#" label="Grommet Tools" />
         </Box>
         <Form>
-          <Box
-            background="rgba(0, 0, 0, 0.04)"
-            direction="row"
-            justify="center"
-            round
-          >
+          <Box background="lightGrey" direction="row" justify="center" round>
             <FormField
               margin={{ bottom: '0px', top: '0px' }}
               name="search input"
@@ -313,22 +308,27 @@ function App() {
             />
             <SmallCard
               text="Themer"
+              textColor="darkGrey"
               icon={<Configure size="large" color="ThemerOrange" />}
             />
             <SmallCard
               text="Images"
+              textColor="darkGrey"
               icon={<Camera size="large" color="ImagerOrange" />}
             />
             <SmallCard
               text="Publisher"
+              textColor="darkGrey"
               icon={<CloudUpload size="large" color="PublisherPink" />}
             />
             <SmallCard
               text="Slides"
+              textColor="darkGrey"
               icon={<Configure size="large" color="SlidesBlue" />}
             />
             <SmallCard
               text="Tabular"
+              textColor="darkGrey"
               icon={<BarChart size="large" color="TabularGreen" />}
             />
           </Box>

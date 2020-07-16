@@ -21,6 +21,7 @@ export const grommetToolsTheme = {
       TabularGreen: '#9BFAD8',
       noCodeBackground: 'rgba(0,0,0,0.06)',
       darkGrey: '#666666',
+      lightGrey: 'rgba(0, 0, 0, 0.04)',
       background: {
         light: '#ffffff',
         dark: '#000000',
@@ -50,13 +51,6 @@ export const grommetToolsTheme = {
     size: {
       headerSize: '36px',
       xlarge: '200px',
-    },
-  },
-  textInput: {
-    input: {
-      font: {
-        size: '18px',
-      },
     },
   },
   formField: {
