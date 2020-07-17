@@ -20,6 +20,7 @@ import {
 import { grommetToolsTheme } from '../../theme.js';
 import AppHeader from '../../components/AppHeader.js';
 import IconCard from '../../components/IconCard.js';
+import ScreenshotCard from '../../components/ScreenshotCard.js';
 
 const Designer = () => (
   <Box>
@@ -134,24 +135,9 @@ const Designer = () => (
             gap="large"
             margin={{ vertical: 'xlarge' }}
           >
-            <Box direction="column">
-              <Image src="Designer_1.svg" />
-              <Text alignSelf="center" color="altGrey">
-                Designer File Name
-              </Text>
-            </Box>
-            <Box direction="column">
-              <Image src="Designer_2.svg" />
-              <Text alignSelf="center" color="altGrey">
-                Designer File Name
-              </Text>
-            </Box>
-            <Box direction="column">
-              <Image src="Designer_3.svg" />
-              <Text alignSelf="center" color="altGrey">
-                Designer File Name
-              </Text>
-            </Box>
+            <ScreenshotCard src="Designer_1.svg" text="Deisgner File Name" />
+            <ScreenshotCard src="Designer_2.svg" text="Deisgner File Name" />
+            <ScreenshotCard src="Designer_3.svg" text="Deisgner File Name" />
           </Box>
         </Box>
       </Stack>
@@ -190,24 +176,15 @@ const Designer = () => (
           margin={{ top: 'medium' }}
           gap="large"
         >
-          <Box direction="column">
-            <Image src="Designer_4.svg" />
-            <Text alignSelf="center" color="altGrey">
-              Creating in Light and Dark modes
-            </Text>
-          </Box>
-          <Box direction="column">
-            <Image src="Designer_5.svg" />
-            <Text alignSelf="center" color="altGrey" margin="medium">
-              Importing your own theme
-            </Text>
-          </Box>
-          <Box direction="column">
-            <Image src="Designer_6.svg" />
-            <Text alignSelf="center" color="altGrey">
-              Easy publishing
-            </Text>
-          </Box>
+          <ScreenshotCard
+            src="Designer_4.svg"
+            text="Creating in Light and Dark modes"
+          />
+          <ScreenshotCard
+            src="Designer_5.svg"
+            text="Importing your own theme"
+          />
+          <ScreenshotCard src="Designer_6.svg" text="Easy publishing" />
         </Box>
       </Box>
       <Box height="xsmall"></Box>
