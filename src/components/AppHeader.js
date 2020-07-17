@@ -8,7 +8,7 @@ const AppHeader = () => (
       <Box margin={{ left: 'medium' }} align="center">
         <GrommetIcon size="customSmall" color="brand" />
       </Box>
-      <Anchor margin="xsmall" href="#" label="Grommet Tools" />
+      <Anchor color="black" margin="xsmall" href="#" label="Grommet Tools" />
     </Box>
     <Box background="lightGrey" direction="row" justify="center" round>
       <TextInput plain a11yTitle="search bar" placeholder="Search Tools" />
@@ -17,8 +17,8 @@ const AppHeader = () => (
       </Button>
     </Box>
     <Box margin={{ right: 'large' }} justify="end" direction="row" gap="medium">
-      <Anchor href="#" label="Grommet" />
-      <Anchor href="#" label="Feedback" />
+      <Anchor color="black" href="#" label="Grommet" />
+      <Anchor color="black" href="#" label="Feedback" />
     </Box>
   </Header>
 );

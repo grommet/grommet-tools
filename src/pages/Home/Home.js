@@ -218,6 +218,7 @@ const Home = (props) => (
               Read about the power of Grommet and No Code Tools
             </Paragraph>
             <Anchor
+              color="black"
               href="#"
               icon={<FormNextLink color="brand" size="large" />}
               alignSelf="end"
