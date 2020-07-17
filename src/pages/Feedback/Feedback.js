@@ -1,167 +1,33 @@
 import React from 'react';
 import {
   Grommet,
-  Header,
-  Main,
-  Footer,
   Anchor,
-  TextInput,
   Box,
   Paragraph,
   Grid,
   Card,
   CardHeader,
   CardBody,
-  Button,
-  Form,
-  FormField,
   Heading,
   Image,
-  Text,
-  ResponsiveContext,
 } from 'grommet';
 import {
-  Grommet as GrommetIcon,
-  Search,
   ClearOption,
   Configure,
   Camera,
   CloudUpload,
   Selection,
   BarChart,
-  FormNextLink,
   Github,
   Slack,
 } from 'grommet-icons';
 import { grommetToolsTheme } from '../../theme.js';
-// import GridCard from './components/GridCard.js';
-// import SmallCard from './components/SmallCard.js';
-
-const columns = {
-  small: ['auto'],
-  medium: ['auto', 'auto'],
-  large: ['auto', 'auto'],
-  xlarge: ['auto', 'auto'],
-};
-
-const rows = {
-  small: ['auto', 'auto'],
-  medium: ['auto'],
-  large: ['auto'],
-  xlarge: ['auto'],
-};
-
-// const fixedGridAreas = {
-//   small: [
-//     { name: "github", start: [0, 0], end: [0, 0] },
-//     { name: "slack", start: [0, 1], end: [0, 1] },
-//     { name: "cards", start: [0, 2], end: [0, 2] },
-//     { name: "gremlin", start: [0, 3], end: [0, 3] }
-//   ],
-//   medium: [
-//     { name: "github", start: [0, 0], end: [0, 0] },
-//     { name: "slack", start: [1, 0], end: [1, 0] },
-//     { name: "cards", start: [0, 1], end: [0, 1] },
-//     { name: "gremlin", start: [1, 1], end: [1, 1] }
-//   ],
-//   large: [
-//     { name: "github", start: [0, 0], end: [0, 0] },
-//     { name: "slack", start: [1, 0], end: [1, 0] },
-//     { name: "cards", start: [0, 1], end: [0, 1] },
-//     { name: "gremlin", start: [1, 1], end: [1, 1] }
-//   ],
-//   xlarge: [
-//     { name: "github", start: [0, 0], end: [0, 0] },
-//     { name: "slack", start: [1, 0], end: [1, 0] },
-//     { name: "cards", start: [0, 1], end: [0, 1] },
-//     { name: "gremlin", start: [1, 1], end: [1, 1] }
-//   ]
-// };
-
-// const Responsive = ({
-//   children,
-//   overrideColumns,
-//   overrideRows,
-//   areas,
-//   ...props
-// }) => (
-//   <ResponsiveContext.Consumer>
-//     {size => {
-//       // Take into consideration if not array is sent but a simple string
-//       let columnsVal = columns;
-//       if (columns) {
-//         if (columns[size]) {
-//           columnsVal = columns[size];
-//         }
-//       }
-
-//       let rowsVal = rows;
-//       if (rows) {
-//         if (rows[size]) {
-//           rowsVal = rows[size];
-//         }
-//       }
-
-//       // Also if areas is a simple array not an object of arrays for
-//       // different sizes
-//       let areasVal = areas;
-//       if (areas && !Array.isArray(areas)) areasVal = areas[size];
-
-//       return (
-//         <Grid
-//           {...props}
-//           areas={!areasVal ? undefined : areasVal}
-//           rows={!rowsVal ? size : rowsVal}
-//           columns={!columnsVal ? size : columnsVal}
-//         >
-//           {children}
-//         </Grid>
-//       );
-//     }}
-//   </ResponsiveContext.Consumer>
-// );
+import AppHeader from '../../components/AppHeader.js';
 
 const Feedback = (props) => (
   <Grommet className="App" theme={grommetToolsTheme}>
-    <Header height="xsmall">
-      <Box justify="start" direction="row" gap="small">
-        <Box margin={{ left: 'medium' }} align="center">
-          <GrommetIcon size="customSmall" color="brand" />
-        </Box>
-        <Anchor margin="xsmall" href="#" label="Grommet Tools" />
-      </Box>
-      <Box background="lightGrey" direction="row" justify="center" round>
-        <TextInput plain a11yTitle="search bar" placeholder="Search Tools" />
-        <Button>
-          <Search />
-        </Button>
-      </Box>
-      <Box
-        margin={{ right: 'large' }}
-        justify="end"
-        direction="row"
-        gap="medium"
-      >
-        <Anchor href="#" label="Grommet" />
-        <Anchor href="#" label="Feedback" />
-      </Box>
-    </Header>
-
+    <AppHeader />
     <Box fill="horizontal" background="gradient">
-      {/* <Responsive
-        rows={rows}
-        columns={columns}
-        gap="small"
-        areas={fixedGridAreas}
-        margin="medium"
-        > */}
-
-      {/* <Box 
-          margin={{
-            left: 'xlarge',
-            right: 'xlarge',
-          }} */}
-      {/* > */}
       <Heading
         margin={{
           top: 'marginXL',
@@ -188,18 +54,6 @@ const Feedback = (props) => (
           // columns='500px'
           columns={{ count: 'fit', size: '500px' }}
           rows="auto"
-          // columns={{
-          //   small: ["auto"],
-          //   medium: ["auto", "auto"],
-          //   large: ["auto", "auto"],
-          //   xlarge: ["auto", "auto"]
-          // }}
-          // rows={{
-          //   small: ["auto", "auto"],
-          //   medium: ["auto"],
-          //   large: ["auto"],
-          //   xlarge: ["auto"]
-          // }}
           gap="large"
           // margin='large'
         >
@@ -231,14 +85,6 @@ const Feedback = (props) => (
                 rows="auto"
                 // margin={{ horizontal: 'small', vertical: 'small' }}
               >
-                {/* <Box 
-                background='pink'
-                width='medium' 
-                margin={{
-                  left: 'xlarge',
-                  right: 'xlarge',
-                }}
-                > */}
                 <Card width="small" background="white">
                   <CardHeader alignSelf="center">
                     <ClearOption color="DesignerYellow" size="large" />
@@ -287,14 +133,11 @@ const Feedback = (props) => (
                     <Paragraph textAlign="center">Designer / Github</Paragraph>
                   </CardBody>
                 </Card>
-                {/* </Box> */}
               </Grid>
             </Box>
           </Box>
 
-          <Box
-          // width='430px'
-          >
+          <Box>
             <Anchor
               size="xlarge"
               href="#"
@@ -315,16 +158,6 @@ const Feedback = (props) => (
               </CardBody>
             </Card>
 
-            {/* <Box 
-                height='500px'
-                //background='green'
-                // oerflow='auto'
-                // direction='row-responsive'
-                // alignSelf='end' 
-                // width='large'
-                // flex={true}
-                // justify=
-                > */}
             <Box width="xlarge">
               <Image
                 width="xlarge"
@@ -334,25 +167,9 @@ const Feedback = (props) => (
                 src="GremlinFaceMask.svg"
               />
             </Box>
-            {/* </Box> */}
           </Box>
         </Grid>
-
-        {/* <Image 
-                  width='700px'
-                  // fill= "horizontal"
-                  alignSelf='end'
-                  // fit='contain'
-                  src="GremlinFaceMask.svg"
-                  /> */}
       </Box>
-      {/* </Box> */}
-
-      {/* <Box background='pink' width='xlarge'> */}
-
-      {/* </Box> */}
-
-      {/* </Responsive> */}
     </Box>
   </Grommet>
 );
