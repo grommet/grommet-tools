@@ -18,16 +18,12 @@ const AppHeader = () => (
       </Box>
       <Anchor margin="xsmall" href="#" label="Grommet Tools" />
     </Box>
-    <Form>
-      <Box background="lightGrey" direction="row" justify="center" round>
-        <FormField margin={{ bottom: 'none', top: 'none' }} name="search input">
-          <TextInput a11yTitle="search bar" placeholder="Search Tools" />
-        </FormField>
-        <Button type="submit">
-          <Search />
-        </Button>
-      </Box>
-    </Form>
+    <Box background="lightGrey" direction="row" justify="center" round>
+      <TextInput a11yTitle="search bar" placeholder="Search Tools" />
+      <Button type="submit">
+        <Search />
+      </Button>
+    </Box>
     <Box margin={{ right: 'large' }} justify="end" direction="row" gap="medium">
       <Anchor href="#" label="Grommet" />
       <Anchor href="#" label="Feedback" />
