@@ -5,7 +5,6 @@ import {
   TextInput,
   Box,
   Button,
-  ResopnsiveContext,
   ResponsiveContext,
 } from 'grommet';
 import { Grommet as GrommetIcon, Search } from 'grommet-icons';
