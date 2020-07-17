@@ -1,15 +1,5 @@
 import React from 'react';
-import {
-  Grommet,
-  Box,
-  Heading,
-  Text,
-  Stack,
-  Card,
-  CardBody,
-  Paragraph,
-  Image,
-} from 'grommet';
+import { Grommet, Box, Heading, Text, Stack, Paragraph, Image } from 'grommet';
 import {
   ClearOption,
   Configure,
