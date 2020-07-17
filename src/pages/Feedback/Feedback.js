@@ -1,15 +1,5 @@
 import React from 'react';
-import {
-  Grommet,
-  Anchor,
-  Box,
-  Paragraph,
-  Grid,
-  Card,
-  Heading,
-  Image,
-  Main,
-} from 'grommet';
+import { Anchor, Box, Paragraph, Grid, Card, Heading, Image } from 'grommet';
 import {
   ClearOption,
   Configure,
@@ -20,11 +10,19 @@ import {
   Github,
   Slack,
 } from 'grommet-icons';
-import { grommetToolsTheme } from '../../theme.js';
 import AppHeader from '../../components/AppHeader.js';
 
+const githubCards = [
+  { icon: <ClearOption />, label: 'Designer / Github' },
+  { icon: <CloudUpload />, label: 'Publisher / Github' },
+  { icon: <Configure />, label: 'Themer / Github' },
+  { icon: <Camera />, label: 'Imager / Github' },
+  { icon: <BarChart />, label: 'Tabular / Github' },
+  { icon: <Selection />, label: 'Slides / Github' },
+];
+
 const Feedback = (props) => (
-  <Grommet background="gradient" className="App" theme={grommetToolsTheme}>
+  <Box background="gradient">
     <AppHeader />
 
     <Box
@@ -59,7 +57,7 @@ const Feedback = (props) => (
             label="Share feedback on Github"
           />
 
-          <Paragraph fill={true} pad={{ right: 'large' }}>
+          <Paragraph fill pad={{ right: 'large' }}>
             Submit feedback on Grommet Tools on Github. Here, you can help
             improve the tools and connect with other Grommet Tools lovers.
           </Paragraph>
@@ -70,66 +68,18 @@ const Feedback = (props) => (
               gap={{ row: 'medium', column: 'medium' }}
               rows="auto"
             >
-              <Card width="medium" background="white">
-                <Anchor
-                  color="black"
-                  alignSelf="center"
-                  margin="xsmall"
-                  href="#"
-                  icon={<ClearOption />}
-                  label="Designer / Github"
-                />
-              </Card>
-              <Card width="medium" background="white">
-                <Anchor
-                  color="black"
-                  alignSelf="center"
-                  margin="xsmall"
-                  href="#"
-                  icon={<CloudUpload />}
-                  label="Publisher / Github"
-                />
-              </Card>
-              <Card width="medium" background="white">
-                <Anchor
-                  color="black"
-                  alignSelf="center"
-                  margin="xsmall"
-                  href="#"
-                  icon={<Configure />}
-                  label="Themer / Github"
-                />
-              </Card>
-              <Card width="medium" background="white">
-                <Anchor
-                  color="black"
-                  alignSelf="center"
-                  margin="xsmall"
-                  href="#"
-                  icon={<Camera />}
-                  label="Imager / Github"
-                />
-              </Card>
-              <Card width="medium" background="white">
-                <Anchor
-                  color="black"
-                  alignSelf="center"
-                  margin="xsmall"
-                  href="#"
-                  icon={<BarChart />}
-                  label="Tabular / Github"
-                />
-              </Card>
-              <Card width="medium" background="white">
-                <Anchor
-                  color="black"
-                  alignSelf="center"
-                  margin="xsmall"
-                  href="#"
-                  icon={<Selection />}
-                  label="Slides / Github"
-                />
-              </Card>
+              {githubCards.map((item) => (
+                <Card width="medium" background="white">
+                  <Anchor
+                    color="black"
+                    alignSelf="center"
+                    margin="xsmall"
+                    href="#"
+                    icon={item.icon}
+                    label={item.label}
+                  />
+                </Card>
+              ))}
             </Grid>
           </Box>
         </Box>
@@ -170,7 +120,7 @@ const Feedback = (props) => (
         </Box>
       </Grid>
     </Box>
-  </Grommet>
+  </Box>
 );
 
 export default Feedback;
