@@ -1,4 +1,7 @@
-export const grommetToolsTheme = {
+import { grommet } from 'grommet/themes';
+import { deepMerge } from 'grommet/utils';
+
+export const grommetToolsTheme = deepMerge(grommet, {
   global: {
     edgeSize: {
       marginXL: '200px',
@@ -29,30 +32,6 @@ export const grommetToolsTheme = {
         dark: '#000000',
       },
     },
-    font: {
-      family: `-apple-system,
-           BlinkMacSystemFont, 
-           "Segoe UI", 
-           Roboto, 
-           Oxygen, 
-           Ubuntu, 
-           Cantarell, 
-           "Fira Sans", 
-           "Droid Sans",  
-           "Helvetica Neue", 
-           Arial, sans-serif,  
-           "Apple Color Emoji", 
-           "Segoe UI Emoji", 
-           "Segoe UI Symbol"`,
-    },
-  },
-  anchor: {
-    color: 'black',
-  },
-  formField: {
-    border: {
-      position: null,
-    },
   },
   icon: {
     size: {
@@ -76,4 +55,4 @@ export const grommetToolsTheme = {
       },
     },
   },
-};
+});
