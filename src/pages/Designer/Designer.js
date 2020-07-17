@@ -10,54 +10,101 @@ import {
   Paragraph,
   Image,
 } from 'grommet';
-import { ClearOption } from 'grommet-icons';
+import {
+  ClearOption,
+  Configure,
+  Camera,
+  CloudUpload,
+  Selection,
+  BarChart,
+} from 'grommet-icons';
 import { grommetToolsTheme } from '../../theme.js';
 import AppHeader from '../../components/AppHeader.js';
+import IconCard from '../../components/IconCard.js';
 
 function Designer() {
   return (
     <Grommet theme={grommetToolsTheme}>
       <AppHeader />
       <Box margin={{ top: 'xlarge' }}>
-        <Box alignSelf="center">
-          <Text
-            margin={{
-              left: 'large',
-            }}
-          >
-            Grommet Tools
-          </Text>
-          <Heading
-            size="xlarge"
-            margin={{
-              top: 'none',
-              bottom: 'medium',
-              left: 'large',
-            }}
-          >
-            Designer
-          </Heading>
+        <Stack>
+          <Box>
+            <Box alignSelf="center">
+              <Text
+                margin={{
+                  left: 'large',
+                }}
+              >
+                Grommet Tools
+              </Text>
+              <Heading
+                size="xlarge"
+                margin={{
+                  top: 'none',
+                  bottom: 'medium',
+                  left: 'large',
+                }}
+              >
+                Designer
+              </Heading>
+            </Box>
+            <Box height="gradient1" background="gradient"></Box>
+            <Box alignSelf="center" margin={{ left: 'xlarge' }} width="large">
+              <Paragraph
+                margin={{
+                  left: 'xlarge',
+                }}
+                size="xxlarge"
+                color="darkGrey"
+              >
+                Grommet Designer is a tool used build expiriences with Grommet
+                components; then publish and share your ideas with a simple
+                wysiwg interface
+              </Paragraph>
+              <Box
+                round="medium"
+                background="buttonYellow"
+                onClick={() => {}}
+                width="small"
+                height="xxsmall"
+                justify="center"
+                margin={{ left: 'xlarge' }}
+              >
+                <Text weight="bold" alignSelf="center" color="black">
+                  Open Designer
+                </Text>
+              </Box>
+            </Box>
+          </Box>
+          <IconCard
+            size="medium"
+            icon={<ClearOption size="xxlarge" color="DesignerYellow" />}
+            margin={{ left: 'xlarge' }}
+          />
+        </Stack>
+      </Box>
+      <Box direction="column" gap="medium" margin={{ left: 'xlarge' }}>
+        <Box direction="row" margin={{ left: 'xlarge' }} gap="xlarge">
+          <Camera size="large" color="ImagerOrange" />
+          <Configure size="large" color="ThemerOrange" />
         </Box>
-        <Box height="gradient1" background="gradient"></Box>
-        <Box alignSelf="center" margin={{ left: 'xlarge' }} width="large">
-          <Paragraph
-            margin={{
-              left: 'xlarge',
-            }}
-            size="large"
-            color="darkGrey"
-          >
-            Grommet Designer is a tool used build expiriences with Grommet
-            components; then publish and share your ideas with a simple wysiwg
-            interface
-          </Paragraph>
+        <Box margin={{ left: 'xlarge' }} direction="row">
+          <Box width="xxsmall"></Box>
+          <CloudUpload size="large" color="PublisherPink" />
+        </Box>
+        <Box margin={{ left: 'xlarge' }} direction="row">
+          <Box width="xsmall"></Box>
+          <Selection size="large" color="SlidesBlue" />
+        </Box>
+        <Box margin={{ left: 'xlarge' }}>
+          <BarChart size="large" color="TabularGreen" />
         </Box>
       </Box>
 
       <Stack>
         <Box
           background="YellowBackground"
-          height="designerBox"
+          height="large"
           margin={{
             top: 'xlarge',
           }}
@@ -69,14 +116,19 @@ function Designer() {
           }}
         >
           <Heading size="large">What is the Designer?</Heading>
-          <Box width="large" margin={{ bottom: 'large' }}>
-            <Paragraph fill={true} size="xlarge">
+          <Box width="large" margin={{ bottom: 'xlarge' }}>
+            <Paragraph fill={true} size="xxlarge">
               A free, web-based WSIWG component editor, Grommet Designer is a
               themeable experience designer baked on top of react and java
               framework. See some examples from Grommet designers below.
             </Paragraph>
           </Box>
-          <Box direction="row" justify="center" gap="large">
+          <Box
+            direction="row-responsive"
+            justify="center"
+            gap="large"
+            margin={{ vertical: 'xlarge' }}
+          >
             <Box direction="column">
               <Image src="Designer_1.svg" />
               <Text alignSelf="center" color="altGrey">
@@ -98,9 +150,10 @@ function Designer() {
           </Box>
         </Box>
       </Stack>
+      <Box height="small"></Box>
       <Box margin={{ top: 'xlarge', horizontal: 'xlarge' }}>
         <Box direction="row">
-          <Box>
+          <Box margin={{ right: 'large' }}>
             <Heading size="large" margin={{ bottom: 'none', top: 'xlarge' }}>
               Capabilities
             </Heading>
@@ -118,7 +171,11 @@ function Designer() {
               </Paragraph>
             </Box>
           </Box>
-          <Box alignSelf="end" align="end">
+          <Box
+            alignSelf="end"
+            align="end"
+            margin={{ left: 'xlarge', top: 'medium' }}
+          >
             <Image alignSelf="end" src="gremlin_laptop.svg" />
           </Box>
         </Box>
@@ -148,16 +205,17 @@ function Designer() {
           </Box>
         </Box>
       </Box>
+      <Box height="xsmall"></Box>
       <Box background="YellowBackground" height="medium">
         <Box
           margin={{ top: 'xlarge', bottom: 'medium' }}
           alignSelf="center"
           width="DesignerStart"
         >
-          <Heading size="small" margin="xsmall">
+          <Heading size="small" margin="xsmall" alignSelf="center">
             Start Using the Designer Now
           </Heading>
-          <Paragraph size="large" margin="xsmall">
+          <Paragraph size="large" margin="small" alignSelf="center">
             Open the Designer tool and get started by watching a tutorial or
             just jumping right in to your first design.
           </Paragraph>
@@ -165,7 +223,7 @@ function Designer() {
         <Box
           alignSelf="center"
           background="white"
-          width="buttonBox"
+          width="small"
           round="medium"
           height="xxsmall"
           justify="center"
@@ -173,7 +231,12 @@ function Designer() {
           margin="none"
           onClick={() => {}}
         >
-          <Text weight="bold" alignSelf="center" TextAlign="center">
+          <Text
+            weight="bold"
+            alignSelf="center"
+            TextAlign="center"
+            color="black"
+          >
             Open Designer
           </Text>
         </Box>
