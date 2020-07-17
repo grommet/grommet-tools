@@ -1,5 +1,14 @@
 import React from 'react';
-import { Grommet, Box, Heading, Text, Stack, Paragraph, Image } from 'grommet';
+import {
+  Grommet,
+  Box,
+  Heading,
+  Text,
+  Stack,
+  Paragraph,
+  Image,
+  Main,
+} from 'grommet';
 import {
   ClearOption,
   Configure,
@@ -12,10 +21,10 @@ import { grommetToolsTheme } from '../../theme.js';
 import AppHeader from '../../components/AppHeader.js';
 import IconCard from '../../components/IconCard.js';
 
-function Designer() {
-  return (
-    <Grommet theme={grommetToolsTheme}>
-      <AppHeader />
+const Designer = () => (
+  <Box>
+    <AppHeader />
+    <Main>
       <Box margin={{ top: 'xlarge' }}>
         <Stack>
           <Box>
@@ -73,7 +82,11 @@ function Designer() {
           />
         </Stack>
       </Box>
-      <Box direction="column" gap="medium" margin={{ left: 'xlarge' }}>
+      <Box
+        direction="column"
+        gap="medium"
+        margin={{ left: 'xlarge', bottom: 'xlarge' }}
+      >
         <Box direction="row" margin={{ left: 'xlarge' }} gap="xlarge">
           <Camera size="large" color="ImagerOrange" />
           <Configure size="large" color="ThemerOrange" />
@@ -105,8 +118,10 @@ function Designer() {
             bottom: 'xlarge',
           }}
         >
-          <Heading size="large">What is the Designer?</Heading>
-          <Box width="large" margin={{ bottom: 'xlarge' }}>
+          <Heading size="large" margin={{ top: 'xlarge' }}>
+            What is the Designer?
+          </Heading>
+          <Box width="large" margin={{ bottom: 'xlarge', top: 'none' }}>
             <Paragraph fill={true} size="xxlarge">
               A free, web-based WSIWG component editor, Grommet Designer is a
               themeable experience designer baked on top of react and java
@@ -231,8 +246,8 @@ function Designer() {
           </Text>
         </Box>
       </Box>
-    </Grommet>
-  );
-}
+    </Main>
+  </Box>
+);
 
 export default Designer;
