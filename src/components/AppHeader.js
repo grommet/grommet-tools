@@ -1,5 +1,13 @@
 import React from 'react';
-import { Header, Anchor, TextInput, Box, Button } from 'grommet';
+import {
+  Header,
+  Anchor,
+  TextInput,
+  Box,
+  Button,
+  ResopnsiveContext,
+  ResponsiveContext,
+} from 'grommet';
 import { Grommet as GrommetIcon, Search } from 'grommet-icons';
 
 const AppHeader = () => (
@@ -10,12 +18,30 @@ const AppHeader = () => (
       </Box>
       <Anchor color="black" margin="xsmall" href="#" label="Grommet Tools" />
     </Box>
-    <Box background="lightGrey" direction="row" justify="center" round>
-      <TextInput plain a11yTitle="search bar" placeholder="Search Tools" />
-      <Button type="submit">
-        <Search />
-      </Button>
-    </Box>
+
+    <ResponsiveContext>
+      {(responsive) =>
+        responsive === 'small' ? (
+          <Box direction="row" justify="end" round>
+            <Button margin="xsmall" type="submit">
+              <Search />
+            </Button>
+          </Box>
+        ) : (
+          <Box background="lightGrey" direction="row" justify="center" round>
+            <TextInput
+              plain
+              a11yTitle="search bar"
+              placeholder="Search Tools"
+            />
+            <Button type="submit" margin={{ right: 'small', top: 'xsmall' }}>
+              <Search />
+            </Button>
+          </Box>
+        )
+      }
+    </ResponsiveContext>
+
     <Box margin={{ right: 'large' }} justify="end" direction="row" gap="medium">
       <Anchor color="black" href="#" label="Grommet" />
       <Anchor color="black" href="#" label="Feedback" />
