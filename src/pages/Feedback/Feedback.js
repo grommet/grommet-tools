@@ -49,13 +49,9 @@ const Feedback = (props) => (
         gap="xlarge"
       >
         <Box>
-          <Anchor
-            color="black"
-            size="xlarge"
-            href="#"
-            icon={<Github />}
-            label="Share feedback on Github"
-          />
+          <Heading size="small">
+            <Github color="headingGrey" /> Share feedback on Github
+          </Heading>
 
           <Paragraph fill pad={{ right: 'large' }}>
             Submit feedback on Grommet Tools on Github. Here, you can help
@@ -71,7 +67,6 @@ const Feedback = (props) => (
               {githubCards.map((item) => (
                 <Card width="medium" background="white">
                   <Anchor
-                    color="black"
                     alignSelf="center"
                     margin="xsmall"
                     href="#"
@@ -85,13 +80,9 @@ const Feedback = (props) => (
         </Box>
 
         <Box>
-          <Anchor
-            color="black"
-            size="xlarge"
-            href="#"
-            icon={<Slack />}
-            label="Join Grommet's Slack Channel"
-          />
+          <Heading size="small">
+            <Slack color="headingGrey" /> Join Grommet's Slack Channel
+          </Heading>
           <Paragraph fill={true} margin={{ right: 'small' }}>
             Contribute to the discussion about Grommet and Grommet Tools and see
             what others are up to by joining the Slack channel.
@@ -99,7 +90,6 @@ const Feedback = (props) => (
 
           <Card width="small" background="white">
             <Anchor
-              color="black"
               alignSelf="center"
               margin="xsmall"
               href="#"

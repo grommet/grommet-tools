@@ -220,7 +220,6 @@ with Grommet and the Grommet Designer."
             Read about the power of Grommet and No Code Tools
           </Paragraph>
           <Anchor
-            color="black"
             href="#"
             icon={<FormNextLink color="brand" size="large" />}
             alignSelf="end"
@@ -299,18 +298,8 @@ with Grommet and the Grommet Designer."
         />
       </Box>
       <Box justify="center" direction="row" gap="large">
-        <Anchor
-          color="darkGrey"
-          href="#"
-          icon={<Slack />}
-          label="Grommet on Slack"
-        />
-        <Anchor
-          color="darkGrey"
-          href="#"
-          icon={<Github />}
-          label="Share feedback on Github"
-        />
+        <Anchor href="#" icon={<Slack />} label="Grommet on Slack" />
+        <Anchor href="#" icon={<Github />} label="Share feedback on Github" />
       </Box>
     </Box>
   </Box>
