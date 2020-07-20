@@ -50,29 +50,24 @@ const Designer = () => (
             </Box>
             <Box height="gradient1" background="gradient"></Box>
             <Box alignSelf="center" margin={{ left: 'xlarge' }} width="large">
-              <Paragraph
-                margin={{
-                  left: 'xlarge',
-                }}
-                size="xxlarge"
-                color="darkGrey"
-              >
-                Grommet Designer is a tool used build expiriences with Grommet
-                components; then publish and share your ideas with a simple
-                wysiwg interface
-              </Paragraph>
-              <Box
-                round="medium"
-                background="buttonYellow"
-                onClick={() => {}}
-                width="small"
-                height="xxsmall"
-                justify="center"
-                margin={{ left: 'xlarge' }}
-              >
-                <Text weight="bold" alignSelf="center" color="black">
-                  Open Designer
-                </Text>
+              <Box margin={{ left: 'xlarge' }}>
+                <Paragraph size="xxlarge" color="darkGrey">
+                  Grommet Designer is a tool used build expiriences with Grommet
+                  components; then publish and share your ideas with a simple
+                  wysiwg interface
+                </Paragraph>
+                <Box
+                  round="medium"
+                  background="buttonYellow"
+                  onClick={() => {}}
+                  width="small"
+                  height="xxsmall"
+                  justify="center"
+                >
+                  <Text weight="bold" alignSelf="center" color="black">
+                    Open Designer
+                  </Text>
+                </Box>
               </Box>
             </Box>
           </Box>
@@ -135,9 +130,9 @@ const Designer = () => (
             gap="large"
             margin={{ vertical: 'xlarge' }}
           >
-            <ScreenshotCard src="Designer_1.svg" text="Deisgner File Name" />
-            <ScreenshotCard src="Designer_2.svg" text="Deisgner File Name" />
-            <ScreenshotCard src="Designer_3.svg" text="Deisgner File Name" />
+            <ScreenshotCard src="Designer_1.svg" label="Deisgner File Name" />
+            <ScreenshotCard src="Designer_2.svg" label="Deisgner File Name" />
+            <ScreenshotCard src="Designer_3.svg" label="Deisgner File Name" />
           </Box>
         </Box>
       </Stack>
@@ -178,13 +173,13 @@ const Designer = () => (
         >
           <ScreenshotCard
             src="Designer_4.svg"
-            text="Creating in Light and Dark modes"
+            label="Creating in Light and Dark modes"
           />
           <ScreenshotCard
             src="Designer_5.svg"
-            text="Importing your own theme"
+            label="Importing your own theme"
           />
-          <ScreenshotCard src="Designer_6.svg" text="Easy publishing" />
+          <ScreenshotCard src="Designer_6.svg" label="Easy publishing" />
         </Box>
       </Box>
       <Box height="xsmall"></Box>

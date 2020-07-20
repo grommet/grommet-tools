@@ -1,11 +1,11 @@
 import React from 'react';
 import { Box, Image, Text } from 'grommet';
 
-const ScreenshotCard = (props) => (
-  <Box direction="column">
-    <Image src={props.src} />
+const ScreenshotCard = ({ label, src }) => (
+  <Box>
+    <Image src={src} />
     <Text alignSelf="center" color="altGrey" margin="medium">
-      {props.text}
+      {label}
     </Text>
   </Box>
 );
