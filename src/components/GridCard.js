@@ -34,7 +34,7 @@ const GridCard = (props) => (
       alignSelf="start"
       width="auto"
     >
-      <Anchor color="black" margin="small" color="rgb(0,0,0)">
+      <Anchor margin="small" href={props.openLink}>
         Open {props.heading}
       </Anchor>
     </Box>
@@ -45,9 +45,8 @@ const GridCard = (props) => (
       justify="end"
     >
       <Anchor
-        color="black"
         alignSelf="center"
-        href="#"
+        href={props.learnLink}
         margin="xsmall"
         label="Learn More"
       />
