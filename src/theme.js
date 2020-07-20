@@ -9,7 +9,6 @@ export const grommetToolsTheme = deepMerge(grommet, {
       none: '0px',
     },
     size: {
-      cards: '500px',
       gradient1: '5px',
       gradient3: '20px',
       noCodeBox: '527px',

@@ -111,10 +111,7 @@ const Home = (props) => (
       </Box>
     </Box>
 
-    <Box
-      // alignContent='center'
-      background="gradient"
-    >
+    <Box background="gradient">
       <Heading
         margin={{
           horizontal: 'xlarge',
@@ -126,8 +123,6 @@ const Home = (props) => (
         Grommet Tool Suite
       </Heading>
       <Grid
-        // align='center'
-        // columns="cards"
         columns={{ count: 'fill', size: 'medium' }}
         gap="medium"
         rows="auto"
@@ -194,15 +189,15 @@ with Grommet and the Grommet Designer."
     <Box
       margin={{
         top: 'xlarge',
-        left: 'xlarge',
-        right: 'xlarge',
         bottom: 'none',
       }}
       direction="row-responsive"
-      // alignSelf='center'
+      align="end"
     >
-      <Box width="medium" margin={{ horizontal: 'xlarge', bottom: 'xlarge' }}>
-        <Heading>What are grommet Tools?</Heading>
+      <Box size="large" margin={{ horizontal: 'xlarge', bottom: 'xlarge' }}>
+        <Heading level={2} size="xlarge">
+          What are grommet Tools?
+        </Heading>
         <Paragraph size="xlarge" margin={{ top: 'small' }}>
           Grommet's "No-Code" Tools assist your development experience by
           offering easy access to Grommet components with powerful branding
@@ -233,11 +228,11 @@ with Grommet and the Grommet Designer."
           />
         </Box>
       </Box>
-      <Box width="medium" margin={{ horizontal: 'xlarge' }}>
+      <Box size="medium" margin={{ horizontal: 'xlarge' }}>
         <Image
-          width="medium"
+          fill="horizontal"
+          alignSelf="end"
           src="RockinGremlin.svg"
-          size="small"
           fit="contain"
         />
       </Box>
