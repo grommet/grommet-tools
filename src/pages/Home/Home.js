@@ -189,12 +189,14 @@ with Grommet and the Grommet Designer."
     <Box
       margin={{
         top: 'xlarge',
+        horizontal: 'xlarge',
         bottom: 'none',
       }}
       direction="row-responsive"
       align="end"
+      gap="xlarge"
     >
-      <Box size="large" margin={{ horizontal: 'xlarge', bottom: 'xlarge' }}>
+      <Box alignSelf="center" size="large" margin={{ bottom: 'xlarge' }}>
         <Heading level={2} size="xlarge">
           What are grommet Tools?
         </Heading>
@@ -228,7 +230,7 @@ with Grommet and the Grommet Designer."
           />
         </Box>
       </Box>
-      <Box size="medium" margin={{ horizontal: 'xlarge' }}>
+      <Box size="medium">
         <Image
           fill="horizontal"
           alignSelf="end"
