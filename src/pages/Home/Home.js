@@ -59,52 +59,64 @@ const Home = (props) => (
         </Text>
       </Box>
       <Box
-        direction="row"
         margin={{
           top: 'small',
           left: 'xlarge',
           right: 'xlarge',
         }}
       >
-        <Box>
-          <Card>
+        <Box direction="row" gap="xlarge">
+          <Card
+            margin={{ horizontal: 'large' }}
+            animation={{ type: 'jiggle', duration: 1000 }}
+          >
             <CardBody margin="small">
               <ClearOption color="DesignerYellow" size="customLarge" />
             </CardBody>
           </Card>
-        </Box>
-        <Box>
-          <Card>
+          <Card
+            margin={{ horizontal: 'large' }}
+            animation={{ type: 'jiggle', duration: 1000, delay: 1000 }}
+          >
             <CardBody margin="small">
               <CloudUpload color="PublisherPink" size="customLarge" />
             </CardBody>
           </Card>
         </Box>
-        <Box>
-          <Card>
+        <Box direction="row" pad={{ left: 'large' }}>
+          <Card
+            alignSelf="center"
+            margin={{ horizontal: 'xlarge' }}
+            animation={{ type: 'jiggle', duration: 1000, delay: 750 }}
+          >
             <CardBody margin="small">
               <Configure color="ThemerOrange" size="customLarge" />
             </CardBody>
           </Card>
         </Box>
-        <Box>
-          <Card>
+        <Box direction="row" gap="xlarge">
+          <Card animation={{ type: 'jiggle', duration: 1000, delay: 400 }}>
+            <CardBody margin="small">
+              <Selection color="SlidesBlue" size="customLarge" />
+            </CardBody>
+          </Card>
+          <Card
+            alignSelf="center"
+            margin={{ left: 'xlarge' }}
+            animation={{ type: 'jiggle', duration: 1000, delay: 600 }}
+          >
             <CardBody margin="small">
               <BarChart color="TabularGreen" size="customLarge" />
             </CardBody>
           </Card>
         </Box>
         <Box>
-          <Card>
+          <Card
+            alignSelf="center"
+            animation={{ type: 'jiggle', duration: 1000, delay: 550 }}
+          >
             <CardBody margin="small">
               <Camera color="ImagerOrange" size="customLarge" />
-            </CardBody>
-          </Card>
-        </Box>
-        <Box>
-          <Card>
-            <CardBody margin="small">
-              <Selection color="SlidesBlue" size="customLarge" />
             </CardBody>
           </Card>
         </Box>
