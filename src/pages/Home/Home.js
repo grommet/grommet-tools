@@ -311,18 +311,8 @@ with Grommet and the Grommet Designer."
         />
       </Box>
       <Box justify="center" direction="row" gap="large">
-        <Anchor
-          color="darkGrey"
-          href="#"
-          icon={<Slack />}
-          label="Grommet on Slack"
-        />
-        <Anchor
-          color="darkGrey"
-          href="#"
-          icon={<Github />}
-          label="Share feedback on Github"
-        />
+        <Anchor href="#" icon={<Slack />} label="Grommet on Slack" />
+        <Anchor href="#" icon={<Github />} label="Share feedback on Github" />
       </Box>
     </Box>
   </Box>
