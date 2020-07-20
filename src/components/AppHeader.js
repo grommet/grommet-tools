@@ -15,7 +15,7 @@ const AppHeader = () => (
       <Box margin={{ left: 'medium' }} align="center">
         <GrommetIcon size="customSmall" color="brand" />
       </Box>
-      <Anchor color="black" margin="xsmall" href="#" label="Grommet Tools" />
+      <Anchor margin="xsmall" href="#" label="Grommet Tools" />
     </Box>
 
     <ResponsiveContext>
@@ -42,8 +42,8 @@ const AppHeader = () => (
     </ResponsiveContext>
 
     <Box margin={{ right: 'large' }} justify="end" direction="row" gap="medium">
-      <Anchor color="black" href="#" label="Grommet" />
-      <Anchor color="black" href="#" label="Feedback" />
+      <Anchor href="#" label="Grommet" />
+      <Anchor href="#" label="Feedback" />
     </Box>
   </Header>
 );

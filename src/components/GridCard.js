@@ -34,9 +34,7 @@ const GridCard = (props) => (
       alignSelf="start"
       width="auto"
     >
-      <Anchor color="black" margin="small" color="rgb(0,0,0)">
-        Open {props.heading}
-      </Anchor>
+      <Anchor margin="small">Open {props.heading}</Anchor>
     </Box>
     <CardFooter
       background={props.buttonColor}
@@ -44,13 +42,7 @@ const GridCard = (props) => (
       alignContent="end"
       justify="end"
     >
-      <Anchor
-        color="black"
-        alignSelf="center"
-        href="#"
-        margin="xsmall"
-        label="Learn More"
-      />
+      <Anchor alignSelf="center" href="#" margin="xsmall" label="Learn More" />
     </CardFooter>
   </Card>
 );
