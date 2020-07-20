@@ -12,7 +12,10 @@ import {
 } from 'grommet';
 
 const GridCard = (props) => (
-  <Card background="rgb(255,255,255)">
+  <Card
+    // width='medium'
+    background="rgb(255,255,255)"
+  >
     <Box margin={{ horizontal: 'medium', top: 'large' }}>{props.icon}</Box>
     <CardHeader>
       <Heading margin={{ horizontal: 'medium', vertical: 'xsmall' }}>
@@ -21,6 +24,7 @@ const GridCard = (props) => (
     </CardHeader>
     <CardBody>
       <Paragraph
+        fill
         alignSelf="start"
         margin={{ horizontal: 'medium', vertical: 'xsmall' }}
       >
@@ -40,7 +44,7 @@ const GridCard = (props) => (
     </Box>
     <CardFooter
       background={props.buttonColor}
-      margin={{ top: 'xlarge' }}
+      margin={{ top: 'large' }}
       alignContent="end"
       justify="end"
     >
@@ -48,7 +52,7 @@ const GridCard = (props) => (
         color="black"
         alignSelf="center"
         href="#"
-        margin="xsmall"
+        margin="small"
         label="Learn More"
       />
     </CardFooter>

@@ -111,7 +111,10 @@ const Home = (props) => (
       </Box>
     </Box>
 
-    <Box background="gradient">
+    <Box
+      // alignContent='center'
+      background="gradient"
+    >
       <Heading
         margin={{
           horizontal: 'xlarge',
@@ -123,7 +126,9 @@ const Home = (props) => (
         Grommet Tool Suite
       </Heading>
       <Grid
-        columns="cards"
+        // align='center'
+        // columns="cards"
+        columns={{ count: 'fill', size: 'medium' }}
         gap="medium"
         rows="auto"
         margin={{ horizontal: 'xlarge', vertical: 'small' }}
