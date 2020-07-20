@@ -198,9 +198,10 @@ with Grommet and the Grommet Designer."
         right: 'xlarge',
         bottom: 'none',
       }}
-      direction="row"
+      direction="row-responsive"
+      // alignSelf='center'
     >
-      <Box width="medium" margin={{ bottom: 'xlarge' }}>
+      <Box width="medium" margin={{ horizontal: 'xlarge', bottom: 'xlarge' }}>
         <Heading>What are grommet Tools?</Heading>
         <Paragraph size="xlarge" margin={{ top: 'small' }}>
           Grommet's "No-Code" Tools assist your development experience by
@@ -225,7 +226,6 @@ with Grommet and the Grommet Designer."
             Read about the power of Grommet and No Code Tools
           </Paragraph>
           <Anchor
-            color="black"
             href="#"
             icon={<FormNextLink color="brand" size="large" />}
             alignSelf="end"
@@ -233,7 +233,14 @@ with Grommet and the Grommet Designer."
           />
         </Box>
       </Box>
-      <Image src="RockinGremlin.svg" fit="contain" />
+      <Box width="medium" margin={{ horizontal: 'xlarge' }}>
+        <Image
+          width="medium"
+          src="RockinGremlin.svg"
+          size="small"
+          fit="contain"
+        />
+      </Box>
     </Box>
 
     <Box background="gradient" height="gradient3" margin="none"></Box>
