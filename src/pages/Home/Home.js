@@ -137,6 +137,8 @@ const Home = (props) => (
           icon={<ClearOption color="DesignerYellow" size="xlarge" />}
           heading="Designer"
           buttonColor="DesignerYellow"
+          learnLink="/Designer"
+          openLink="https://designer.grommet.io/"
           text="Grommet web-based WSIWG component editor. Use
 pubilshed themes by entering the URL in the context
 of editing the design details."
@@ -145,6 +147,7 @@ of editing the design details."
           icon={<Configure size="xlarge" color="ThemerOrange" />}
           heading="Themer"
           buttonColor="ThemerOrange"
+          openLink="https://theme-designer.grommet.io/"
           text="Grommet web-based WSIWG component editor. Use
 pubilshed themes by entering the URL in the context
 of editing the design details."
@@ -153,6 +156,7 @@ of editing the design details."
           icon={<Camera size="xlarge" color="ImagerOrange" />}
           heading="Images"
           buttonColor="ImagerOrange"
+          openLink="https://images.grommet.io/"
           text="  Super simple image hosting for your Grommet-based
 projects. Works great with Publisher, Slides, and
 Designer."
@@ -161,6 +165,7 @@ Designer."
           icon={<CloudUpload size="xlarge" color="PublisherPink" />}
           heading="Publisher"
           buttonColor="PublisherPink"
+          openLink="https://publisher.grommet.io/"
           text="Think one part lightweight CMS,
 one part Markdown, and some special sauce
 from Grommet to make it all come together."
@@ -169,6 +174,7 @@ from Grommet to make it all come together."
           icon={<Selection size="xlarge" color="SlidesBlue" />}
           heading="Slides"
           buttonColor="SlidesBlue"
+          openLink="https://slides.grommet.io/"
           text="Similar to the Grommet Publisher and using
 Markdown and some shortcuts to make presenting easy,
 Slides makes presentations a breeze."
@@ -177,6 +183,7 @@ Slides makes presentations a breeze."
           icon={<BarChart size="xlarge" color="TabularGreen" />}
           heading="Tabular"
           buttonColor="TabularGreen"
+          openLink="https://tabular.grommet.io/"
           text="  If you need a table and have an API or data source,
 choose your columns and create content that is integrated
 with Grommet and the Grommet Designer."
