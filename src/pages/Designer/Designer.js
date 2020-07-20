@@ -1,14 +1,5 @@
 import React from 'react';
-import {
-  Grommet,
-  Box,
-  Heading,
-  Text,
-  Stack,
-  Paragraph,
-  Image,
-  Main,
-} from 'grommet';
+import { Box, Heading, Text, Stack, Paragraph, Image, Main } from 'grommet';
 import {
   ClearOption,
   Configure,
@@ -17,7 +8,6 @@ import {
   Selection,
   BarChart,
 } from 'grommet-icons';
-import { grommetToolsTheme } from '../../theme.js';
 import AppHeader from '../../components/AppHeader.js';
 import IconCard from '../../components/IconCard.js';
 import ScreenshotCard from '../../components/ScreenshotCard.js';
