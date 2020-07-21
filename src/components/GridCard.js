@@ -11,12 +11,19 @@ import {
   Heading,
 } from 'grommet';
 
-const GridCard = (props) => (
+const GridCard = ({
+  buttonColor,
+  heading,
+  icon,
+  text,
+  learnLink,
+  openLink,
+}) => (
   <Card background="rgb(255,255,255)">
-    <Box margin={{ horizontal: 'medium', top: 'large' }}>{props.icon}</Box>
+    <Box margin={{ horizontal: 'medium', top: 'large' }}>{icon}</Box>
     <CardHeader>
       <Heading margin={{ horizontal: 'medium', vertical: 'xsmall' }}>
-        {props.heading}
+        {heading}
       </Heading>
     </CardHeader>
     <CardBody>
@@ -24,29 +31,29 @@ const GridCard = (props) => (
         alignSelf="start"
         margin={{ horizontal: 'medium', vertical: 'xsmall' }}
       >
-        {props.text}
+        {text}
       </Paragraph>
     </CardBody>
     <Box
       round="medium"
-      background={props.buttonColor}
+      background={buttonColor}
       margin={{ horizontal: 'medium', vertical: 'small' }}
       alignSelf="start"
       width="auto"
     >
-      <Anchor margin="small" href={props.openLink}>
-        Open {props.heading}
+      <Anchor margin="small" href={openLink}>
+        Open {heading}
       </Anchor>
     </Box>
     <CardFooter
-      background={props.buttonColor}
+      background={buttonColor}
       margin={{ top: 'xlarge' }}
       alignContent="end"
       justify="end"
     >
       <Anchor
         alignSelf="center"
-        href={props.learnLink}
+        href={learnLink}
         margin="xsmall"
         label="Learn More"
       />
