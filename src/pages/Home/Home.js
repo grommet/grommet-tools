@@ -24,6 +24,7 @@ import {
 import GridCard from '../../components/GridCard.js';
 import SmallCard from '../../components/SmallCard.js';
 import AppHeader from '../../components/AppHeader.js';
+import RotatedIcon from '../../components/RotatedIcon.js';
 
 const Home = (props) => (
   <Box>
@@ -97,7 +98,9 @@ const Home = (props) => (
         <Box direction="row" gap="xlarge">
           <Card animation={{ type: 'jiggle', duration: 1000, delay: 400 }}>
             <CardBody margin="small">
-              <Selection color="SlidesBlue" size="customLarge" />
+              <RotatedIcon>
+                <Selection color="SlidesBlue" size="customLarge" />
+              </RotatedIcon>
             </CardBody>
           </Card>
           <Card
@@ -178,7 +181,11 @@ one part Markdown, and some special sauce
 from Grommet to make it all come together."
         />
         <GridCard
-          icon={<Selection size="xlarge" color="SlidesBlue" />}
+          icon={
+            <RotatedIcon>
+              <Selection size="xlarge" color="SlidesBlue" />
+            </RotatedIcon>
+          }
           heading="Slides"
           buttonColor="SlidesBlue"
           openLink="https://slides.grommet.io/"
@@ -301,7 +308,11 @@ with Grommet and the Grommet Designer."
         <SmallCard
           text="Slides"
           textColor="darkGrey"
-          icon={<Configure size="large" color="SlidesBlue" />}
+          icon={
+            <RotatedIcon>
+              <Selection size="large" color="SlidesBlue" />
+            </RotatedIcon>
+          }
         />
         <SmallCard
           text="Tabular"

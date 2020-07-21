@@ -11,10 +11,12 @@ import {
 import AppHeader from '../../components/AppHeader.js';
 import IconCard from '../../components/IconCard.js';
 import ScreenshotCard from '../../components/ScreenshotCard.js';
+import RotatedIcon from '../../components/RotatedIcon.js';
 import styled from 'styled-components';
 const DesignIconWrapper = styled.div`
   transform: rotate(-5.79deg);
-  transform-origin: 0% -90%;
+  transform-origin: 25% 40%;
+  margin: 0 auto;
 `;
 
 const Designer = () => (
@@ -88,9 +90,11 @@ const Designer = () => (
           <Box width="xxsmall"></Box>
           <CloudUpload size="large" color="PublisherPink" />
         </Box>
-        <Box margin={{ left: 'xlarge' }} direction="row">
+        <Box margin={{ left: 'xlarge' }} width="small" direction="row">
           <Box width="xsmall"></Box>
-          <Selection size="large" color="SlidesBlue" />
+          <RotatedIcon>
+            <Selection size="large" color="SlidesBlue" />
+          </RotatedIcon>
         </Box>
         <Box margin={{ left: 'xlarge' }}>
           <BarChart size="large" color="TabularGreen" />

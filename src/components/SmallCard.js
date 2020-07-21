@@ -13,7 +13,9 @@ function SmallCard(props) {
       alignContent="center"
       elevation="medium"
     >
-      <Box alignSelf="center">{props.icon}</Box>
+      <Box alignSelf="center" align="center">
+        {props.icon}
+      </Box>
       <Text alignSelf="center" size="small" color={props.textColor}>
         {props.text}
       </Text>
