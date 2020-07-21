@@ -42,20 +42,4 @@ export const grommetToolsTheme = deepMerge(grommet, {
       customLarge: '60px',
     },
   },
-  heading: {
-    level: {
-      '1': {
-        customMedium: {
-          size: '72px',
-          height: '88px',
-          maxWidth: '1968px',
-        },
-        customLarge: {
-          size: '100px',
-          height: '120px',
-          maxWidth: '2736px',
-        },
-      },
-    },
-  },
 });

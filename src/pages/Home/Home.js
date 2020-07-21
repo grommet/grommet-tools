@@ -29,13 +29,14 @@ const Home = (props) => (
   <Box>
     <AppHeader />
     <Heading
+      level={1}
       margin={{
         top: 'marginXL',
         left: 'xlarge',
         right: 'xlarge',
         bottom: 'none',
       }}
-      size="customLarge"
+      size="xlarge"
     >
       Grommet Tools
     </Heading>
@@ -113,12 +114,13 @@ const Home = (props) => (
 
     <Box background="gradient">
       <Heading
+        level={2}
         margin={{
           horizontal: 'xlarge',
           top: 'large',
           bottom: 'small',
         }}
-        size="customMedium"
+        size="xlarge"
       >
         Grommet Tool Suite
       </Heading>
@@ -196,7 +198,7 @@ with Grommet and the Grommet Designer."
       align="end"
       gap="xlarge"
     >
-      <Box alignSelf="center" size="large" margin={{ bottom: 'xlarge' }}>
+      <Box alignSelf="center" margin={{ bottom: 'xlarge' }}>
         <Heading level={2} size="xlarge">
           What are grommet Tools?
         </Heading>
@@ -230,8 +232,9 @@ with Grommet and the Grommet Designer."
           />
         </Box>
       </Box>
-      <Box size="medium">
+      <Box>
         <Image
+          a11yTitle="Rockin Gremlin"
           fill="horizontal"
           alignSelf="end"
           src="RockinGremlin.svg"
