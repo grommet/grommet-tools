@@ -32,12 +32,13 @@ const Feedback = (props) => (
       }}
     >
       <Heading
+        level={1}
         margin={{
           top: 'xlarge',
           right: 'xlarge',
           bottom: 'large',
         }}
-        size="customLarge"
+        size="xlarge"
       >
         Feedback
       </Heading>
@@ -100,6 +101,7 @@ const Feedback = (props) => (
 
           <Box width="xlarge">
             <Image
+              a11yTitle="Gremlin with a Face Mask"
               width="xlarge"
               fill="horizontal"
               alignSelf="end"

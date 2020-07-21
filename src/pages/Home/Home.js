@@ -29,13 +29,14 @@ const Home = (props) => (
   <Box>
     <AppHeader />
     <Heading
+      level={1}
       margin={{
         top: 'marginXL',
         left: 'xlarge',
         right: 'xlarge',
         bottom: 'none',
       }}
-      size="customLarge"
+      size="xlarge"
     >
       Grommet Tools
     </Heading>
@@ -125,17 +126,18 @@ const Home = (props) => (
 
     <Box background="gradient">
       <Heading
+        level={2}
         margin={{
           horizontal: 'xlarge',
           top: 'large',
           bottom: 'small',
         }}
-        size="customMedium"
+        size="xlarge"
       >
         Grommet Tool Suite
       </Heading>
       <Grid
-        columns="cards"
+        columns={{ count: 'fill', size: 'medium' }}
         gap="medium"
         rows="auto"
         margin={{ horizontal: 'xlarge', vertical: 'small' }}
@@ -201,14 +203,17 @@ with Grommet and the Grommet Designer."
     <Box
       margin={{
         top: 'xlarge',
-        left: 'xlarge',
-        right: 'xlarge',
+        horizontal: 'xlarge',
         bottom: 'none',
       }}
-      direction="row"
+      direction="row-responsive"
+      align="end"
+      gap="xlarge"
     >
-      <Box width="medium" margin={{ bottom: 'xlarge' }}>
-        <Heading>What are grommet Tools?</Heading>
+      <Box alignSelf="center" margin={{ bottom: 'xlarge' }}>
+        <Heading level={2} size="xlarge">
+          What are grommet Tools?
+        </Heading>
         <Paragraph size="xlarge" margin={{ top: 'small' }}>
           Grommet's "No-Code" Tools assist your development experience by
           offering easy access to Grommet components with powerful branding
@@ -239,7 +244,15 @@ with Grommet and the Grommet Designer."
           />
         </Box>
       </Box>
-      <Image src="RockinGremlin.svg" fit="contain" />
+      <Box>
+        <Image
+          a11yTitle="Rockin Gremlin"
+          fill="horizontal"
+          alignSelf="end"
+          src="RockinGremlin.svg"
+          fit="contain"
+        />
+      </Box>
     </Box>
 
     <Box background="gradient" height="gradient3" margin="none"></Box>
