@@ -1,16 +1,16 @@
 import React from 'react';
 import { Card, CardBody } from 'grommet';
 
-const IconCard = (props) => (
+const IconCard = ({ margin, icon, size }) => (
   <Card
-    margin={props.margin}
-    height={props.size}
-    width={props.size}
+    margin={margin}
+    height={size}
+    width={size}
     elevation="xlarge"
     background="white"
     round="large"
   >
-    <CardBody>{props.icon}</CardBody>
+    <CardBody>{icon}</CardBody>
   </Card>
 );
 
