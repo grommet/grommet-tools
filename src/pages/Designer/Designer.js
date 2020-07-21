@@ -11,6 +11,11 @@ import {
 import AppHeader from '../../components/AppHeader.js';
 import IconCard from '../../components/IconCard.js';
 import ScreenshotCard from '../../components/ScreenshotCard.js';
+import styled from 'styled-components';
+const IconButtonWrapper = styled.div`
+  transform: rotate(-5.79deg);
+  transform-origin: 0% -90%;
+`;
 
 const Designer = () => (
   <Box>
@@ -61,11 +66,13 @@ const Designer = () => (
               </Box>
             </Box>
           </Box>
-          <IconCard
-            size="medium"
-            icon={<ClearOption size="xxlarge" color="DesignerYellow" />}
-            margin={{ left: 'xlarge' }}
-          />
+          <IconButtonWrapper>
+            <IconCard
+              size="medium"
+              icon={<ClearOption size="xxlarge" color="DesignerYellow" />}
+              margin={{ left: 'xlarge', bottom: 'xlarge' }}
+            />
+          </IconButtonWrapper>
         </Stack>
       </Box>
       <Box
