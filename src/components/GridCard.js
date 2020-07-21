@@ -30,6 +30,7 @@ const GridCard = ({
     </CardHeader>
     <CardBody>
       <Paragraph
+        fill
         alignSelf="start"
         margin={{ horizontal: 'medium', vertical: 'xsmall' }}
       >
@@ -49,14 +50,14 @@ const GridCard = ({
     </Box>
     <CardFooter
       background={buttonColor}
-      margin={{ top: 'xlarge' }}
+      margin={{ top: 'large' }}
       alignContent="end"
       justify="end"
     >
       <Anchor
         alignSelf="center"
         href={learnLink}
-        margin="xsmall"
+        margin="small"
         label="Learn More"
       />
     </CardFooter>
