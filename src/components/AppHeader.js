@@ -18,7 +18,7 @@ const AppHeader = () => (
       <Anchor margin="xsmall" href="#" label="Grommet Tools" />
     </Box>
 
-    <ResponsiveContext>
+    <ResponsiveContext.Consumer>
       {(responsive) =>
         responsive === 'small' ? (
           <Box direction="row" justify="end" round>
@@ -39,7 +39,7 @@ const AppHeader = () => (
           </Box>
         )
       }
-    </ResponsiveContext>
+    </ResponsiveContext.Consumer>
 
     <Box margin={{ right: 'large' }} justify="end" direction="row" gap="medium">
       <Anchor href="#" label="Grommet" />
