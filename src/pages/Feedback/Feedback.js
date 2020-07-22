@@ -13,12 +13,36 @@ import {
 import AppHeader from '../../components/AppHeader.js';
 
 const githubCards = [
-  { icon: <ClearOption />, label: 'Designer / Github' },
-  { icon: <CloudUpload />, label: 'Publisher / Github' },
-  { icon: <Configure />, label: 'Themer / Github' },
-  { icon: <Camera />, label: 'Imager / Github' },
-  { icon: <BarChart />, label: 'Tabular / Github' },
-  { icon: <Selection />, label: 'Slides / Github' },
+  {
+    icon: <ClearOption />,
+    label: 'Designer / Github',
+    link: 'https://github.com/grommet/grommet-designer',
+  },
+  {
+    icon: <CloudUpload />,
+    label: 'Publisher / Github',
+    link: 'https://github.com/grommet/grommet-publisher',
+  },
+  {
+    icon: <Configure />,
+    label: 'Themer / Github',
+    link: 'https://github.com/grommet/grommet-theme-designer',
+  },
+  {
+    icon: <Camera />,
+    label: 'Imager / Github',
+    link: 'https://github.com/grommet/grommet-images',
+  },
+  {
+    icon: <BarChart />,
+    label: 'Tabular / Github',
+    link: 'https://github.com/grommet/grommet-tabular',
+  },
+  {
+    icon: <Selection />,
+    label: 'Slides / Github',
+    link: 'https://github.com/grommet/grommet-slides',
+  },
 ];
 
 const Feedback = (props) => (
@@ -70,7 +94,7 @@ const Feedback = (props) => (
                   <Anchor
                     alignSelf="center"
                     margin="xsmall"
-                    href="#"
+                    href={item.link}
                     icon={item.icon}
                     label={item.label}
                   />
@@ -93,7 +117,7 @@ const Feedback = (props) => (
             <Anchor
               alignSelf="center"
               margin="xsmall"
-              href="#"
+              href="http://slackin.grommet.io/"
               icon={<Slack />}
               label="Grommet / Slack"
             />
