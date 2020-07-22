@@ -10,7 +10,9 @@ const IconCard = ({ margin, icon, size }) => (
     background="white"
     round="large"
   >
-    <CardBody>{icon}</CardBody>
+    <CardBody align="center" justify="center">
+      {icon}
+    </CardBody>
   </Card>
 );
 
