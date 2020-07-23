@@ -180,7 +180,7 @@ const Home = (props) => (
       >
         <GridCard
           icon={<ClearOption color="DesignerYellow" size="xlarge" />}
-          heading="Designer"
+          heading="Open Designer"
           buttonColor="DesignerYellow"
           learnLink="/Designer"
           openLink="https://designer.grommet.io/"
@@ -190,7 +190,7 @@ of editing the design details."
         />
         <GridCard
           icon={<Configure size="xlarge" color="ThemerOrange" />}
-          heading="Themer"
+          heading="Open Themer"
           buttonColor="ThemerOrange"
           openLink="https://theme-designer.grommet.io/"
           text="Grommet web-based WSIWG component editor. Use
@@ -199,7 +199,7 @@ of editing the design details."
         />
         <GridCard
           icon={<Camera size="xlarge" color="ImagerOrange" />}
-          heading="Images"
+          heading="Open Images"
           buttonColor="ImagerOrange"
           openLink="https://images.grommet.io/"
           text="  Super simple image hosting for your Grommet-based
@@ -208,7 +208,7 @@ Designer."
         />
         <GridCard
           icon={<CloudUpload size="xlarge" color="PublisherPink" />}
-          heading="Publisher"
+          heading="Open Publisher"
           buttonColor="PublisherPink"
           openLink="https://publisher.grommet.io/"
           text="Think one part lightweight CMS,
@@ -217,7 +217,7 @@ from Grommet to make it all come together."
         />
         <GridCard
           icon={<Selection size="xlarge" color="SlidesBlue" />}
-          heading="Slides"
+          heading="Open Slides"
           buttonColor="SlidesBlue"
           openLink="https://slides.grommet.io/"
           text="Similar to the Grommet Publisher and using
@@ -226,7 +226,7 @@ Slides makes presentations a breeze."
         />
         <GridCard
           icon={<BarChart size="xlarge" color="TabularGreen" />}
-          heading="Tabular"
+          heading="Open Tabular"
           buttonColor="TabularGreen"
           openLink="https://tabular.grommet.io/"
           text="  If you need a table and have an API or data source,
