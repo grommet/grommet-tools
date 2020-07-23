@@ -47,7 +47,7 @@ const Home = (props) => (
         margin={{
           top: 'small',
           left: 'xlarge',
-          right: 'xlarge',
+          right: 'medium',
           bottom: 'animationBox',
         }}
         width="medium"
@@ -62,58 +62,67 @@ const Home = (props) => (
       </Box>
       <ResponsiveContext.Consumer>
         {(responsive) =>
-          responsive === 'large' || responsive === 'xlarge' ? (
+          responsive !== 'small' && responsive !== 'xsmall' ? (
             <Box
               margin={{
                 top: 'small',
-                left: 'xlarge',
+                left: 'medium',
                 right: 'xlarge',
               }}
+              pad={{ right: responsive }}
             >
-              <Box direction="row" gap="xlarge">
+              <Box
+                direction="row"
+                gap={responsive}
+                margin={
+                  responsive === 'small'
+                    ? { bottom: 'xsmall' }
+                    : { bottom: 'small' }
+                }
+              >
                 <Card
-                  margin={{ horizontal: 'large' }}
-                  animation={{ type: 'jiggle', duration: 1000 }}
+                  margin={{ right: responsive }}
+                  animation={{ left: 'jiggle', duration: 1000 }}
                 >
                   <CardBody margin="small">
-                    <ClearOption color="DesignerYellow" size="customLarge" />
+                    <ClearOption color="DesignerYellow" size={responsive} />
                   </CardBody>
                 </Card>
                 <Card
-                  margin={{ horizontal: 'large' }}
+                  margin={{ horizontal: { responsive } }}
                   animation={{ type: 'jiggle', duration: 1000, delay: 1000 }}
                 >
                   <CardBody margin="small">
-                    <CloudUpload color="PublisherPink" size="customLarge" />
+                    <CloudUpload color="PublisherPink" size={responsive} />
                   </CardBody>
                 </Card>
               </Box>
-              <Box direction="row" pad={{ left: 'large' }}>
+              <Box direction="row" pad={{ left: responsive }}>
                 <Card
                   alignSelf="center"
-                  margin={{ horizontal: 'xlarge' }}
+                  margin={{ horizontal: responsive }}
                   animation={{ type: 'jiggle', duration: 1000, delay: 750 }}
                 >
                   <CardBody margin="small">
-                    <Configure color="ThemerOrange" size="customLarge" />
+                    <Configure color="ThemerOrange" size={responsive} />
                   </CardBody>
                 </Card>
               </Box>
-              <Box direction="row" gap="xlarge">
+              <Box direction="row" gap={responsive}>
                 <Card
                   animation={{ type: 'jiggle', duration: 1000, delay: 400 }}
                 >
                   <CardBody margin="small">
-                    <Selection color="SlidesBlue" size="customLarge" />
+                    <Selection color="SlidesBlue" size={responsive} />
                   </CardBody>
                 </Card>
                 <Card
                   alignSelf="center"
-                  margin={{ left: 'xlarge' }}
+                  margin={{ left: responsive }}
                   animation={{ type: 'jiggle', duration: 1000, delay: 600 }}
                 >
                   <CardBody margin="small">
-                    <BarChart color="TabularGreen" size="customLarge" />
+                    <BarChart color="TabularGreen" size={responsive} />
                   </CardBody>
                 </Card>
               </Box>
@@ -123,143 +132,12 @@ const Home = (props) => (
                   animation={{ type: 'jiggle', duration: 1000, delay: 550 }}
                 >
                   <CardBody margin="small">
-                    <Camera color="ImagerOrange" size="customLarge" />
+                    <Camera color="ImagerOrange" size={responsive} />
                   </CardBody>
                 </Card>
               </Box>
             </Box>
-          ) : responsive === 'medium' ? (
-            <Box
-              margin={{
-                top: 'small',
-                right: 'medium',
-              }}
-            >
-              <Box direction="row" gap="large">
-                <Card
-                  margin={{ right: 'small' }}
-                  animation={{ type: 'jiggle', duration: 1000 }}
-                >
-                  <CardBody margin="small">
-                    <ClearOption color="DesignerYellow" size="large" />
-                  </CardBody>
-                </Card>
-                <Card
-                  margin={{ left: 'small' }}
-                  animation={{ type: 'jiggle', duration: 1000, delay: 1000 }}
-                >
-                  <CardBody margin="small">
-                    <CloudUpload color="PublisherPink" size="large" />
-                  </CardBody>
-                </Card>
-              </Box>
-              <Box direction="row" pad={{ left: 'large' }}>
-                <Card
-                  alignSelf="center"
-                  margin={{ horizontal: 'medium' }}
-                  animation={{ type: 'jiggle', duration: 1000, delay: 750 }}
-                >
-                  <CardBody margin="small">
-                    <Configure color="ThemerOrange" size="large" />
-                  </CardBody>
-                </Card>
-              </Box>
-              <Box direction="row" gap="large">
-                <Card
-                  animation={{ type: 'jiggle', duration: 1000, delay: 400 }}
-                >
-                  <CardBody margin="small">
-                    <Selection color="SlidesBlue" size="large" />
-                  </CardBody>
-                </Card>
-                <Card
-                  alignSelf="center"
-                  margin={{ left: 'medium' }}
-                  animation={{ type: 'jiggle', duration: 1000, delay: 600 }}
-                >
-                  <CardBody margin="small">
-                    <BarChart color="TabularGreen" size="large" />
-                  </CardBody>
-                </Card>
-              </Box>
-              <Box>
-                <Card
-                  alignSelf="center"
-                  animation={{ type: 'jiggle', duration: 1000, delay: 550 }}
-                >
-                  <CardBody margin="small">
-                    <Camera color="ImagerOrange" size="large" />
-                  </CardBody>
-                </Card>
-              </Box>
-            </Box>
-          ) : (
-            <Box
-              margin={{
-                top: 'small',
-                left: 'none',
-                right: 'small',
-              }}
-            >
-              <Box direction="row" gap="xsmall">
-                <Card
-                  margin={{ right: 'xsmall' }}
-                  animation={{ type: 'jiggle', duration: 1000 }}
-                >
-                  <CardBody margin="small">
-                    <ClearOption color="DesignerYellow" size="medium" />
-                  </CardBody>
-                </Card>
-                <Card
-                  margin={{ left: 'xsmall' }}
-                  animation={{ type: 'jiggle', duration: 1000, delay: 1000 }}
-                >
-                  <CardBody margin="small">
-                    <CloudUpload color="PublisherPink" size="medium" />
-                  </CardBody>
-                </Card>
-              </Box>
-              <Box direction="row" pad={{ left: 'large' }}>
-                <Card
-                  alignSelf="center"
-                  margin={{ horizontal: 'small', vertical: 'small' }}
-                  animation={{ type: 'jiggle', duration: 1000, delay: 750 }}
-                >
-                  <CardBody margin="small">
-                    <Configure color="ThemerOrange" size="medium" />
-                  </CardBody>
-                </Card>
-              </Box>
-              <Box direction="row" gap="xsmall">
-                <Card
-                  animation={{ type: 'jiggle', duration: 1000, delay: 400 }}
-                >
-                  <CardBody margin="small">
-                    <Selection color="SlidesBlue" size="medium" />
-                  </CardBody>
-                </Card>
-                <Card
-                  alignSelf="center"
-                  margin={{ left: 'small' }}
-                  animation={{ type: 'jiggle', duration: 1000, delay: 600 }}
-                >
-                  <CardBody margin="small">
-                    <BarChart color="TabularGreen" size="medium" />
-                  </CardBody>
-                </Card>
-              </Box>
-              <Box margin={{ top: 'small' }}>
-                <Card
-                  alignSelf="center"
-                  animation={{ type: 'jiggle', duration: 1000, delay: 550 }}
-                >
-                  <CardBody margin="small">
-                    <Camera color="ImagerOrange" size="medium" />
-                  </CardBody>
-                </Card>
-              </Box>
-            </Box>
-          )
+          ) : null
         }
       </ResponsiveContext.Consumer>
     </Box>
