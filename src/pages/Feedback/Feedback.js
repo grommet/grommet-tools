@@ -1,5 +1,14 @@
 import React from 'react';
-import { Anchor, Box, Paragraph, Grid, Card, Heading, Image } from 'grommet';
+import {
+  Anchor,
+  Box,
+  Paragraph,
+  Grid,
+  Card,
+  Heading,
+  Image,
+  Main,
+} from 'grommet';
 import {
   ClearOption,
   Configure,
@@ -48,8 +57,7 @@ const githubCards = [
 const Feedback = (props) => (
   <Box background="gradient">
     <AppHeader />
-
-    <Box
+    <Main
       align="center"
       margin={{
         left: 'xlarge',
@@ -90,7 +98,7 @@ const Feedback = (props) => (
               rows="auto"
             >
               {githubCards.map((item) => (
-                <Card width="medium" background="white">
+                <Card key={item.label} width="medium" background="white">
                   <Anchor
                     alignSelf="center"
                     margin="xsmall"
@@ -129,13 +137,12 @@ const Feedback = (props) => (
               width="xlarge"
               fill="horizontal"
               alignSelf="end"
-              fit="fill"
               src="GremlinFaceMask.svg"
             />
           </Box>
         </Box>
       </Grid>
-    </Box>
+    </Main>
   </Box>
 );
 
