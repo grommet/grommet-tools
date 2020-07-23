@@ -41,7 +41,7 @@ const Home = (props) => (
     >
       Grommet Tools
     </Heading>
-    <Box height="gradient1" background="gradient"></Box>
+    <Box pad="xsmall" background="gradient"></Box>
     <Box direction="row-responsive" justify="between">
       <Box
         margin={{
@@ -256,7 +256,7 @@ with Grommet and the Grommet Designer."
       </Box>
     </Box>
 
-    <Box background="gradient" height="gradient3" margin="none"></Box>
+    <Box background="gradient" pad="small" margin="none"></Box>
 
     <Box background="noCodeBackground" direction="column" justify="center">
       <Text
