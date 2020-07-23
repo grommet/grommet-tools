@@ -98,7 +98,7 @@ const Feedback = (props) => (
               rows="auto"
             >
               {githubCards.map((item) => (
-                <Card key={item.label} width="medium" background="white">
+                <Card key={item.label} width="small" background="white">
                   <Anchor
                     alignSelf="center"
                     margin="xsmall"
@@ -124,6 +124,7 @@ const Feedback = (props) => (
           <Card width="small" background="white">
             <Anchor
               alignSelf="center"
+              width="small"
               margin="xsmall"
               href="http://slackin.grommet.io/"
               icon={<Slack />}
