@@ -83,6 +83,9 @@ const Home = (props) => (
                 <Card
                   margin={{ right: responsive }}
                   animation={{ left: 'jiggle', duration: 1000 }}
+                  onClick={() =>
+                    window.open('https://designer.grommet.io', '_self')
+                  }
                 >
                   <CardBody margin="small">
                     <ClearOption color="DesignerYellow" size={responsive} />
@@ -91,6 +94,9 @@ const Home = (props) => (
                 <Card
                   margin={{ horizontal: { responsive } }}
                   animation={{ type: 'jiggle', duration: 1000, delay: 1000 }}
+                  onClick={() =>
+                    window.open('https://publisher.grommet.io', '_self')
+                  }
                 >
                   <CardBody margin="small">
                     <CloudUpload color="PublisherPink" size={responsive} />
@@ -102,6 +108,9 @@ const Home = (props) => (
                   alignSelf="center"
                   margin={{ horizontal: responsive }}
                   animation={{ type: 'jiggle', duration: 1000, delay: 750 }}
+                  onClick={() =>
+                    window.open('https://theme-designer.grommet.io', '_self')
+                  }
                 >
                   <CardBody margin="small">
                     <Configure color="ThemerOrange" size={responsive} />
@@ -111,6 +120,9 @@ const Home = (props) => (
               <Box direction="row" gap={responsive}>
                 <Card
                   animation={{ type: 'jiggle', duration: 1000, delay: 400 }}
+                  onClick={() =>
+                    window.open('https://slides.grommet.io', '_self')
+                  }
                 >
                   <CardBody margin="small">
                     <Selection color="SlidesBlue" size={responsive} />
@@ -120,6 +132,9 @@ const Home = (props) => (
                   alignSelf="center"
                   margin={{ left: responsive }}
                   animation={{ type: 'jiggle', duration: 1000, delay: 600 }}
+                  onClick={() =>
+                    window.open('https://tabular.grommet.io', '_self')
+                  }
                 >
                   <CardBody margin="small">
                     <BarChart color="TabularGreen" size={responsive} />
@@ -130,6 +145,9 @@ const Home = (props) => (
                 <Card
                   alignSelf="center"
                   animation={{ type: 'jiggle', duration: 1000, delay: 550 }}
+                  onClick={() =>
+                    window.open('https://images.grommet.io', '_self')
+                  }
                 >
                   <CardBody margin="small">
                     <Camera color="ImagerOrange" size={responsive} />
