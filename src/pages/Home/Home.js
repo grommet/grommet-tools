@@ -44,12 +44,12 @@ const Home = (props) => (
         Grommet Tools
       </Heading>
       <Box height="gradient1" background="gradient"></Box>
-      <Box direction="row-responsive" justify="between">
+      <Box direction="row" justify="between">
         <Box
           margin={{
             top: 'small',
             left: 'xlarge',
-            right: 'xlarge',
+            right: 'medium',
             bottom: 'animationBox',
           }}
           width="medium"
@@ -62,69 +62,86 @@ const Home = (props) => (
             components without the stress of handling code.
           </Text>
         </Box>
-        <Box
-          margin={{
-            top: 'small',
-            left: 'xlarge',
-            right: 'xlarge',
-          }}
-        >
-          <Box direction="row" gap="xlarge">
-            <Card
-              margin={{ horizontal: 'large' }}
-              animation={{ type: 'jiggle', duration: 1000 }}
-            >
-              <CardBody margin="small">
-                <ClearOption color="DesignerYellow" size="customLarge" />
-              </CardBody>
-            </Card>
-            <Card
-              margin={{ horizontal: 'large' }}
-              animation={{ type: 'jiggle', duration: 1000, delay: 1000 }}
-            >
-              <CardBody margin="small">
-                <CloudUpload color="PublisherPink" size="customLarge" />
-              </CardBody>
-            </Card>
-          </Box>
-          <Box direction="row" pad={{ left: 'large' }}>
-            <Card
-              alignSelf="center"
-              margin={{ horizontal: 'xlarge' }}
-              animation={{ type: 'jiggle', duration: 1000, delay: 750 }}
-            >
-              <CardBody margin="small">
-                <Configure color="ThemerOrange" size="customLarge" />
-              </CardBody>
-            </Card>
-          </Box>
-          <Box direction="row" gap="xlarge">
-            <Card animation={{ type: 'jiggle', duration: 1000, delay: 400 }}>
-              <CardBody margin="small">
-                <Selection color="SlidesBlue" size="customLarge" />
-              </CardBody>
-            </Card>
-            <Card
-              alignSelf="center"
-              margin={{ left: 'xlarge' }}
-              animation={{ type: 'jiggle', duration: 1000, delay: 600 }}
-            >
-              <CardBody margin="small">
-                <BarChart color="TabularGreen" size="customLarge" />
-              </CardBody>
-            </Card>
-          </Box>
-          <Box>
-            <Card
-              alignSelf="center"
-              animation={{ type: 'jiggle', duration: 1000, delay: 550 }}
-            >
-              <CardBody margin="small">
-                <Camera color="ImagerOrange" size="customLarge" />
-              </CardBody>
-            </Card>
-          </Box>
-        </Box>
+        <ResponsiveContext.Consumer>
+          {(responsive) =>
+            responsive !== 'small' && responsive !== 'xsmall' ? (
+              <Box
+                margin={{
+                  top: 'small',
+                  left: 'medium',
+                  right: 'xlarge',
+                }}
+                pad={{ right: responsive }}
+              >
+                <Box
+                  direction="row"
+                  gap={responsive}
+                  margin={
+                    responsive === 'small'
+                      ? { bottom: 'xsmall' }
+                      : { bottom: 'small' }
+                  }
+                >
+                  <Card
+                    margin={{ right: responsive }}
+                    animation={{ left: 'jiggle', duration: 1000 }}
+                  >
+                    <CardBody margin="small">
+                      <ClearOption color="DesignerYellow" size={responsive} />
+                    </CardBody>
+                  </Card>
+                  <Card
+                    margin={{ horizontal: responsive }}
+                    animation={{ type: 'jiggle', duration: 1000, delay: 1000 }}
+                  >
+                    <CardBody margin="small">
+                      <CloudUpload color="PublisherPink" size={responsive} />
+                    </CardBody>
+                  </Card>
+                </Box>
+                <Box direction="row" pad={{ left: responsive }}>
+                  <Card
+                    alignSelf="center"
+                    margin={{ horizontal: responsive }}
+                    animation={{ type: 'jiggle', duration: 1000, delay: 750 }}
+                  >
+                    <CardBody margin="small">
+                      <Configure color="ThemerOrange" size={responsive} />
+                    </CardBody>
+                  </Card>
+                </Box>
+                <Box direction="row" gap={responsive}>
+                  <Card
+                    animation={{ type: 'jiggle', duration: 1000, delay: 400 }}
+                  >
+                    <CardBody margin="small">
+                      <Selection color="SlidesBlue" size={responsive} />
+                    </CardBody>
+                  </Card>
+                  <Card
+                    alignSelf="center"
+                    margin={{ left: responsive }}
+                    animation={{ type: 'jiggle', duration: 1000, delay: 600 }}
+                  >
+                    <CardBody margin="small">
+                      <BarChart color="TabularGreen" size={responsive} />
+                    </CardBody>
+                  </Card>
+                </Box>
+                <Box>
+                  <Card
+                    alignSelf="center"
+                    animation={{ type: 'jiggle', duration: 1000, delay: 550 }}
+                  >
+                    <CardBody margin="small">
+                      <Camera color="ImagerOrange" size={responsive} />
+                    </CardBody>
+                  </Card>
+                </Box>
+              </Box>
+            ) : null
+          }
+        </ResponsiveContext.Consumer>
       </Box>
 
       <Box background="gradient">
@@ -151,47 +168,54 @@ const Home = (props) => (
             buttonColor="DesignerYellow"
             learnLink="/Designer"
             openLink="https://designer.grommet.io/"
-            text="Easily create experiences in a 
-            simple, straightforward approach 
-            to building your application."
+            text="Grommet web-based WSIWG component editor. Use
+  pubilshed themes by entering the URL in the context
+  of editing the design details."
           />
           <GridCard
             icon={<Configure size="xlarge" color="ThemerOrange" />}
             heading="Themer"
             buttonColor="ThemerOrange"
             openLink="https://theme-designer.grommet.io/"
-            text="Create Grommet themes by 
-            changing colors, fonts, and sizing 
-            to personalize your apps."
+            text="Grommet web-based WSIWG component editor. Use
+  pubilshed themes by entering the URL in the context
+  of editing the design details."
           />
           <GridCard
             icon={<Camera size="xlarge" color="ImagerOrange" />}
             heading="Images"
             buttonColor="ImagerOrange"
             openLink="https://images.grommet.io/"
-            text="Super simple image file hosting for your Grommet-based projects."
+            text="  Super simple image hosting for your Grommet-based
+  projects. Works great with Publisher, Slides, and
+  Designer."
           />
           <GridCard
             icon={<CloudUpload size="xlarge" color="PublisherPink" />}
             heading="Publisher"
             buttonColor="PublisherPink"
             openLink="https://publisher.grommet.io/"
-            text="Think lightweight CMS, Markdown, and some Grommet to make it all come together."
+            text="Think one part lightweight CMS,
+  one part Markdown, and some special sauce
+  from Grommet to make it all come together."
           />
           <GridCard
             icon={<Selection size="xlarge" color="SlidesBlue" />}
             heading="Slides"
             buttonColor="SlidesBlue"
             openLink="https://slides.grommet.io/"
-            text="Similar to the Publisher by using
-  Markdown and some shortcuts to make presenting easy."
+            text="Similar to the Grommet Publisher and using
+  Markdown and some shortcuts to make presenting easy,
+  Slides makes presentations a breeze."
           />
           <GridCard
             icon={<BarChart size="xlarge" color="TabularGreen" />}
             heading="Tabular"
             buttonColor="TabularGreen"
             openLink="https://tabular.grommet.io/"
-            text="Uses API or data sources for tabels and integrates Grommet with the Grommet Designer."
+            text="  If you need a table and have an API or data source,
+  choose your columns and create content that is integrated
+  with Grommet and the Grommet Designer."
           />
         </Grid>
       </Box>
