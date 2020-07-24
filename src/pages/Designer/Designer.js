@@ -56,12 +56,24 @@ const Designer = () => (
           <Box
             direction="row"
             justify="center"
-            gap="large"
+            gap="medium"
             margin={{ vertical: 'xlarge' }}
           >
-            <ScreenshotCard src="Designer_1.svg" label="Deisgner File Name" />
-            <ScreenshotCard src="Designer_2.svg" label="Deisgner File Name" />
-            <ScreenshotCard src="Designer_3.svg" label="Deisgner File Name" />
+            <ScreenshotCard
+              src="Designer_1.svg"
+              label="Deisgner File Name"
+              a11yTitle="Screenshot of Designer Tool"
+            />
+            <ScreenshotCard
+              src="Designer_2.svg"
+              label="Deisgner File Name"
+              a11yTitle="Screenshot of Designer Tool"
+            />
+            <ScreenshotCard
+              src="Designer_3.svg"
+              label="Deisgner File Name"
+              a11yTitle="Screenshot of Designer Tool"
+            />
           </Box>
         </Box>
       </Stack>
@@ -111,12 +123,18 @@ const Designer = () => (
           <ScreenshotCard
             src="Designer_4.svg"
             label="Creating in Light and Dark modes"
+            a11yTitle="Screenshot of Designer Tool"
           />
           <ScreenshotCard
             src="Designer_5.svg"
             label="Importing your own theme"
+            a11yTitle="Screenshot of Designer Tool"
           />
-          <ScreenshotCard src="Designer_6.svg" label="Easy publishing" />
+          <ScreenshotCard
+            src="Designer_6.svg"
+            label="Easy publishing"
+            a11yTitle="Screenshot of Designer Tool"
+          />
         </Box>
       </Box>
       <Box height="xsmall"></Box>
