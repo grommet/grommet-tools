@@ -8,7 +8,6 @@ import {
   CardBody,
   Heading,
   Image,
-  Main,
   Text,
   ResponsiveContext,
 } from 'grommet';
@@ -85,14 +84,20 @@ const Home = (props) => (
                   <Card
                     margin={{ right: responsive }}
                     animation={{ left: 'jiggle', duration: 1000 }}
+                    onClick={() =>
+                      window.open('https://designer.grommet.io', '_self')
+                    }
                   >
                     <CardBody margin="small">
                       <ClearOption color="DesignerYellow" size={responsive} />
                     </CardBody>
                   </Card>
                   <Card
-                    margin={{ horizontal: responsive }}
+                    margin={{ horizontal: { responsive } }}
                     animation={{ type: 'jiggle', duration: 1000, delay: 1000 }}
+                    onClick={() =>
+                      window.open('https://publisher.grommet.io', '_self')
+                    }
                   >
                     <CardBody margin="small">
                       <CloudUpload color="PublisherPink" size={responsive} />
@@ -104,6 +109,9 @@ const Home = (props) => (
                     alignSelf="center"
                     margin={{ horizontal: responsive }}
                     animation={{ type: 'jiggle', duration: 1000, delay: 750 }}
+                    onClick={() =>
+                      window.open('https://theme-designer.grommet.io', '_self')
+                    }
                   >
                     <CardBody margin="small">
                       <Configure color="ThemerOrange" size={responsive} />
@@ -113,6 +121,9 @@ const Home = (props) => (
                 <Box direction="row" gap={responsive}>
                   <Card
                     animation={{ type: 'jiggle', duration: 1000, delay: 400 }}
+                    onClick={() =>
+                      window.open('https://slides.grommet.io', '_self')
+                    }
                   >
                     <CardBody margin="small">
                       <Selection color="SlidesBlue" size={responsive} />
@@ -122,6 +133,9 @@ const Home = (props) => (
                     alignSelf="center"
                     margin={{ left: responsive }}
                     animation={{ type: 'jiggle', duration: 1000, delay: 600 }}
+                    onClick={() =>
+                      window.open('https://tabular.grommet.io', '_self')
+                    }
                   >
                     <CardBody margin="small">
                       <BarChart color="TabularGreen" size={responsive} />
@@ -132,6 +146,9 @@ const Home = (props) => (
                   <Card
                     alignSelf="center"
                     animation={{ type: 'jiggle', duration: 1000, delay: 550 }}
+                    onClick={() =>
+                      window.open('https://images.grommet.io', '_self')
+                    }
                   >
                     <CardBody margin="small">
                       <Camera color="ImagerOrange" size={responsive} />
@@ -164,7 +181,7 @@ const Home = (props) => (
         >
           <GridCard
             icon={<ClearOption color="DesignerYellow" size="xlarge" />}
-            heading="Designer"
+            heading="Open Designer"
             buttonColor="DesignerYellow"
             learnLink="/Designer"
             openLink="https://designer.grommet.io/"
@@ -174,7 +191,7 @@ const Home = (props) => (
           />
           <GridCard
             icon={<Configure size="xlarge" color="ThemerOrange" />}
-            heading="Themer"
+            heading="Open Themer"
             buttonColor="ThemerOrange"
             openLink="https://theme-designer.grommet.io/"
             text="Grommet web-based WSIWG component editor. Use
@@ -183,7 +200,7 @@ const Home = (props) => (
           />
           <GridCard
             icon={<Camera size="xlarge" color="ImagerOrange" />}
-            heading="Images"
+            heading="Open Images"
             buttonColor="ImagerOrange"
             openLink="https://images.grommet.io/"
             text="  Super simple image hosting for your Grommet-based
@@ -192,7 +209,7 @@ const Home = (props) => (
           />
           <GridCard
             icon={<CloudUpload size="xlarge" color="PublisherPink" />}
-            heading="Publisher"
+            heading="Open Publisher"
             buttonColor="PublisherPink"
             openLink="https://publisher.grommet.io/"
             text="Think one part lightweight CMS,
@@ -201,7 +218,7 @@ const Home = (props) => (
           />
           <GridCard
             icon={<Selection size="xlarge" color="SlidesBlue" />}
-            heading="Slides"
+            heading="Open Slides"
             buttonColor="SlidesBlue"
             openLink="https://slides.grommet.io/"
             text="Similar to the Grommet Publisher and using
@@ -210,7 +227,7 @@ const Home = (props) => (
           />
           <GridCard
             icon={<BarChart size="xlarge" color="TabularGreen" />}
-            heading="Tabular"
+            heading="Open Tabular"
             buttonColor="TabularGreen"
             openLink="https://tabular.grommet.io/"
             text="  If you need a table and have an API or data source,
