@@ -8,9 +8,9 @@ import {
   CardBody,
   Heading,
   Image,
-  Main,
   Text,
   ResponsiveContext,
+  Main,
 } from 'grommet';
 import {
   ClearOption,
@@ -43,7 +43,7 @@ const Home = (props) => (
       >
         Grommet Tools
       </Heading>
-      <Box height="gradient1" background="gradient"></Box>
+      <Box pad="xsmall" background="gradient"></Box>
       <Box direction="row" justify="between">
         <Box
           margin={{
@@ -293,7 +293,7 @@ const Home = (props) => (
         </Box>
       </Box>
 
-      <Box background="gradient" height="gradient3" margin="none"></Box>
+      <Box background="gradient" pad="small" margin="none"></Box>
 
       <Box background="noCodeBackground" direction="column" justify="center">
         <Text
