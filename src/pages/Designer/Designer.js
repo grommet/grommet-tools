@@ -3,6 +3,7 @@ import {
   Box,
   Heading,
   Text,
+  Stack,
   Paragraph,
   Image,
   Main,
