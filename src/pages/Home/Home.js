@@ -160,44 +160,20 @@ const Home = (props) => (
       </ResponsiveContext.Consumer>
     </Box>
 
-    <ResponsiveContext.Consumer>
-      {(responsive) =>
-        responsive === 'large' || responsive === 'xlarge' ? (
-          <Stack>
-            <Box background="gradient" height="1000px"></Box>
-            <Box>
-              <Heading
-                level={2}
-                margin={{
-                  horizontal: 'xlarge',
-                  top: 'large',
-                  bottom: 'small',
-                }}
-                size="xlarge"
-              >
-                Grommet Tool Suite
-              </Heading>
-              <HomeGrid />
-            </Box>
-          </Stack>
-        ) : (
-          <Box background="gradient">
-            <Heading
-              level={2}
-              margin={{
-                horizontal: 'xlarge',
-                top: 'large',
-                bottom: 'small',
-              }}
-              size="xlarge"
-            >
-              Grommet Tool Suite
-            </Heading>
-            <HomeGrid />
-          </Box>
-        )
-      }
-    </ResponsiveContext.Consumer>
+    <Box background="gradient">
+      <Heading
+        level={2}
+        margin={{
+          horizontal: 'xlarge',
+          top: 'large',
+          bottom: 'small',
+        }}
+        size="xlarge"
+      >
+        Grommet Tool Suite
+      </Heading>
+      <HomeGrid />
+    </Box>
 
     <Box
       margin={{

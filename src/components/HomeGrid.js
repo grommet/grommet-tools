@@ -17,7 +17,7 @@ const HomeGrid = () => (
     columns={{ count: 'fill', size: 'medium' }}
     gap="medium"
     rows="auto"
-    margin={{ horizontal: 'xlarge', vertical: 'small' }}
+    margin={{ horizontal: 'xlarge', top: 'small', bottom: '-30px' }}
   >
     <GridCard
       icon={<ClearOption color="DesignerYellow" size="xlarge" />}
