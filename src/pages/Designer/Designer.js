@@ -1,5 +1,14 @@
 import React from 'react';
-import { Box, Heading, Text, Stack, Paragraph, Image, Main } from 'grommet';
+import {
+  Box,
+  Heading,
+  Text,
+  Stack,
+  Paragraph,
+  Image,
+  Main,
+  ResponsiveContext,
+} from 'grommet';
 import {
   ClearOption,
   Configure,
@@ -53,6 +62,7 @@ const Designer = () => (
                   width="small"
                   height="xxsmall"
                   justify="center"
+                  margin={{ bottom: 'small' }}
                 >
                   <Text weight="bold" alignSelf="center" color="black">
                     Open Designer
@@ -61,11 +71,29 @@ const Designer = () => (
               </Box>
             </Box>
           </Box>
-          <IconCard
-            size="medium"
-            icon={<ClearOption size="xxlarge" color="DesignerYellow" />}
-            margin={{ left: 'xlarge' }}
-          />
+          <ResponsiveContext.Consumer>
+            {(responsive) =>
+              responsive === 'large' || responsive === 'xlarge' ? (
+                <IconCard
+                  size="medium"
+                  icon={<ClearOption size="xxlarge" color="DesignerYellow" />}
+                  margin={{ left: 'xlarge' }}
+                />
+              ) : responsive === 'medium' ? (
+                <IconCard
+                  size="small"
+                  icon={<ClearOption size="xxlarge" color="DesignerYellow" />}
+                  margin={{ left: 'large' }}
+                />
+              ) : (
+                <IconCard
+                  size="xsmall"
+                  icon={<ClearOption size="xlarge" color="DesignerYellow" />}
+                  margin={{ left: 'medium' }}
+                />
+              )
+            }
+          </ResponsiveContext.Consumer>
         </Stack>
       </Box>
       <Box
@@ -115,31 +143,43 @@ const Designer = () => (
             </Paragraph>
           </Box>
           <Box
-            direction="row-responsive"
+            direction="row"
             justify="center"
-            gap="large"
+            gap="medium"
             margin={{ vertical: 'xlarge' }}
           >
-            <ScreenshotCard src="Designer_1.svg" label="Deisgner File Name" />
-            <ScreenshotCard src="Designer_2.svg" label="Deisgner File Name" />
-            <ScreenshotCard src="Designer_3.svg" label="Deisgner File Name" />
+            <ScreenshotCard
+              src="Designer_1.svg"
+              label="Deisgner File Name"
+              a11yTitle="Screenshot of Designer Tool"
+            />
+            <ScreenshotCard
+              src="Designer_2.svg"
+              label="Deisgner File Name"
+              a11yTitle="Screenshot of Designer Tool"
+            />
+            <ScreenshotCard
+              src="Designer_3.svg"
+              label="Deisgner File Name"
+              a11yTitle="Screenshot of Designer Tool"
+            />
           </Box>
         </Box>
       </Stack>
       <Box height="small"></Box>
       <Box margin={{ top: 'xlarge', horizontal: 'xlarge' }}>
-        <Box direction="row">
+        <Box direction="row-responsive">
           <Box margin={{ right: 'large' }}>
             <Heading size="large" margin={{ bottom: 'none', top: 'xlarge' }}>
               Capabilities
             </Heading>
-            <Box width="576px">
-              <Paragraph size="large" color="darkGrey">
+            <Box width="medium">
+              <Paragraph size="large" color="darkGrey" fill>
                 The Designer puts the power in your hands to create sites with
                 built in theming, while leveraging the full extent of grommet’s
                 components and props.
               </Paragraph>
-              <Paragraph size="large">
+              <Paragraph size="large" fill>
                 Open the Designer tool and get started by watching a tutorial or
                 just jumping right in to your first design. Open the Designer
                 tool and get started by watching a tutorial or just jumping
@@ -152,7 +192,15 @@ const Designer = () => (
             align="end"
             margin={{ left: 'xlarge', top: 'medium' }}
           >
-            <Image alignSelf="end" src="gremlin_laptop.svg" />
+            <Box>
+              <Image
+                a11yTitle="Gremlin Holding a Laptop"
+                alignSelf="end"
+                src="gremlin_laptop.svg"
+                fill="horizontal"
+                fit="contain"
+              />
+            </Box>
           </Box>
         </Box>
         <Box
@@ -164,12 +212,18 @@ const Designer = () => (
           <ScreenshotCard
             src="Designer_4.svg"
             label="Creating in Light and Dark modes"
+            a11yTitle="Screenshot of Designer Tool"
           />
           <ScreenshotCard
             src="Designer_5.svg"
             label="Importing your own theme"
+            a11yTitle="Screenshot of Designer Tool"
           />
-          <ScreenshotCard src="Designer_6.svg" label="Easy publishing" />
+          <ScreenshotCard
+            src="Designer_6.svg"
+            label="Easy publishing"
+            a11yTitle="Screenshot of Designer Tool"
+          />
         </Box>
       </Box>
       <Box height="xsmall"></Box>

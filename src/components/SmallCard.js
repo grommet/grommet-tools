@@ -4,8 +4,8 @@ import { Box, Text } from 'grommet';
 function SmallCard(props) {
   return (
     <Box
-      height="xsmall"
-      width="xsmall"
+      height={props.size}
+      width={props.size}
       background="rgb(255,255,255)"
       round="medium"
       justify="center"
@@ -13,10 +13,15 @@ function SmallCard(props) {
       alignContent="center"
       elevation="medium"
     >
-      <Box alignSelf="center">{props.icon}</Box>
-      <Text alignSelf="center" size="small" color={props.textColor}>
-        {props.text}
-      </Text>
+      <Box
+        margin={{ horizontal: 'small', vertical: 'small' }}
+        alignSelf="center"
+      >
+        {props.icon}
+        <Text alignSelf="center" size="xsmall" color={props.textColor}>
+          {props.text}
+        </Text>
+      </Box>
     </Box>
   );
 }

@@ -11,10 +11,10 @@ function App() {
     <Grommet className="App" theme={grommetToolsTheme}>
       <Router>
         <Switch>
-          <Route path="/Designer">
+          <Route path="/designer">
             <Designer />
           </Route>
-          <Route path="/Feedback">
+          <Route path="/feedback">
             <Feedback />
           </Route>
           <Route path="/">

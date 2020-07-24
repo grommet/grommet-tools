@@ -3,6 +3,7 @@ import React from 'react';
 import {
   Anchor,
   Box,
+  Button,
   Paragraph,
   Card,
   CardHeader,
@@ -28,33 +29,31 @@ const GridCard = ({
     </CardHeader>
     <CardBody>
       <Paragraph
+        fill
         alignSelf="start"
         margin={{ horizontal: 'medium', vertical: 'xsmall' }}
       >
         {text}
       </Paragraph>
     </CardBody>
-    <Box
-      round="medium"
-      background={buttonColor}
+    <Button
+      primary
+      href={openLink}
+      color={buttonColor}
+      label={heading}
       margin={{ horizontal: 'medium', vertical: 'small' }}
       alignSelf="start"
-      width="auto"
-    >
-      <Anchor margin="small" href={openLink}>
-        Open {heading}
-      </Anchor>
-    </Box>
+    ></Button>
     <CardFooter
-      background={buttonColor}
-      margin={{ top: 'xlarge' }}
+      background="light-2"
+      margin={{ top: 'large' }}
       alignContent="end"
       justify="end"
     >
       <Anchor
         alignSelf="center"
         href={learnLink}
-        margin="xsmall"
+        margin="small"
         label="Learn More"
       />
     </CardFooter>
