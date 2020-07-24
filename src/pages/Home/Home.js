@@ -8,6 +8,7 @@ import {
   CardBody,
   Heading,
   Image,
+  Main,
   Text,
   ResponsiveContext,
 } from 'grommet';

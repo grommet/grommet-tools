@@ -5,9 +5,11 @@ import {
   Paragraph,
   Grid,
   Card,
+  CardBody,
   Heading,
   Image,
   Main,
+  Text,
 } from 'grommet';
 import {
   ClearOption,
@@ -17,6 +19,7 @@ import {
   Selection,
   BarChart,
   Github,
+  Grommet,
   Slack,
 } from 'grommet-icons';
 import AppHeader from '../../components/AppHeader.js';
@@ -24,32 +27,32 @@ import AppHeader from '../../components/AppHeader.js';
 const githubCards = [
   {
     icon: <ClearOption />,
-    label: 'Designer / Github',
+    label: 'Designer /',
     link: 'https://github.com/grommet/grommet-designer',
   },
   {
     icon: <CloudUpload />,
-    label: 'Publisher / Github',
+    label: 'Publisher /',
     link: 'https://github.com/grommet/grommet-publisher',
   },
   {
     icon: <Configure />,
-    label: 'Themer / Github',
+    label: 'Themer /',
     link: 'https://github.com/grommet/grommet-theme-designer',
   },
   {
     icon: <Camera />,
-    label: 'Imager / Github',
+    label: 'Imager /',
     link: 'https://github.com/grommet/grommet-images',
   },
   {
     icon: <BarChart />,
-    label: 'Tabular / Github',
+    label: 'Tabular /',
     link: 'https://github.com/grommet/grommet-tabular',
   },
   {
     icon: <Selection />,
-    label: 'Slides / Github',
+    label: 'Slides /',
     link: 'https://github.com/grommet/grommet-slides',
   },
 ];
@@ -98,14 +101,22 @@ const Feedback = (props) => (
               rows="auto"
             >
               {githubCards.map((item) => (
-                <Card key={item.label} width="small" background="white">
-                  <Anchor
-                    alignSelf="center"
-                    margin="xsmall"
-                    href={item.link}
-                    icon={item.icon}
-                    label={item.label}
-                  />
+                <Card
+                  key={item.label}
+                  onClick={() => {
+                    window.open(item.link, '_self');
+                  }}
+                  background="white"
+                  pad="xsmall"
+                  direction="row"
+                  // width='small'
+                >
+                  <CardBody direction="row">
+                    {item.icon} &nbsp;
+                    <Text textAlign="center">
+                      <b>{item.label}</b> Github
+                    </Text>
+                  </CardBody>
                 </Card>
               ))}
             </Grid>
@@ -121,15 +132,22 @@ const Feedback = (props) => (
             what others are up to by joining the Slack channel.
           </Paragraph>
 
-          <Card width="small" background="white">
-            <Anchor
-              alignSelf="center"
-              width="small"
-              margin="xsmall"
-              href="http://slackin.grommet.io/"
-              icon={<Slack />}
-              label="Grommet / Slack"
-            />
+          <Card
+            onClick={() => {
+              window.open('http://slackin.grommet.io/', '_self');
+            }}
+            background="white"
+            pad="xsmall"
+            direction="row"
+            width="small"
+            fill={false}
+          >
+            <CardBody fill={false} direction="row">
+              <Grommet /> &nbsp;
+              <Text textAlign="center">
+                <b>Grommet /</b> Slack
+              </Text>
+            </CardBody>
           </Card>
 
           <Box width="xlarge">
