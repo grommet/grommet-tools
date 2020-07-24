@@ -47,8 +47,8 @@ const Home = (props) => (
         margin={{
           top: 'small',
           left: 'xlarge',
-          right: 'medium',
-          bottom: 'animationBox',
+          right: 'none',
+          bottom: 'medium',
         }}
         width="medium"
       >
@@ -64,46 +64,53 @@ const Home = (props) => (
         {(responsive) =>
           responsive !== 'small' && responsive !== 'xsmall' ? (
             <Box
-              margin={{
-                top: 'small',
-                left: 'medium',
-                right: 'xlarge',
-              }}
-              pad={{ right: responsive }}
+              margin={
+                responsive === 'medium'
+                  ? {
+                      top: 'small',
+                      left: 'small',
+                      right: 'xlarge',
+                      bottom: 'small',
+                    }
+                  : {
+                      top: 'small',
+                      left: 'small',
+                      right: '300px',
+                      bottom: 'small',
+                    }
+              }
+              pad={{ right: 'xlarge' }}
+              justify="around"
             >
-              <Box
-                direction="row"
-                gap={responsive}
-                margin={
-                  responsive === 'small'
-                    ? { bottom: 'xsmall' }
-                    : { bottom: 'small' }
-                }
-              >
+              <Box direction="row" gap={responsive}>
                 <Card
-                  margin={{ right: responsive }}
-                  animation={{ left: 'jiggle', duration: 1000 }}
+                  margin={
+                    responsive === 'medium'
+                      ? { right: 'large' }
+                      : { right: 'xlarge' }
+                  }
+                  animation={{ type: 'jiggle', duration: 1000 }}
                   onClick={() =>
                     window.open('https://designer.grommet.io', '_self')
                   }
                 >
                   <CardBody margin="small">
-                    <ClearOption color="DesignerYellow" size={responsive} />
+                    <ClearOption color="DesignerYellow" size="large" />
                   </CardBody>
                 </Card>
                 <Card
-                  margin={{ horizontal: { responsive } }}
+                  margin={{ left: 'large' }}
                   animation={{ type: 'jiggle', duration: 1000, delay: 1000 }}
                   onClick={() =>
                     window.open('https://publisher.grommet.io', '_self')
                   }
                 >
                   <CardBody margin="small">
-                    <CloudUpload color="PublisherPink" size={responsive} />
+                    <Configure color="ThemerOrange" size="large" />
                   </CardBody>
                 </Card>
               </Box>
-              <Box direction="row" pad={{ left: responsive }}>
+              <Box direction="row" pad={{ left: 'large', right: 'large' }}>
                 <Card
                   alignSelf="center"
                   margin={{ horizontal: responsive }}
@@ -113,31 +120,36 @@ const Home = (props) => (
                   }
                 >
                   <CardBody margin="small">
-                    <Configure color="ThemerOrange" size={responsive} />
+                    <CloudUpload color="PublisherPink" size="large" />
                   </CardBody>
                 </Card>
               </Box>
-              <Box direction="row" gap={responsive}>
+              <Box
+                direction="row"
+                gap={responsive}
+                margin={{ bottom: 'small' }}
+              >
                 <Card
                   animation={{ type: 'jiggle', duration: 1000, delay: 400 }}
+                  margin={{ right: 'large' }}
                   onClick={() =>
                     window.open('https://slides.grommet.io', '_self')
                   }
                 >
                   <CardBody margin="small">
-                    <Selection color="SlidesBlue" size={responsive} />
+                    <Selection color="SlidesBlue" size="large" />
                   </CardBody>
                 </Card>
                 <Card
                   alignSelf="center"
-                  margin={{ left: responsive }}
+                  margin={{ left: 'large' }}
                   animation={{ type: 'jiggle', duration: 1000, delay: 600 }}
                   onClick={() =>
                     window.open('https://tabular.grommet.io', '_self')
                   }
                 >
                   <CardBody margin="small">
-                    <BarChart color="TabularGreen" size={responsive} />
+                    <BarChart color="TabularGreen" size="large" />
                   </CardBody>
                 </Card>
               </Box>
@@ -150,7 +162,7 @@ const Home = (props) => (
                   }
                 >
                   <CardBody margin="small">
-                    <Camera color="ImagerOrange" size={responsive} />
+                    <Camera color="ImagerOrange" size="large" />
                   </CardBody>
                 </Card>
               </Box>
