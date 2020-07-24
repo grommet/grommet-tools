@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  Anchor,
   Box,
   Paragraph,
   Grid,
@@ -109,7 +108,6 @@ const Feedback = (props) => (
                   background="white"
                   pad="xsmall"
                   direction="row"
-                  // width='small'
                 >
                   <CardBody direction="row">
                     {item.icon} &nbsp;
@@ -140,9 +138,8 @@ const Feedback = (props) => (
             pad="xsmall"
             direction="row"
             width="small"
-            fill={false}
           >
-            <CardBody fill={false} direction="row">
+            <CardBody direction="row">
               <Grommet /> &nbsp;
               <Text textAlign="center">
                 <b>Grommet /</b> Slack
