@@ -22,7 +22,6 @@ export const grommetToolsTheme = deepMerge(grommet, {
       TabularGreen: '#9BFAD8',
       noCodeBackground: 'rgba(0,0,0,0.06)',
       YellowBackground: '#FDF074',
-      buttonYellow: '#FDFE74',
       altGrey: '#999999',
       darkGrey: '#666666',
       headingGrey: '#444444',

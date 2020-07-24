@@ -1,8 +1,8 @@
 import React from 'react';
 import {
   Box,
+  Button,
   Heading,
-  Text,
   Stack,
   Paragraph,
   Image,
@@ -138,41 +138,35 @@ const Designer = () => (
         </Box>
       </Box>
       <Box height="xsmall"></Box>
-      <Box background="YellowBackground" height="medium">
+      <Box background="YellowBackground" pad="large">
         <Box
-          margin={{ top: 'xlarge', bottom: 'medium' }}
+          margin={{ top: 'large', bottom: 'medium' }}
           alignSelf="center"
           width="DesignerStart"
         >
           <Heading size="small" margin="xsmall" alignSelf="center">
             Start Using the Designer Now
           </Heading>
-          <Paragraph size="large" margin="small" alignSelf="center">
+          <Paragraph
+            textAlign="center"
+            size="large"
+            margin="small"
+            alignSelf="center"
+          >
             Open the Designer tool and get started by watching a tutorial or
             just jumping right in to your first design.
           </Paragraph>
         </Box>
-        <Box
+        <Button
+          margin={{ bottom: 'small' }}
+          primary
           alignSelf="center"
-          background="white"
-          width="small"
-          round="medium"
-          height="xxsmall"
-          justify="center"
-          elevation="small"
-          margin="none"
-          onClick={() => {}}
-        >
-          <Text
-            weight="bold"
-            alignSelf="center"
-            TextAlign="center"
-            color="black"
-          >
-            Open Designer
-          </Text>
-        </Box>
+          href="https://designer.grommet.io/"
+          color="white"
+          label="Open Designer"
+        />
       </Box>
+      <Box pad="xsmall" background="gradient" />
     </Main>
   </Box>
 );

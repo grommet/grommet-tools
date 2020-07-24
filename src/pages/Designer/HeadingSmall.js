@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Box, Paragraph, Heading, Text } from 'grommet';
+import { Box, Button, Paragraph, Heading, Text } from 'grommet';
 
 const HeadingSmall = () => (
   <Box margin={{ top: 'xlarge' }}>
@@ -21,19 +21,13 @@ const HeadingSmall = () => (
         components; then publish and share your ideas with a simple wysiwg
         interface
       </Paragraph>
-      <Box
-        round="medium"
-        background="buttonYellow"
-        onClick={() => {}}
-        width="small"
-        height="xxsmall"
-        justify="center"
-        margin={{ bottom: 'small' }}
-      >
-        <Text weight="bold" alignSelf="center" color="black">
-          Open Designer
-        </Text>
-      </Box>
+      <Button
+        primary
+        href="https://designer.grommet.io/"
+        color="DesignerYellow"
+        label="Open Designer"
+        alignSelf="start"
+      />
     </Box>
   </Box>
 );
