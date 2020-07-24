@@ -8,7 +8,6 @@ import {
   Heading,
   Image,
   Text,
-  Stack,
   ResponsiveContext,
 } from 'grommet';
 import {
