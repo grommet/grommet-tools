@@ -28,7 +28,6 @@ const Designer = () => (
       </ResponsiveContext.Consumer>
       <Box
         background="YellowBackground"
-        height="large"
         margin={{
           top: 'xlarge',
         }}
