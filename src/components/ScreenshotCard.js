@@ -4,7 +4,11 @@ import { Box, Image, Text } from 'grommet';
 const ScreenshotCard = ({ label, src, a11yTitle }) => (
   <Box>
     <Image src={src} a11yTitle={a11yTitle} />
-    <Text alignSelf="center" color="dark-2" margin={{ top: 'none' }}>
+    <Text
+      alignSelf="center"
+      color="dark-2"
+      margin={{ top: 'none', bottom: 'large' }}
+    >
       {label}
     </Text>
   </Box>

@@ -3,7 +3,6 @@ import {
   Box,
   Button,
   Heading,
-  Stack,
   Paragraph,
   Image,
   Main,
@@ -27,26 +26,23 @@ const Designer = () => (
           )
         }
       </ResponsiveContext.Consumer>
-
-      <Stack>
-        <Box
-          background="YellowBackground"
-          height="large"
-          margin={{
-            top: 'xlarge',
-          }}
-        ></Box>
+      <Box
+        background="YellowBackground"
+        margin={{
+          top: 'xlarge',
+        }}
+      >
         <Box
           margin={{
             top: 'xlarge',
             horizontal: 'xlarge',
-            bottom: 'xlarge',
+            bottom: 'medium',
           }}
         >
           <Heading size="large" margin={{ top: 'xlarge', bottom: 'none' }}>
             What is the Designer?
           </Heading>
-          <Box width="large" margin={{ bottom: 'xlarge', top: 'none' }}>
+          <Box width="large" margin={{ bottom: 'medium', top: 'none' }}>
             <Paragraph fill={true} size="xxlarge">
               A free, web-based WSIWG component editor, Grommet Designer is a
               themeable experience designer baked on top of react and java
@@ -54,10 +50,10 @@ const Designer = () => (
             </Paragraph>
           </Box>
           <Box
-            direction="row"
+            direction="row-responsive"
             justify="center"
             gap="medium"
-            margin={{ vertical: 'xlarge' }}
+            margin={{ top: 'large', bottom: '-160px' }}
           >
             <ScreenshotCard
               src="Designer_1.svg"
@@ -76,7 +72,8 @@ const Designer = () => (
             />
           </Box>
         </Box>
-      </Stack>
+      </Box>
+
       <Box height="small"></Box>
       <Box margin={{ top: 'xlarge', horizontal: 'xlarge' }}>
         <Box direction="row-responsive">
