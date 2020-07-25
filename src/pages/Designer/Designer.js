@@ -1,135 +1,47 @@
 import React from 'react';
 import {
   Box,
+  Button,
   Heading,
-  Text,
   Stack,
   Paragraph,
   Image,
   Main,
   ResponsiveContext,
 } from 'grommet';
-import {
-  ClearOption,
-  Configure,
-  Camera,
-  CloudUpload,
-  Selection,
-  BarChart,
-} from 'grommet-icons';
 import AppHeader from '../../components/AppHeader.js';
-import IconCard from '../../components/IconCard.js';
+import HeadingLarge from './HeadingLarge.js';
+import HeadingSmall from './HeadingSmall.js';
 import ScreenshotCard from '../../components/ScreenshotCard.js';
 
 const Designer = () => (
   <Box>
     <AppHeader />
     <Main>
-      <Box margin={{ top: 'xlarge' }}>
-        <Stack>
-          <Box>
-            <Box alignSelf="center">
-              <Text
-                margin={{
-                  left: 'large',
-                }}
-              >
-                Grommet Tools
-              </Text>
-              <Heading
-                size="xlarge"
-                margin={{
-                  top: 'none',
-                  bottom: 'medium',
-                  left: 'large',
-                }}
-              >
-                Designer
-              </Heading>
-            </Box>
-            <Box height="gradient1" background="gradient"></Box>
-            <Box alignSelf="center" margin={{ left: 'xlarge' }} width="large">
-              <Box margin={{ left: 'xlarge' }}>
-                <Paragraph size="xxlarge" color="darkGrey">
-                  Grommet Designer is a tool used build expiriences with Grommet
-                  components; then publish and share your ideas with a simple
-                  wysiwg interface
-                </Paragraph>
-                <Box
-                  round="medium"
-                  background="buttonYellow"
-                  onClick={() => {}}
-                  width="small"
-                  height="xxsmall"
-                  justify="center"
-                  margin={{ bottom: 'small' }}
-                >
-                  <Text weight="bold" alignSelf="center" color="black">
-                    Open Designer
-                  </Text>
-                </Box>
-              </Box>
-            </Box>
-          </Box>
-          <ResponsiveContext.Consumer>
-            {(responsive) =>
-              responsive === 'large' || responsive === 'xlarge' ? (
-                <IconCard
-                  size="medium"
-                  icon={<ClearOption size="xxlarge" color="DesignerYellow" />}
-                  margin={{ left: 'xlarge' }}
-                />
-              ) : responsive === 'medium' ? (
-                <IconCard
-                  size="small"
-                  icon={<ClearOption size="xxlarge" color="DesignerYellow" />}
-                  margin={{ left: 'large' }}
-                />
-              ) : (
-                <IconCard
-                  size="xsmall"
-                  icon={<ClearOption size="xlarge" color="DesignerYellow" />}
-                  margin={{ left: 'medium' }}
-                />
-              )
-            }
-          </ResponsiveContext.Consumer>
-        </Stack>
-      </Box>
-      <Box
-        direction="column"
-        gap="medium"
-        margin={{ left: 'xlarge', bottom: 'xlarge' }}
-      >
-        <Box direction="row" margin={{ left: 'xlarge' }} gap="xlarge">
-          <Camera size="large" color="ImagerOrange" />
-          <Configure size="large" color="ThemerOrange" />
-        </Box>
-        <Box margin={{ left: 'xlarge' }} direction="row">
-          <Box width="xxsmall"></Box>
-          <CloudUpload size="large" color="PublisherPink" />
-        </Box>
-        <Box margin={{ left: 'xlarge' }} direction="row">
-          <Box width="xsmall"></Box>
-          <Selection size="large" color="SlidesBlue" />
-        </Box>
-        <Box margin={{ left: 'xlarge' }}>
-          <BarChart size="large" color="TabularGreen" />
-        </Box>
-      </Box>
+      <ResponsiveContext.Consumer>
+        {(responsive) =>
+          responsive === 'large' || responsive === 'xlarge' ? (
+            <HeadingLarge />
+          ) : (
+            <HeadingSmall />
+          )
+        }
+      </ResponsiveContext.Consumer>
       <Box
         background="YellowBackground"
+        height="large"
         margin={{
           top: 'xlarge',
         }}
       >
         <Box
           margin={{
+            top: 'xlarge',
             horizontal: 'xlarge',
             bottom: 'medium',
           }}
         >
-          <Heading size="large" margin={{ top: 'xlarge' }}>
+          <Heading size="large" margin={{ top: 'xlarge', bottom: 'none' }}>
             What is the Designer?
           </Heading>
           <Box width="large" margin={{ bottom: 'medium', top: 'none' }}>
@@ -204,7 +116,7 @@ const Designer = () => (
         <Box
           direction="row-responsive"
           justify="center"
-          margin={{ top: 'medium' }}
+          margin={{ top: 'xlarge' }}
           gap="large"
         >
           <ScreenshotCard
@@ -225,41 +137,35 @@ const Designer = () => (
         </Box>
       </Box>
       <Box height="xsmall"></Box>
-      <Box background="YellowBackground" height="medium">
+      <Box background="YellowBackground" pad="large">
         <Box
-          margin={{ top: 'xlarge', bottom: 'medium' }}
+          margin={{ top: 'large', bottom: 'medium' }}
           alignSelf="center"
           width="DesignerStart"
         >
           <Heading size="small" margin="xsmall" alignSelf="center">
             Start Using the Designer Now
           </Heading>
-          <Paragraph size="large" margin="small" alignSelf="center">
+          <Paragraph
+            textAlign="center"
+            size="large"
+            margin="small"
+            alignSelf="center"
+          >
             Open the Designer tool and get started by watching a tutorial or
             just jumping right in to your first design.
           </Paragraph>
         </Box>
-        <Box
+        <Button
+          margin={{ bottom: 'small' }}
+          primary
           alignSelf="center"
-          background="white"
-          width="small"
-          round="medium"
-          height="xxsmall"
-          justify="center"
-          elevation="small"
-          margin="none"
-          onClick={() => {}}
-        >
-          <Text
-            weight="bold"
-            alignSelf="center"
-            TextAlign="center"
-            color="black"
-          >
-            Open Designer
-          </Text>
-        </Box>
+          href="https://designer.grommet.io/"
+          color="white"
+          label="Open Designer"
+        />
       </Box>
+      <Box pad="xsmall" background="gradient" />
     </Main>
   </Box>
 );
