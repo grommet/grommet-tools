@@ -10,8 +10,8 @@ import {
 } from 'grommet-icons';
 import AppHeader from '../../components/AppHeader.js';
 import ToolHeader from '../../components/common/ToolHeader.js';
-import ScreenshotCard from '../../components/ScreenshotCard.js';
 import ToolFooter from '../../components/common/ToolFooter.js';
+import Description from '../../components/common/Description.js';
 import ScreenShotRow from '../../components/common/ScreenShotRow.js';
 
 const Designer = () => (
@@ -33,55 +33,20 @@ const Designer = () => (
         link="https://designer.grommet.io/"
         color="DesignerYellow"
       />
-      <Box
-        background="YellowBackground"
-        margin={{
-          top: 'xlarge',
-        }}
-      >
-        <Box
-          margin={{
-            top: 'xlarge',
-            horizontal: 'xlarge',
-            bottom: 'medium',
-          }}
-        >
-          <Heading size="large" margin={{ top: 'xlarge', bottom: 'none' }}>
-            What is the Designer?
-          </Heading>
-          <Box width="large" margin={{ bottom: 'medium', top: 'none' }}>
-            <Paragraph fill={true} size="xxlarge">
-              A free, web-based WSIWG component editor, Grommet Designer is a
-              themeable experience designer baked on top of react and java
-              framework. See some examples from Grommet designers below.
-            </Paragraph>
-          </Box>
-          <Box
-            direction="row-responsive"
-            justify="center"
-            gap="medium"
-            margin={{ top: 'large', bottom: '-160px' }}
-          >
-            <ScreenshotCard
-              src="Designer_1.svg"
-              label="Deisgner File Name"
-              a11yTitle="Screenshot of Designer Tool"
-            />
-            <ScreenshotCard
-              src="Designer_2.svg"
-              label="Deisgner File Name"
-              a11yTitle="Screenshot of Designer Tool"
-            />
-            <ScreenshotCard
-              src="Designer_3.svg"
-              label="Deisgner File Name"
-              a11yTitle="Screenshot of Designer Tool"
-            />
-          </Box>
-        </Box>
-      </Box>
+      <Description
+        tool="Designer"
+        content="A free, web-based WSIWG component editor, Grommet Designer is a
+        themeable experience designer baked on top of react and java
+        framework. See some examples from Grommet designers below."
+        color="DesignerYellow"
+        images={['Designer_1.svg', 'Designer_2.svg', 'Designer_3.svg']}
+        labels={[
+          'Deisgner File Name',
+          'Deisgner File Name',
+          'Deisgner File Name',
+        ]}
+      />
 
-      <Box height="small"></Box>
       <Box margin={{ top: 'xlarge', horizontal: 'xlarge' }}>
         <Box direction="row-responsive">
           <Box margin={{ right: 'large' }}>
