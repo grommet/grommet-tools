@@ -49,6 +49,7 @@ const Home = (props) => (
             top: 'small',
             left: 'xlarge',
             right: 'medium',
+            bottom: 'medium',
           }}
           width="medium"
         >
@@ -280,25 +281,31 @@ const Home = (props) => (
                 }}
               >
                 <SmallCard
+                  link="https://designer.grommet.io"
                   icon={
                     <ClearOption size="customSmall" color="DesignerYellow" />
                   }
                 />
                 <SmallCard
+                  link="https://theme-designer.grommet.io"
                   icon={<Configure size="customSmall" color="ThemerOrange" />}
                 />
                 <SmallCard
+                  link="https://images.grommet.io"
                   icon={<Camera size="customSmall" color="ImagerOrange" />}
                 />
                 <SmallCard
+                  link="https://publisher.grommet.io"
                   icon={
                     <CloudUpload size="customSmall" color="PublisherPink" />
                   }
                 />
                 <SmallCard
+                  link="https://slides.grommet.io"
                   icon={<Selection size="customSmall" color="SlidesBlue" />}
                 />
                 <SmallCard
+                  link="https://tabular.grommet.io"
                   icon={<BarChart size="customSmall" color="TabularGreen" />}
                 />
               </Box>
@@ -315,37 +322,37 @@ const Home = (props) => (
               >
                 <SmallCard
                   text="Designer"
-                  textColor="darkGrey"
+                  link="https://designer.grommet.io"
                   size="xsmall"
                   icon={<ClearOption size="large" color="DesignerYellow" />}
                 />
                 <SmallCard
                   text="Themer"
-                  textColor="darkGrey"
+                  link="https://theme-designer.grommet.io"
                   size="xsmall"
                   icon={<Configure size="large" color="ThemerOrange" />}
                 />
                 <SmallCard
                   text="Images"
-                  textColor="darkGrey"
+                  link="https://images.grommet.io"
                   size="xsmall"
                   icon={<Camera size="large" color="ImagerOrange" />}
                 />
                 <SmallCard
                   text="Publisher"
-                  textColor="darkGrey"
+                  link="https://publisher.grommet.io"
                   size="xsmall"
                   icon={<CloudUpload size="large" color="PublisherPink" />}
                 />
                 <SmallCard
                   text="Slides"
-                  textColor="darkGrey"
+                  link="https://slides.grommet.io"
                   size="xsmall"
                   icon={<Selection size="large" color="SlidesBlue" />}
                 />
                 <SmallCard
                   text="Tabular"
-                  textColor="darkGrey"
+                  link="https://tabular.grommet.io"
                   size="xsmall"
                   icon={<BarChart size="large" color="TabularGreen" />}
                 />
