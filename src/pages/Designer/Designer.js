@@ -1,15 +1,15 @@
 import React from 'react';
+import { Box, Heading, Paragraph, Image, Main } from 'grommet';
 import {
-  Box,
-  Heading,
-  Paragraph,
-  Image,
-  Main,
-  ResponsiveContext,
-} from 'grommet';
+  ClearOption,
+  Configure,
+  Camera,
+  CloudUpload,
+  Selection,
+  BarChart,
+} from 'grommet-icons';
 import AppHeader from '../../components/AppHeader.js';
-import HeadingLarge from './HeadingLarge.js';
-import HeadingSmall from './HeadingSmall.js';
+import ToolHeader from '../../components/common/ToolHeader.js';
 import ScreenshotCard from '../../components/ScreenshotCard.js';
 import ToolFooter from '../../components/common/ToolFooter.js';
 
@@ -17,15 +17,21 @@ const Designer = () => (
   <Box>
     <AppHeader />
     <Main>
-      <ResponsiveContext.Consumer>
-        {(responsive) =>
-          responsive === 'large' || responsive === 'xlarge' ? (
-            <HeadingLarge />
-          ) : (
-            <HeadingSmall />
-          )
-        }
-      </ResponsiveContext.Consumer>
+      <ToolHeader
+        mainIcon={<ClearOption size="xxlarge" color="DesignerYellow" />}
+        icon1={<Camera opacity="0.8" size="large" color="ImagerOrange" />}
+        icon2={<Configure opacity="0.9" size="large" color="ThemerOrange" />}
+        icon3={<CloudUpload opacity="0.7" size="large" color="PublisherPink" />}
+        icon4={<Selection opacity="0.5" size="large" color="SlidesBlue" />}
+        icon5={<BarChart opacity="0.3" size="large" color="TabularGreen" />}
+        title="Designer"
+        content="Grommet Designer is a tool used to build experiences with Grommet
+       components; then publish and share your ideas with a simple wysiwg
+       interface"
+        open="Open Designer"
+        link="https://designer.grommet.io/"
+        color="DesignerYellow"
+      />
       <Box
         background="YellowBackground"
         margin={{

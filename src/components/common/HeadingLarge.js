@@ -1,27 +1,34 @@
 import React from 'react';
 
 import { Box, Button, Paragraph, Heading, Stack, Text } from 'grommet';
-import {
-  ClearOption,
-  Configure,
-  Camera,
-  CloudUpload,
-  Selection,
-  BarChart,
-} from 'grommet-icons';
-import IconCard from '../../components/IconCard.js';
+import IconCard from '../IconCard.js';
+import RotatedIcon from './RotatedIcon';
 
-const HeadingLarge = () => (
+const HeadingLarge = ({
+  mainIcon,
+  icon1,
+  icon2,
+  icon3,
+  icon4,
+  icon5,
+  title,
+  content,
+  open,
+  link,
+  color,
+}) => (
   <Box>
     <Box height="medium" margin={{ top: 'xlarge' }}>
       <Stack margin={{ top: 'xlarge' }} anchor="left">
         <Box margin={{ top: 'xlarge' }} pad="xsmall" background="gradient" />
         <Box margin={{ top: 'large' }} direction="row">
-          <IconCard
-            size="medium"
-            icon={<ClearOption size="xxlarge" color="DesignerYellow" />}
-            margin={{ left: 'xlarge', top: 'large' }}
-          />
+          <RotatedIcon>
+            <IconCard
+              size="medium"
+              icon={mainIcon}
+              margin={{ left: 'xlarge', top: 'large' }}
+            />
+          </RotatedIcon>
           <Box
             direction="column"
             margin={{
@@ -32,18 +39,16 @@ const HeadingLarge = () => (
           >
             <Text> Grommet Tools </Text>
             <Heading level={1} size="xlarge" margin={{ top: 'none' }}>
-              Designer
+              {title}
             </Heading>
             <Paragraph margin={{ top: 'none' }} size="xxlarge" color="darkGrey">
-              Grommet Designer is a tool used to build experiences with Grommet
-              components; then publish and share your ideas with a simple wysiwg
-              interface
+              {content}
             </Paragraph>
             <Button
               primary
-              href="https://designer.grommet.io/"
-              color="DesignerYellow"
-              label="Open Designer"
+              href={link}
+              color={color}
+              label={open}
               alignSelf="start"
             />
           </Box>
@@ -52,20 +57,18 @@ const HeadingLarge = () => (
     </Box>
     <Box gap="medium" margin={{ left: 'xlarge', bottom: 'large' }}>
       <Box direction="row" margin={{ left: 'xlarge' }} gap="xlarge">
-        <Camera opacity="0.8" size="large" color="ImagerOrange" />
-        <Configure opacity="0.9" size="large" color="ThemerOrange" />
+        {icon1}
+        {icon2}
       </Box>
       <Box margin={{ left: 'xlarge' }} direction="row">
         <Box width="xxsmall"></Box>
-        <CloudUpload opacity="0.7" size="large" color="PublisherPink" />
+        {icon3}
       </Box>
       <Box margin={{ left: 'xlarge' }} direction="row">
         <Box width="xsmall"></Box>
-        <Selection opacity="0.5" size="large" color="SlidesBlue" />
+        {icon4}
       </Box>
-      <Box margin={{ left: 'xlarge' }}>
-        <BarChart opacity="0.3" size="large" color="TabularGreen" />
-      </Box>
+      <Box margin={{ left: 'xlarge' }}>{icon5}</Box>
     </Box>
   </Box>
 );
