@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Heading, Paragraph, Image, Main } from 'grommet';
+import { Box, Main } from 'grommet';
 import {
   ClearOption,
   Configure,
@@ -11,8 +11,8 @@ import {
 import AppHeader from '../../components/AppHeader.js';
 import ToolHeader from '../../components/common/ToolHeader.js';
 import ToolFooter from '../../components/common/ToolFooter.js';
+import CapabilitiesLeft from '../../components/common/CapabilitiesLeft.js';
 import Description from '../../components/common/Description.js';
-import ScreenShotRow from '../../components/common/ScreenShotRow.js';
 
 const Designer = () => (
   <Box>
@@ -47,53 +47,24 @@ const Designer = () => (
         ]}
       />
 
-      <Box margin={{ top: 'xlarge', horizontal: 'xlarge' }}>
-        <Box direction="row-responsive">
-          <Box margin={{ right: 'large' }}>
-            <Heading size="large" margin={{ bottom: 'none', top: 'xlarge' }}>
-              Capabilities
-            </Heading>
-            <Box width="medium">
-              <Paragraph size="large" color="darkGrey" fill>
-                The Designer puts the power in your hands to create sites with
-                built in theming, while leveraging the full extent of grommet’s
-                components and props.
-              </Paragraph>
-              <Paragraph size="large" fill>
-                Open the Designer tool and get started by watching a tutorial or
-                just jumping right in to your first design. Open the Designer
-                tool and get started by watching a tutorial or just jumping
-                right in to your first design.
-              </Paragraph>
-            </Box>
-          </Box>
-          <Box
-            alignSelf="end"
-            align="end"
-            margin={{ left: 'xlarge', top: 'medium' }}
-          >
-            <Box>
-              <Image
-                a11yTitle="Gremlin Holding a Laptop"
-                alignSelf="end"
-                src="gremlin_laptop.svg"
-                fill="horizontal"
-                fit="contain"
-              />
-            </Box>
-          </Box>
-        </Box>
-        <ScreenShotRow
-          margin={{ top: 'xlarge' }}
-          src={['Designer_4.svg', 'Designer_5.svg', 'Designer_6.svg']}
-          label={[
-            'Creating in Light and Dark modes',
-            'Importing your own theme',
-            'Easy publishing',
-          ]}
-        />
-      </Box>
-      <Box height="xsmall"></Box>
+      <CapabilitiesLeft
+        mainContent="The Designer puts the power in your hands to create sites with
+        built in theming, while leveraging the full extent of grommet’s
+        components and props."
+        subContent="Just a few of the Designer’s capabilities include 
+        seamlessly designing in both Light and Dark modes, 
+        importing themes from the Grommet Tools Themer, 
+        and publishing your designs to share with others."
+        mainImage="gremlin_laptop.svg"
+        mainLabel="Gremlin Holding a Laptop"
+        images={['Designer_4.svg', 'Designer_5.svg', 'Designer_6.svg']}
+        labels={[
+          'Creating in Light and Dark modes',
+          'Importing your own theme',
+          'Easy publishing',
+        ]}
+      />
+
       <ToolFooter
         backgroundColor="YellowBackground"
         headingText="Start Using the Designer Now"
