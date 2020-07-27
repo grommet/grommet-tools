@@ -10,9 +10,9 @@ import {
 } from 'grommet-icons';
 import AppHeader from '../../components/AppHeader.js';
 import ToolHeader from '../../components/common/ToolHeader.js';
-import ScreenshotCard from '../../components/ScreenshotCard.js';
 import ToolFooter from '../../components/common/ToolFooter.js';
 import Description from '../../components/common/Description.js';
+import ScreenShotRow from '../../components/common/ScreenShotRow.js';
 
 const Designer = () => (
   <Box>
@@ -83,28 +83,15 @@ const Designer = () => (
             </Box>
           </Box>
         </Box>
-        <Box
-          direction="row-responsive"
-          justify="center"
+        <ScreenShotRow
           margin={{ top: 'xlarge' }}
-          gap="large"
-        >
-          <ScreenshotCard
-            src="Designer_4.svg"
-            label="Creating in Light and Dark modes"
-            a11yTitle="Screenshot of Designer Tool"
-          />
-          <ScreenshotCard
-            src="Designer_5.svg"
-            label="Importing your own theme"
-            a11yTitle="Screenshot of Designer Tool"
-          />
-          <ScreenshotCard
-            src="Designer_6.svg"
-            label="Easy publishing"
-            a11yTitle="Screenshot of Designer Tool"
-          />
-        </Box>
+          src={['Designer_4.svg', 'Designer_5.svg', 'Designer_6.svg']}
+          label={[
+            'Creating in Light and Dark modes',
+            'Importing your own theme',
+            'Easy publishing',
+          ]}
+        />
       </Box>
       <Box height="xsmall"></Box>
       <ToolFooter

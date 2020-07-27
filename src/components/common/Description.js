@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Heading, Paragraph } from 'grommet';
-import ScreenshotCard from '../../components/ScreenshotCard.js';
+import ScreenShotRow from './ScreenShotRow';
 
 const Description = ({ tool, content, color, images, labels }) => (
   <Box background={color} margin={{ veritcal: 'xlarge' }}>
@@ -19,28 +19,12 @@ const Description = ({ tool, content, color, images, labels }) => (
           {content}
         </Paragraph>
       </Box>
-      <Box
-        direction="row-responsive"
-        justify="center"
-        gap="medium"
+      <ScreenShotRow
         margin={{ top: 'large', bottom: '-160px' }}
-      >
-        <ScreenshotCard
-          src={images[0]}
-          label={labels[0]}
-          a11yTitle={labels[0]}
-        />
-        <ScreenshotCard
-          src={images[1]}
-          label={labels[1]}
-          a11yTitle={labels[1]}
-        />
-        <ScreenshotCard
-          src={images[2]}
-          label={labels[2]}
-          a11yTitle={labels[2]}
-        />
-      </Box>
+        gap="medium"
+        src={images}
+        label={labels}
+      />
     </Box>
   </Box>
 );
