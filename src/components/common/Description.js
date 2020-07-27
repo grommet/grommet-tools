@@ -3,13 +3,7 @@ import { Box, Heading, Paragraph } from 'grommet';
 import ScreenshotCard from '../../components/ScreenshotCard.js';
 
 const Description = ({ tool, content, color, images, labels }) => (
-  <Box
-    background={color}
-    margin={{
-      top: 'xlarge',
-      bottom: 'xlarge',
-    }}
-  >
+  <Box background={color} margin={{ veritcal: 'xlarge' }}>
     <Box
       margin={{
         top: 'xlarge',
@@ -21,7 +15,7 @@ const Description = ({ tool, content, color, images, labels }) => (
         What is the {tool}?
       </Heading>
       <Box width="large" margin={{ bottom: 'medium', top: 'none' }}>
-        <Paragraph fill={true} size="xxlarge">
+        <Paragraph fill size="xxlarge">
           {content}
         </Paragraph>
       </Box>
