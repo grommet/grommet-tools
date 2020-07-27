@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Box, Button, Paragraph, Heading, Text } from 'grommet';
 
-const HeadingSmall = () => (
+const HeadingSmall = ({ title, content, open, link, color }) => (
   <Box margin={{ top: 'xlarge' }}>
     <Box margin={{ left: 'xlarge' }}>
       <Text> Grommet Tools </Text>
@@ -11,21 +11,19 @@ const HeadingSmall = () => (
         size="xlarge"
         margin={{ top: 'none', bottom: 'medium' }}
       >
-        Designer
+        {title}
       </Heading>
     </Box>
     <Box pad="xsmall" background="gradient" />
     <Box margin={{ left: 'xlarge' }}>
       <Paragraph margin={{ top: 'none' }} size="xxlarge" color="darkGrey">
-        Grommet Designer is a tool used to build expiriences with Grommet
-        components; then publish and share your ideas with a simple wysiwg
-        interface
+        {content}
       </Paragraph>
       <Button
         primary
-        href="https://designer.grommet.io/"
-        color="DesignerYellow"
-        label="Open Designer"
+        href={link}
+        color={color}
+        label={open}
         alignSelf="start"
       />
     </Box>
