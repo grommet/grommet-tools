@@ -1,25 +1,28 @@
 import React from 'react';
 import { Box, Text } from 'grommet';
 
-function SmallCard(props) {
+function SmallCard({ size, link, icon, text }) {
   return (
     <Box
-      height={props.size}
-      width={props.size}
+      height={size}
+      width={size}
       background="rgb(255,255,255)"
       round="medium"
       justify="center"
       align="center"
       alignContent="center"
       elevation="medium"
+      onClick={() => {
+        window.open(link, '_self');
+      }}
     >
       <Box
         margin={{ horizontal: 'small', vertical: 'small' }}
         alignSelf="center"
       >
-        {props.icon}
-        <Text alignSelf="center" size="xsmall" color={props.textColor}>
-          {props.text}
+        {icon}
+        <Text alignSelf="center" size="xsmall" color="darkGrey">
+          {text}
         </Text>
       </Box>
     </Box>
