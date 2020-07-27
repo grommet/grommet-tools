@@ -6,8 +6,9 @@ const ToolFooter = ({
   headingText,
   description,
   buttonLabel,
+  ...rest
 }) => (
-  <Footer direction="column" gap="none">
+  <Footer gap="none" {...rest}>
     <Box background={backgroundColor} pad="large" fill="horizontal">
       <Box
         margin={{ top: 'large', bottom: 'medium' }}
