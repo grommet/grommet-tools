@@ -114,15 +114,12 @@ const Designer = () => (
         </Box>
         <ScreenShotRow
           margin={{ top: 'xlarge' }}
-          src0="Designer_4.svg"
-          label0="Creating in Light and Dark modes"
-          a11yTitle0="Screenshot of Designer Tool"
-          src1="Designer_5.svg"
-          label1="Importing your own theme"
-          a11yTitle1="Screenshot of Designer Tool"
-          src2="Designer_6.svg"
-          label2="Easy publishing"
-          a11yTitle2="Screenshot of Designer Tool"
+          src={['Designer_4.svg', 'Designer_5.svg', 'Designer_6.svg']}
+          label={[
+            'Creating in Light and Dark modes',
+            'Importing your own theme',
+            'Easy publishing',
+          ]}
         />
       </Box>
       <Box height="xsmall"></Box>
