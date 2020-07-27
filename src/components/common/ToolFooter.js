@@ -15,7 +15,12 @@ const ToolFooter = ({
         alignSelf="center"
         width="DesignerStart"
       >
-        <Heading size="small" margin="xsmall" alignSelf="center">
+        <Heading
+          textAlign="center"
+          size="small"
+          margin="xsmall"
+          alignSelf="center"
+        >
           {headingText}
         </Heading>
         <Paragraph
