@@ -10,8 +10,9 @@ import {
 import AppHeader from '../../components/AppHeader.js';
 import HeadingLarge from './HeadingLarge.js';
 import HeadingSmall from './HeadingSmall.js';
-import ScreenshotCard from '../../components/ScreenshotCard.js';
 import ToolFooter from '../../components/common/ToolFooter.js';
+import ScreenshotCard from '../../components/ScreenshotCard.js';
+import ScreenShotRow from '../../components/common/ScreenShotRow.js';
 
 const Designer = () => (
   <Box>
@@ -111,28 +112,18 @@ const Designer = () => (
             </Box>
           </Box>
         </Box>
-        <Box
-          direction="row-responsive"
-          justify="center"
+        <ScreenShotRow
           margin={{ top: 'xlarge' }}
-          gap="large"
-        >
-          <ScreenshotCard
-            src="Designer_4.svg"
-            label="Creating in Light and Dark modes"
-            a11yTitle="Screenshot of Designer Tool"
-          />
-          <ScreenshotCard
-            src="Designer_5.svg"
-            label="Importing your own theme"
-            a11yTitle="Screenshot of Designer Tool"
-          />
-          <ScreenshotCard
-            src="Designer_6.svg"
-            label="Easy publishing"
-            a11yTitle="Screenshot of Designer Tool"
-          />
-        </Box>
+          src0="Designer_4.svg"
+          label0="Creating in Light and Dark modes"
+          a11yTitle0="Screenshot of Designer Tool"
+          src1="Designer_5.svg"
+          label1="Importing your own theme"
+          a11yTitle1="Screenshot of Designer Tool"
+          src2="Designer_6.svg"
+          label2="Easy publishing"
+          a11yTitle2="Screenshot of Designer Tool"
+        />
       </Box>
       <Box height="xsmall"></Box>
       <ToolFooter
