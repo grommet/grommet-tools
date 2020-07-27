@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Box, Button, Paragraph, Heading, Stack, Text } from 'grommet';
 import IconCard from '../IconCard.js';
+import RotatedIcon from './RotatedIcon';
 
 const HeadingLarge = ({
   mainIcon,
@@ -21,11 +22,13 @@ const HeadingLarge = ({
       <Stack margin={{ top: 'xlarge' }} anchor="left">
         <Box margin={{ top: 'xlarge' }} pad="xsmall" background="gradient" />
         <Box margin={{ top: 'large' }} direction="row">
-          <IconCard
-            size="medium"
-            icon={mainIcon}
-            margin={{ left: 'xlarge', top: 'large' }}
-          />
+          <RotatedIcon>
+            <IconCard
+              size="medium"
+              icon={mainIcon}
+              margin={{ left: 'xlarge', top: 'large' }}
+            />
+          </RotatedIcon>
           <Box
             direction="column"
             margin={{
