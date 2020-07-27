@@ -7,6 +7,7 @@ const Description = ({ tool, content, color, images, labels }) => (
     background={color}
     margin={{
       top: 'xlarge',
+      bottom: 'xlarge',
     }}
   >
     <Box

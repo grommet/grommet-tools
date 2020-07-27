@@ -47,7 +47,6 @@ const Designer = () => (
         ]}
       />
 
-      <Box height="small"></Box>
       <Box margin={{ top: 'xlarge', horizontal: 'xlarge' }}>
         <Box direction="row-responsive">
           <Box margin={{ right: 'large' }}>
