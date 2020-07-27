@@ -82,21 +82,17 @@ const Designer = () => (
       </Box>
 
       <CapabilitiesLeft
-        content1="The Designer puts the power in your hands to create sites with
+        mainContent="The Designer puts the power in your hands to create sites with
         built in theming, while leveraging the full extent of grommet’s
         components and props."
-        content2="Just a few of the Designer’s capabilities include 
+        subContent="Just a few of the Designer’s capabilities include 
         seamlessly designing in both Light and Dark modes, 
         importing themes from the Grommet Tools Themer, 
         and publishing your designs to share with others."
-        images={[
-          'gremlin_laptop.svg',
-          'Designer_4.svg',
-          'Designer_5.svg',
-          'Designer_6.svg',
-        ]}
+        mainImage="gremlin_laptop.svg"
+        mainLabel="Gremlin Holding a Laptop"
+        images={['Designer_4.svg', 'Designer_5.svg', 'Designer_6.svg']}
         labels={[
-          'Gremlin Holding a Laptop',
           'Creating in Light and Dark modes',
           'Importing your own theme',
           'Easy publishing',
