@@ -13,6 +13,7 @@ import AppHeader from '../../components/AppHeader.js';
 import HeadingLarge from './HeadingLarge.js';
 import HeadingSmall from './HeadingSmall.js';
 import ScreenshotCard from '../../components/ScreenshotCard.js';
+import ToolFooter from '../../components/common/ToolFooter.js';
 
 const Designer = () => (
   <Box>
@@ -138,35 +139,13 @@ const Designer = () => (
         </Box>
       </Box>
       <Box height="xsmall"></Box>
-      <Box background="YellowBackground" pad="large">
-        <Box
-          margin={{ top: 'large', bottom: 'medium' }}
-          alignSelf="center"
-          width="DesignerStart"
-        >
-          <Heading size="small" margin="xsmall" alignSelf="center">
-            Start Using the Designer Now
-          </Heading>
-          <Paragraph
-            textAlign="center"
-            size="large"
-            margin="small"
-            alignSelf="center"
-          >
-            Open the Designer tool and get started by watching a tutorial or
-            just jumping right in to your first design.
-          </Paragraph>
-        </Box>
-        <Button
-          margin={{ bottom: 'small' }}
-          primary
-          alignSelf="center"
-          href="https://designer.grommet.io/"
-          color="white"
-          label="Open Designer"
-        />
-      </Box>
-      <Box pad="xsmall" background="gradient" />
+      <ToolFooter
+        backgroundColor="YellowBackground"
+        headingText="Start Using the Designer Now"
+        description="Open the Designer tool and get started by watching a tutorial or
+        just jumping right in to your first design."
+        buttonLabel="Open Designer"
+      />
     </Main>
   </Box>
 );
