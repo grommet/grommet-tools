@@ -3,7 +3,7 @@ import React from 'react';
 import { Box, Button, Paragraph, Heading, Text } from 'grommet';
 
 const HeadingSmall = ({ title, content, open, link, color }) => (
-  <Box margin={{ top: 'xlarge' }}>
+  <Box margin={{ vertical: 'xlarge' }}>
     <Box margin={{ left: 'xlarge' }}>
       <Text> Grommet Tools </Text>
       <Heading
