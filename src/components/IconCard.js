@@ -3,6 +3,7 @@ import { Card, CardBody } from 'grommet';
 
 const IconCard = ({ margin, icon, size }) => (
   <Card
+    pad="medium"
     margin={margin}
     height={size}
     width={size}
@@ -10,7 +11,9 @@ const IconCard = ({ margin, icon, size }) => (
     background="white"
     round="large"
   >
-    <CardBody>{icon}</CardBody>
+    <CardBody align="center" justify="center">
+      {icon}
+    </CardBody>
   </Card>
 );
 

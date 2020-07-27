@@ -9,10 +9,6 @@ export const grommetToolsTheme = deepMerge(grommet, {
       none: '0px',
     },
     size: {
-      cards: '500px',
-      gradient1: '5px',
-      gradient3: '20px',
-      noCodeBox: '527px',
       none: '0px',
     },
     colors: {
@@ -26,7 +22,6 @@ export const grommetToolsTheme = deepMerge(grommet, {
       TabularGreen: '#9BFAD8',
       noCodeBackground: 'rgba(0,0,0,0.06)',
       YellowBackground: '#FDF074',
-      buttonYellow: '#FDFE74',
       altGrey: '#999999',
       darkGrey: '#666666',
       headingGrey: '#444444',
@@ -41,22 +36,6 @@ export const grommetToolsTheme = deepMerge(grommet, {
     size: {
       customSmall: '36px',
       customLarge: '60px',
-    },
-  },
-  heading: {
-    level: {
-      '1': {
-        customMedium: {
-          size: '72px',
-          height: '88px',
-          maxWidth: '1968px',
-        },
-        customLarge: {
-          size: '100px',
-          height: '120px',
-          maxWidth: '2736px',
-        },
-      },
     },
   },
 });
