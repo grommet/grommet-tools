@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Heading, Paragraph } from 'grommet';
 import ScreenShotRow from './ScreenShotRow';
 
-const Description = ({ tool, content, color, images, labels }) => (
+const Description = ({ title, content, color, images, labels }) => (
   <Box background={color} margin={{ veritcal: 'xlarge' }}>
     <Box
       margin={{
@@ -12,7 +12,7 @@ const Description = ({ tool, content, color, images, labels }) => (
       }}
     >
       <Heading size="large" margin={{ top: 'xlarge', bottom: 'none' }}>
-        What is the {tool}?
+        {title}
       </Heading>
       <Box width="large" margin={{ bottom: 'medium', top: 'none' }}>
         <Paragraph fill size="xxlarge">
