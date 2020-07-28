@@ -1,5 +1,5 @@
-<svg width="384" height="248" viewBox="0 0 384 248" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="384" height="248" fill="#333333"/>
+<svg width="408" height="272" viewBox="0 0 408 272" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="384" height="248"  rx='22' fill="#333333"/>
 <rect x="36" y="27" width="176" height="196" fill="url(#pattern0)"/>
 <g filter="url(#filter0_d)">
 <rect x="247" y="64" width="75" height="33" rx="4" fill="white"/>
