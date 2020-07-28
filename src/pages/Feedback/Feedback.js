@@ -113,6 +113,7 @@ const Feedback = (props) => (
                   background="white"
                   pad="xsmall"
                   direction="row"
+                  width={{ max: '200px' }}
                 >
                   <CardBody direction="row">
                     {item.icon} &nbsp;
