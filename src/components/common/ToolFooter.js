@@ -37,7 +37,6 @@ const ToolFooter = ({
         margin={{ bottom: 'small' }}
         primary
         alignSelf="center"
-        href="https://designer.grommet.io/"
         color="white"
         label={buttonLabel}
         href={buttonHref}
