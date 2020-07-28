@@ -39,7 +39,7 @@ const HomeGrid = () => (
       text="Grommet web-based WSIWG component editor. Use
       pubilshed themes by entering the URL in the context
       of editing the design details."
-      learn="/themer"
+      learnLink="/themer"
     />
     <GridCard
       icon={<Camera size="xlarge" color="ImagerOrange" />}
