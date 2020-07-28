@@ -20,11 +20,19 @@ const Designer = () => (
     <Main>
       <ToolHeader
         mainIcon={<ClearOption size="xxlarge" color="DesignerYellow" />}
-        icon1={<Camera opacity="0.8" size="large" color="ImagerOrange" />}
-        icon2={<Configure opacity="0.9" size="large" color="ThemerOrange" />}
-        icon3={<CloudUpload opacity="0.7" size="large" color="PublisherPink" />}
-        icon4={<Selection opacity="0.5" size="large" color="SlidesBlue" />}
-        icon5={<BarChart opacity="0.3" size="large" color="TabularGreen" />}
+        icon1={<Camera opacity="0.6" size="customLarge" color="ImagerOrange" />}
+        icon2={
+          <Configure opacity="0.7" size="customLarge" color="ThemerOrange" />
+        }
+        icon3={
+          <CloudUpload opacity="0.5" size="customLarge" color="PublisherPink" />
+        }
+        icon4={
+          <Selection opacity="0.4" size="customLarge" color="SlidesBlue" />
+        }
+        icon5={
+          <BarChart opacity="0.3" size="customLarge" color="TabularGreen" />
+        }
         title="Designer"
         content="Grommet Designer is a tool used to build experiences with Grommet
        components; then publish and share your ideas with a simple wysiwg

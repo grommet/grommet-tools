@@ -22,7 +22,7 @@ const HeadingLarge = ({
       <Stack margin={{ top: 'xlarge' }} anchor="left">
         <Box margin={{ top: 'xlarge' }} pad="xsmall" background="gradient" />
         <Box margin={{ top: 'large' }} direction="row">
-          <RotatedIcon>
+          <RotatedIcon rotate="rotate(-5.79deg)">
             <IconCard
               size="medium"
               icon={mainIcon}
@@ -57,18 +57,24 @@ const HeadingLarge = ({
     </Box>
     <Box gap="medium" margin={{ left: 'xlarge', bottom: 'large' }}>
       <Box direction="row" margin={{ left: 'xlarge' }} gap="xlarge">
-        {icon1}
-        {icon2}
+        <RotatedIcon rotate="rotate(7.95deg)">{icon1}</RotatedIcon>
+        <RotatedIcon rotate="rotate(-9.18deg)" margin="-30px 0px 0px 30px">
+          {icon2}
+        </RotatedIcon>
       </Box>
       <Box margin={{ left: 'xlarge' }} direction="row">
-        <Box width="xxsmall"></Box>
-        {icon3}
+        <RotatedIcon rotate="rotate(-11.88deg)" margin="0px 0px 0px 80px">
+          {icon3}
+        </RotatedIcon>
       </Box>
       <Box margin={{ left: 'xlarge' }} direction="row">
-        <Box width="xsmall"></Box>
-        {icon4}
+        <RotatedIcon rotate="rotate(8.83deg)" margin="-15px 0px 0px 160px">
+          {icon4}
+        </RotatedIcon>
       </Box>
-      <Box margin={{ left: 'xlarge' }}>{icon5}</Box>
+      <Box margin={{ left: 'xlarge' }}>
+        <RotatedIcon margin="-30px 0px 0px 20px">{icon5}</RotatedIcon>
+      </Box>
     </Box>
   </Box>
 );

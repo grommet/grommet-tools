@@ -20,13 +20,23 @@ const Slides = () => (
     <Main>
       <ToolHeader
         mainIcon={<Selection size="xxlarge" color="SlidesBlue" />}
-        icon1={<Camera opacity="0.8" size="large" color="ImagerOrange" />}
+        icon1={<Camera opacity="0.6" size="customLarge" color="ImagerOrange" />}
         icon2={
-          <ClearOption opacity="0.9" size="large" color="DesignerYellow" />
+          <ClearOption
+            opacity="0.7"
+            size="customLarge"
+            color="DesignerYellow"
+          />
         }
-        icon3={<CloudUpload opacity="0.7" size="large" color="PublisherPink" />}
-        icon4={<Configure opacity="0.5" size="large" color="ThemerOrange" />}
-        icon5={<BarChart opacity="0.3" size="large" color="TabularGreen" />}
+        icon3={
+          <CloudUpload opacity="0.5" size="customLarge" color="PublisherPink" />
+        }
+        icon4={
+          <Configure opacity="0.4" size="customLarge" color="ThemerOrange" />
+        }
+        icon5={
+          <BarChart opacity="0.3" size="customLarge" color="TabularGreen" />
+        }
         title="Slides"
         content="Grommet Designer is a tool used to build experiences with Grommet
        components; then publish and share your ideas with a simple wysiwg
