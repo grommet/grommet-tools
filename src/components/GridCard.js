@@ -15,6 +15,7 @@ import {
 const GridCard = ({
   buttonColor,
   heading,
+  buttonName,
   icon,
   text,
   learnLink,
@@ -40,7 +41,7 @@ const GridCard = ({
       primary
       href={openLink}
       color={buttonColor}
-      label={heading}
+      label={buttonName}
       margin={{ horizontal: 'medium', vertical: 'small' }}
       alignSelf="start"
     ></Button>
