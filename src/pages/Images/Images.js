@@ -23,8 +23,7 @@ const Images = () => (
         mainIcon={<Camera size="xxlarge" color="ImagerOrange" />}
         icon1={
           <RotatedIcon rotate="rotate(90deg)">
-            {' '}
-            <Selection opacity="0.8" size="large" color="SlidesBlue" />{' '}
+            <Selection opacity="0.8" size="large" color="SlidesBlue" />
           </RotatedIcon>
         }
         icon2={
