@@ -21,7 +21,8 @@ const HomeGrid = () => (
   >
     <GridCard
       icon={<ClearOption color="DesignerYellow" size="xlarge" />}
-      heading="Open Designer"
+      heading="Designer"
+      buttonName="Open Designer"
       buttonColor="DesignerYellow"
       learnLink="/Designer"
       openLink="https://designer.grommet.io/"
@@ -31,7 +32,8 @@ const HomeGrid = () => (
     />
     <GridCard
       icon={<Configure size="xlarge" color="ThemerOrange" />}
-      heading="Open Themer"
+      heading="Themer"
+      buttonName="Open Themer"
       buttonColor="ThemerOrange"
       openLink="https://theme-designer.grommet.io/"
       text="Grommet web-based WSIWG component editor. Use
@@ -41,7 +43,8 @@ const HomeGrid = () => (
     />
     <GridCard
       icon={<Camera size="xlarge" color="ImagerOrange" />}
-      heading="Open Images"
+      heading="Images"
+      buttonName="Open Images"
       buttonColor="ImagerOrange"
       openLink="https://images.grommet.io/"
       text="  Super simple image hosting for your Grommet-based
@@ -50,7 +53,8 @@ const HomeGrid = () => (
     />
     <GridCard
       icon={<CloudUpload size="xlarge" color="PublisherPink" />}
-      heading="Open Publisher"
+      heading="Publisher"
+      buttonName="Open Publisher"
       buttonColor="PublisherPink"
       openLink="https://publisher.grommet.io/"
       text="Think one part lightweight CMS,
@@ -59,7 +63,8 @@ const HomeGrid = () => (
     />
     <GridCard
       icon={<Selection size="xlarge" color="SlidesBlue" />}
-      heading="Open Slides"
+      heading="Slides"
+      buttonName="Open Slides"
       buttonColor="SlidesBlue"
       learnLink="/Slides"
       openLink="https://slides.grommet.io/"
@@ -69,7 +74,8 @@ const HomeGrid = () => (
     />
     <GridCard
       icon={<BarChart size="xlarge" color="TabularGreen" />}
-      heading="Open Tabular"
+      heading="Tabular"
+      buttonName="Open Tabular"
       buttonColor="TabularGreen"
       openLink="https://tabular.grommet.io/"
       text="  If you need a table and have an API or data source,
