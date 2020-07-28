@@ -85,6 +85,7 @@ const HomeGrid = () => (
       text="  If you need a table and have an API or data source,
       choose your columns and create content that is integrated
       with Grommet and the Grommet Designer."
+      learnLink="/tabular"
     />
   </Grid>
 );
