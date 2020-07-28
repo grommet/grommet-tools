@@ -13,13 +13,19 @@ import ToolHeader from '../../components/common/ToolHeader.js';
 import ToolFooter from '../../components/common/ToolFooter.js';
 import CapabilitiesLeft from '../../components/common/CapabilitiesLeft.js';
 import Description from '../../components/common/Description.js';
+import RotatedIcon from '../../components/common/RotatedIcon.js';
 
 const Slides = () => (
   <Box>
     <AppHeader />
     <Main>
       <ToolHeader
-        mainIcon={<Selection size="xxlarge" color="SlidesBlue" />}
+        mainIcon={
+          <RotatedIcon rotate="rotate(90deg)" margin="0px 3px 0px -3px">
+            {' '}
+            <Selection size="xxlarge" color="SlidesBlue" />{' '}
+          </RotatedIcon>
+        }
         icon1={<Camera opacity="0.6" size="customLarge" color="ImagerOrange" />}
         icon2={
           <ClearOption

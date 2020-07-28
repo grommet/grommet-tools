@@ -13,6 +13,7 @@ import ToolHeader from '../../components/common/ToolHeader.js';
 import ToolFooter from '../../components/common/ToolFooter.js';
 import CapabilitiesLeft from '../../components/common/CapabilitiesLeft.js';
 import Description from '../../components/common/Description.js';
+import RotatedIcon from '../../components/common/RotatedIcon.js';
 
 const Designer = () => (
   <Box>
@@ -28,7 +29,14 @@ const Designer = () => (
           <CloudUpload opacity="0.5" size="customLarge" color="PublisherPink" />
         }
         icon4={
-          <Selection opacity="0.4" size="customLarge" color="SlidesBlue" />
+          <RotatedIcon rotate="rotate(90deg)">
+            {' '}
+            <Selection
+              opacity="0.4"
+              size="customLarge"
+              color="SlidesBlue"
+            />{' '}
+          </RotatedIcon>
         }
         icon5={
           <BarChart opacity="0.3" size="customLarge" color="TabularGreen" />
