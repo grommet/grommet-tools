@@ -51,9 +51,9 @@ const Designer = () => (
         mainContent="The Designer puts the power in your hands to create sites with
         built in theming, while leveraging the full extent of grommet’s
         components and props."
-        subContent="Just a few of the Designer’s capabilities include 
-        seamlessly designing in both Light and Dark modes, 
-        importing themes from the Grommet Tools Themer, 
+        subContent="Just a few of the Designer’s capabilities include
+        seamlessly designing in both Light and Dark modes,
+        importing themes from the Grommet Tools Themer,
         and publishing your designs to share with others."
         mainImage="gremlin_laptop.svg"
         mainLabel="Gremlin Holding a Laptop"
@@ -71,6 +71,7 @@ const Designer = () => (
         description="Open the Designer tool and get started by watching a tutorial or
         just jumping right in to your first design."
         buttonLabel="Open Designer"
+        buttonHref="https://designer.grommet.io"
         direction="column"
       />
     </Main>
