@@ -6,6 +6,7 @@ const ToolFooter = ({
   headingText,
   description,
   buttonLabel,
+  buttonHref,
   ...rest
 }) => (
   <Footer gap="none" {...rest}>
@@ -34,6 +35,7 @@ const ToolFooter = ({
         href="https://designer.grommet.io/"
         color="white"
         label={buttonLabel}
+        href={buttonHref}
       />
     </Box>
     <Box pad="xsmall" background="gradient" fill="horizontal" />
