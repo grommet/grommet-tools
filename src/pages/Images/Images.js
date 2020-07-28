@@ -28,41 +28,39 @@ const Images = () => (
         icon4={<Configure opacity="0.5" size="large" color="ThemerOrange" />}
         icon5={<BarChart opacity="0.3" size="large" color="TabularGreen" />}
         title="Images"
-        content="Grommet Designer is a tool used to build experiences with Grommet
-       components; then publish and share your ideas with a simple wysiwg
-       interface"
+        content="Grommet Images is a tool used to host 
+        images and videos. Easily upload and use 
+        seamlessly with all Grommet Tools."
         open="Open Images"
         link="https://images.grommet.io/"
         color="ImagerOrange"
       />
       <Description
         title="What is Images?"
-        content="A free, web-based WSIWG component editor, Grommet Designer is a
-        themeable experience designer baked on top of react and java
-        framework. See some examples from Grommet designers below."
+        content="A free, web-based image host, Grommet Images is 
+        a storage and distribution platform. Grommet Images 
+        supports image, video, and gif files. See some 
+        examples from Grommet Images below."
         color="ImagerOrange"
         images={['Designer_1.svg', 'Designer_2.svg', 'Designer_3.svg']}
-        labels={[
-          'Deisgner File Name',
-          'Deisgner File Name',
-          'Deisgner File Name',
-        ]}
+        labels={['Images File Name', 'Images File Name', 'Images File Name']}
       />
 
       <CapabilitiesLeft
-        mainContent="Slides provides a space to quickly generate and publish 
-        content in minutes. Import a theme, logo, and add copyright details 
-        directly to your page."
-        subContent="Just a few of Slides’ powerful capabilities include using 
-        markup language to quickly create content, easily importing and using 
-        a theme, and being able to publish and share a URL with anyone."
-        mainImage="SlidesGremlin.svg"
-        mainLabel="Gremlin with Slides Icon"
-        images={['Designer_4.svg', 'Designer_5.svg', 'Designer_6.svg']}
+        mainContent="Grommet Images puts the power in your hands to upload 
+        visual files in any format and manage them to aide in creating in 
+        any Grommet Tool."
+        subContent="Just a few of Grommet Images’ capabilities include 
+        supporting image, video, and gif formats, the ability to use the 
+        image URL for use across the Grommet Tools ecosystem, and an 
+        easy-going UI."
+        mainImage="ImagesGremlin.svg"
+        mainLabel="Gremlin with Images Icon"
+        images={['Images_4.svg', 'Images_5.svg', 'Images_6.svg']}
         labels={[
-          'Use Markup language to quickly generate content',
-          'Easily import and use theme',
-          'Publish and share URL with anyone in just a couple clicks',
+          'Supports images, videos, and gifs',
+          'Able to use image URl across all Grommet Tools',
+          'Simple UI to manage files',
         ]}
       />
 
