@@ -30,12 +30,7 @@ const Designer = () => (
         }
         icon4={
           <RotatedIcon rotate="rotate(90deg)">
-            {' '}
-            <Selection
-              opacity="0.4"
-              size="customLarge"
-              color="SlidesBlue"
-            />{' '}
+            <Selection opacity="0.4" size="customLarge" color="SlidesBlue" />
           </RotatedIcon>
         }
         icon5={

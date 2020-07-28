@@ -64,8 +64,7 @@ const HomeGrid = () => (
     <GridCard
       icon={
         <RotatedIcon rotate="rotate(90deg)">
-          {' '}
-          <Selection size="xlarge" color="SlidesBlue" />{' '}
+          <Selection size="xlarge" color="SlidesBlue" />
         </RotatedIcon>
       }
       heading="Slides"
