@@ -22,6 +22,7 @@ import {
   Slack,
 } from 'grommet-icons';
 import AppHeader from '../../components/AppHeader.js';
+import RotatedIcon from '../../components/common/RotatedIcon.js';
 
 const githubCards = [
   {
@@ -50,7 +51,11 @@ const githubCards = [
     link: 'https://github.com/grommet/grommet-tabular',
   },
   {
-    icon: <Selection />,
+    icon: (
+      <RotatedIcon rotate="rotate(90deg)">
+        <Selection />
+      </RotatedIcon>
+    ),
     label: 'Slides /',
     link: 'https://github.com/grommet/grommet-slides',
   },
@@ -108,6 +113,7 @@ const Feedback = (props) => (
                   background="white"
                   pad="xsmall"
                   direction="row"
+                  width={{ max: '200px' }}
                 >
                   <CardBody direction="row">
                     {item.icon} &nbsp;

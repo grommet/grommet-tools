@@ -11,6 +11,7 @@ import {
 } from 'grommet-icons';
 
 import GridCard from './GridCard.js';
+import RotatedIcon from './common/RotatedIcon.js';
 
 const HomeGrid = () => (
   <Grid
@@ -62,7 +63,11 @@ const HomeGrid = () => (
       from Grommet to make it all come together."
     />
     <GridCard
-      icon={<Selection size="xlarge" color="SlidesBlue" />}
+      icon={
+        <RotatedIcon rotate="rotate(90deg)">
+          <Selection size="xlarge" color="SlidesBlue" />
+        </RotatedIcon>
+      }
       heading="Slides"
       buttonName="Open Slides"
       buttonColor="SlidesBlue"
@@ -81,6 +86,7 @@ const HomeGrid = () => (
       text="  If you need a table and have an API or data source,
       choose your columns and create content that is integrated
       with Grommet and the Grommet Designer."
+      learnLink="/tabular"
     />
   </Grid>
 );

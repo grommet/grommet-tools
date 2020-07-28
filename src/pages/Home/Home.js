@@ -25,6 +25,7 @@ import {
 import HomeGrid from '../../components/HomeGrid.js';
 import SmallCard from '../../components/SmallCard.js';
 import AppHeader from '../../components/AppHeader.js';
+import RotatedIcon from '../../components/common/RotatedIcon.js';
 
 const Home = (props) => (
   <Box>
@@ -138,7 +139,12 @@ const Home = (props) => (
                     }
                   >
                     <CardBody margin="small">
-                      <Selection color="SlidesBlue" size="large" />
+                      <RotatedIcon
+                        rotate="rotate(90deg)"
+                        margin="0px 2px 0px -3px"
+                      >
+                        <Selection color="SlidesBlue" size="large" />
+                      </RotatedIcon>
                     </CardBody>
                   </Card>
                   <Card
@@ -302,7 +308,14 @@ const Home = (props) => (
                 />
                 <SmallCard
                   link="https://slides.grommet.io"
-                  icon={<Selection size="customSmall" color="SlidesBlue" />}
+                  icon={
+                    <RotatedIcon
+                      rotate="rotate(90deg)"
+                      margin="-3px 3px -3px -3px"
+                    >
+                      <Selection size="customSmall" color="SlidesBlue" />
+                    </RotatedIcon>
+                  }
                 />
                 <SmallCard
                   link="https://tabular.grommet.io"
@@ -348,7 +361,14 @@ const Home = (props) => (
                   text="Slides"
                   link="https://slides.grommet.io"
                   size="xsmall"
-                  icon={<Selection size="large" color="SlidesBlue" />}
+                  icon={
+                    <RotatedIcon
+                      rotate="rotate(90deg)"
+                      margin="0px 3px 0px -3px"
+                    >
+                      <Selection size="large" color="SlidesBlue" />
+                    </RotatedIcon>
+                  }
                 />
                 <SmallCard
                   text="Tabular"
