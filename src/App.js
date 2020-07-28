@@ -2,6 +2,7 @@ import React from 'react';
 import Home from './pages/Home/Home.js';
 import Feedback from './pages/Feedback/Feedback.js';
 import Designer from './pages/Designer/Designer.js';
+import Images from './pages/Images/Images.js';
 import Slides from './pages/Slides/Slides.js';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { grommetToolsTheme } from './theme.js';
@@ -17,6 +18,9 @@ function App() {
           </Route>
           <Route path="/slides">
             <Slides />
+          </Route>
+          <Route path="/images">
+            <Images />
           </Route>
           <Route path="/feedback">
             <Feedback />

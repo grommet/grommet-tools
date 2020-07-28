@@ -23,7 +23,7 @@ const HomeGrid = () => (
       icon={<ClearOption color="DesignerYellow" size="xlarge" />}
       heading="Open Designer"
       buttonColor="DesignerYellow"
-      learnLink="/Designer"
+      learnLink="/designer"
       openLink="https://designer.grommet.io/"
       text="Grommet web-based WSIWG component editor. Use
       pubilshed themes by entering the URL in the context
@@ -42,6 +42,7 @@ const HomeGrid = () => (
       icon={<Camera size="xlarge" color="ImagerOrange" />}
       heading="Open Images"
       buttonColor="ImagerOrange"
+      learnLink="/images"
       openLink="https://images.grommet.io/"
       text="  Super simple image hosting for your Grommet-based
       projects. Works great with Publisher, Slides, and
@@ -60,7 +61,7 @@ const HomeGrid = () => (
       icon={<Selection size="xlarge" color="SlidesBlue" />}
       heading="Open Slides"
       buttonColor="SlidesBlue"
-      learnLink="/Slides"
+      learnLink="/slides"
       openLink="https://slides.grommet.io/"
       text="Similar to the Grommet Publisher and using
       Markdown and some shortcuts to make presenting easy,

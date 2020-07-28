@@ -1,0 +1,81 @@
+import React from 'react';
+import { Box, Main } from 'grommet';
+import {
+  ClearOption,
+  Configure,
+  Camera,
+  CloudUpload,
+  Selection,
+  BarChart,
+} from 'grommet-icons';
+import AppHeader from '../../components/AppHeader.js';
+import ToolHeader from '../../components/common/ToolHeader.js';
+import ToolFooter from '../../components/common/ToolFooter.js';
+import CapabilitiesLeft from '../../components/common/CapabilitiesLeft.js';
+import Description from '../../components/common/Description.js';
+
+const Images = () => (
+  <Box>
+    <AppHeader />
+    <Main>
+      <ToolHeader
+        mainIcon={<Camera size="xxlarge" color="ImagerOrange" />}
+        icon1={<Selection opacity="0.8" size="large" color="SlidesBlue" />}
+        icon2={
+          <ClearOption opacity="0.9" size="large" color="DesignerYellow" />
+        }
+        icon3={<CloudUpload opacity="0.7" size="large" color="PublisherPink" />}
+        icon4={<Configure opacity="0.5" size="large" color="ThemerOrange" />}
+        icon5={<BarChart opacity="0.3" size="large" color="TabularGreen" />}
+        title="Images"
+        content="Grommet Designer is a tool used to build experiences with Grommet
+       components; then publish and share your ideas with a simple wysiwg
+       interface"
+        open="Open Images"
+        link="https://images.grommet.io/"
+        color="ImagerOrange"
+      />
+      <Description
+        title="What is Images?"
+        content="A free, web-based WSIWG component editor, Grommet Designer is a
+        themeable experience designer baked on top of react and java
+        framework. See some examples from Grommet designers below."
+        color="ImagerOrange"
+        images={['Designer_1.svg', 'Designer_2.svg', 'Designer_3.svg']}
+        labels={[
+          'Deisgner File Name',
+          'Deisgner File Name',
+          'Deisgner File Name',
+        ]}
+      />
+
+      <CapabilitiesLeft
+        mainContent="Slides provides a space to quickly generate and publish 
+        content in minutes. Import a theme, logo, and add copyright details 
+        directly to your page."
+        subContent="Just a few of Slides’ powerful capabilities include using 
+        markup language to quickly create content, easily importing and using 
+        a theme, and being able to publish and share a URL with anyone."
+        mainImage="SlidesGremlin.svg"
+        mainLabel="Gremlin with Slides Icon"
+        images={['Designer_4.svg', 'Designer_5.svg', 'Designer_6.svg']}
+        labels={[
+          'Use Markup language to quickly generate content',
+          'Easily import and use theme',
+          'Publish and share URL with anyone in just a couple clicks',
+        ]}
+      />
+
+      <ToolFooter
+        backgroundColor="ImagerOrange"
+        headingText="Start Using Images Now"
+        description="Open the Slides tool and get started by watching a 
+        tutorial or just jumping right in to your first publication."
+        buttonLabel="Open Images"
+        direction="column"
+      />
+    </Main>
+  </Box>
+);
+
+export default Images;
