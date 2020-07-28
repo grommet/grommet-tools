@@ -30,7 +30,11 @@ const CapabilitiesLeft = ({
         align="end"
         margin={{ left: 'xlarge', top: 'medium' }}
       >
-        <Heading size="large" margin={{ bottom: 'none', top: 'xlarge' }}>
+        <Heading
+          size="large"
+          margin={{ bottom: 'none', top: 'xlarge' }}
+          alignSelf="start"
+        >
           Capabilities
         </Heading>
         <Box width="medium" margin={{ right: 'large' }}>
