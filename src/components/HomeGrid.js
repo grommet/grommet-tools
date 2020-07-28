@@ -61,6 +61,7 @@ const HomeGrid = () => (
       icon={<Selection size="xlarge" color="SlidesBlue" />}
       heading="Open Slides"
       buttonColor="SlidesBlue"
+      learnLink="/Slides"
       openLink="https://slides.grommet.io/"
       text="Similar to the Grommet Publisher and using
       Markdown and some shortcuts to make presenting easy,
