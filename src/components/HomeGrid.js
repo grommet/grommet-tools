@@ -52,6 +52,7 @@ const HomeGrid = () => (
       heading="Open Publisher"
       buttonColor="PublisherPink"
       openLink="https://publisher.grommet.io/"
+      learnLink="/publisher"
       text="Think one part lightweight CMS,
       one part Markdown, and some special sauce
       from Grommet to make it all come together."
