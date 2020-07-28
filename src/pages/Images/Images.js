@@ -13,6 +13,7 @@ import ToolHeader from '../../components/common/ToolHeader.js';
 import ToolFooter from '../../components/common/ToolFooter.js';
 import CapabilitiesLeft from '../../components/common/CapabilitiesLeft.js';
 import Description from '../../components/common/Description.js';
+import RotatedIcon from '../../components/common/RotatedIcon.js';
 
 const Images = () => (
   <Box>
@@ -20,7 +21,12 @@ const Images = () => (
     <Main>
       <ToolHeader
         mainIcon={<Camera size="xxlarge" color="ImagerOrange" />}
-        icon1={<Selection opacity="0.8" size="large" color="SlidesBlue" />}
+        icon1={
+          <RotatedIcon rotate="rotate(90deg)">
+            {' '}
+            <Selection opacity="0.8" size="large" color="SlidesBlue" />{' '}
+          </RotatedIcon>
+        }
         icon2={
           <ClearOption opacity="0.9" size="large" color="DesignerYellow" />
         }
