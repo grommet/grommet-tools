@@ -11,6 +11,7 @@ import {
 } from 'grommet-icons';
 
 import GridCard from './GridCard.js';
+import RotatedIcon from './common/RotatedIcon.js';
 
 const HomeGrid = () => (
   <Grid
@@ -61,7 +62,11 @@ const HomeGrid = () => (
       from Grommet to make it all come together."
     />
     <GridCard
-      icon={<Selection size="xlarge" color="SlidesBlue" />}
+      icon={
+        <RotatedIcon rotate="rotate(90deg)">
+          <Selection size="xlarge" color="SlidesBlue" />
+        </RotatedIcon>
+      }
       heading="Slides"
       buttonName="Open Slides"
       buttonColor="SlidesBlue"
