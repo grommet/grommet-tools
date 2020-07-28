@@ -35,7 +35,7 @@ const Publisher = () => (
         color="PublisherPink"
       />
       <Description
-        tool="Publisher"
+        title="Publisher"
         content="A free, web-based documentation generator, the Publisher combines the
         freedom of markup language with the efficiency of built-in text and button components.
          See examples of the Publisher below."
