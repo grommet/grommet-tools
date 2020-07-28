@@ -27,52 +27,50 @@ const Themer = () => (
         icon3={<CloudUpload opacity="0.7" size="large" color="PublisherPink" />}
         icon4={<Selection opacity="0.5" size="large" color="SlidesBlue" />}
         icon5={<BarChart opacity="0.3" size="large" color="TabularGreen" />}
-        title="Publisher"
-        content="Grommet Publisher is a tools used to build simple and beautiful documentation.
-        Quickly generate content, generate a themer, and share the site URL with anyone in just a few clicks"
-        open="Open Publisher"
-        link="https://publisher.grommet.io/"
-        color="PublisherPink"
+        title="Themer"
+        content="Grommet Themer is a tool used to build themes with specified features
+        such as colors and fonts; then publish and distrubite them across multiple Grommet
+        projects."
+        open="Open Themer"
+        link="https://theme-designer.grommet.io/"
+        color="ThemerOrange"
       />
       <Description
-        tool="Publisher"
-        content="A free, web-based documentation generator, the Publisher combines the
-        freedom of markup language with the efficiency of built-in text and button components.
-         See examples of the Publisher below."
-        color="PublisherPink"
+        title="What is the Themer?"
+        content=" A free, web-based theme designer, Grommet Themer builds themes that
+        specify all visual branding features: typography, color, and more. Share and
+        distribute themes by publishing and generating a unique URL."
+        color="ThemerOrange"
         images={['Designer_1.svg', 'Designer_2.svg', 'Designer_3.svg']}
-        labels={[
-          'Publisher File Name',
-          'Publisher File Name',
-          'Publisher File Name',
-        ]}
+        labels={['Themer File Name', 'Themer File Name', 'Themer File Name']}
       />
 
       <CapabilitiesRight
-        mainContent="The Publisher provides a space to quickly generate and publish
-        content in minutes. Import a theme, logo, and add copyright details
-        directly to your page."
-        subContent="Just a few of the Publisher’s powerful capabilities
-        include using markup language to quickly create content, easily
-        importing and using a theme, and being able to publish and
-        share a URL with anyone."
-        mainImage="PublisherGremlin.svg"
+        mainContent="The Themer has the power to provide visual
+        consistency to all of your projects.
+         No need to repeat yourself; create a theme once and use
+         it everywhere. "
+        subContent="Just a few of the Themer’s capabilities include
+        the abilty to publish and distribute your theme with a unique URL,
+        specify details like rounding, spacing, and font scale, and define
+        all colors and fonts."
+        mainImage="ThemerLaptop.svg"
         mainLabel="Gremlin Holding a Publisher Icon"
-        images={['Publisher_1.svg', 'Designer_5.svg', 'Publisher_2.svg']}
+        images={['Themer_1.svg', 'Themer_2.svg', 'Themer_3.svg']}
         labels={[
-          'Use Markup language to quickly generate content',
-          'Easily import and use theme',
-          'Publish and share URL with anyone in just a couple clicks',
+          'Distribute themes to use with multiple projects',
+          'Specify rounding, base spacing, & font scale',
+          'Define all colors & fonts to maintain consistency ',
         ]}
       />
 
       <ToolFooter
-        backgroundColor="PublisherPink"
-        headingText="Start Using the Publisher Now"
-        description="Open the Publisher tool and get started by watching a tutorial or
+        backgroundColor="ThemerOrange"
+        headingText="Start Using the Themer"
+        description="Open the Themer tool and get started by watching a tutorial or
         just jumping right in to your first design."
-        buttonLabel="Open Publisher"
-        buttonHref="https://publisher.grommet.io"
+        buttonLabel="Open Themer"
+        buttonHref="https://theme-designer.grommet.io"
         direction="column"
       />
     </Main>
