@@ -21,7 +21,7 @@ const GridCard = ({
   learnLink,
   openLink,
 }) => (
-  <Card background="rgb(255,255,255)">
+  <Card round="medium" background="rgb(255,255,255)">
     <Box margin={{ horizontal: 'medium', top: 'large' }}>{icon}</Box>
     <CardHeader>
       <Heading margin={{ horizontal: 'medium', vertical: 'xsmall' }}>

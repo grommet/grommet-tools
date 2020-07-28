@@ -15,9 +15,10 @@ import GridCard from './GridCard.js';
 const HomeGrid = () => (
   <Grid
     columns={{ count: 'fill', size: 'medium' }}
-    gap="medium"
+    gap="large"
     rows="auto"
     margin={{ horizontal: 'xlarge', top: 'small', bottom: '-30px' }}
+    alignSelf="center"
   >
     <GridCard
       icon={<ClearOption color="DesignerYellow" size="xlarge" />}
