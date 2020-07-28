@@ -53,8 +53,7 @@ const githubCards = [
   {
     icon: (
       <RotatedIcon rotate="rotate(90deg)">
-        {' '}
-        <Selection />{' '}
+        <Selection />
       </RotatedIcon>
     ),
     label: 'Slides /',

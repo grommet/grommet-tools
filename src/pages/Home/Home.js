@@ -313,8 +313,7 @@ const Home = (props) => (
                       rotate="rotate(90deg)"
                       margin="-3px 3px -3px -3px"
                     >
-                      {' '}
-                      <Selection size="customSmall" color="SlidesBlue" />{' '}
+                      <Selection size="customSmall" color="SlidesBlue" />
                     </RotatedIcon>
                   }
                 />
@@ -367,8 +366,7 @@ const Home = (props) => (
                       rotate="rotate(90deg)"
                       margin="0px 3px 0px -3px"
                     >
-                      {' '}
-                      <Selection size="large" color="SlidesBlue" />{' '}
+                      <Selection size="large" color="SlidesBlue" />
                     </RotatedIcon>
                   }
                 />

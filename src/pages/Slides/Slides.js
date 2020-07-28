@@ -22,8 +22,7 @@ const Slides = () => (
       <ToolHeader
         mainIcon={
           <RotatedIcon rotate="rotate(90deg)" margin="0px 3px 0px -3px">
-            {' '}
-            <Selection size="xxlarge" color="SlidesBlue" />{' '}
+            <Selection size="xxlarge" color="SlidesBlue" />
           </RotatedIcon>
         }
         icon1={<Camera opacity="0.6" size="customLarge" color="ImagerOrange" />}
