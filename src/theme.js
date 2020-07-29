@@ -18,7 +18,7 @@ export const grommetToolsTheme = deepMerge(grommet, {
       ThemerOrange: '#F9D36E',
       ImagerOrange: '#F4AD68',
       PublisherPink: '#FFD8D8',
-      SlidesBlue: '#ABEFFC',
+      SlidesBlue: '#6AE4FB',
       TabularGreen: '#9BFAD8',
       noCodeBackground: 'rgba(0,0,0,0.06)',
       YellowBackground: '#FDF074',
