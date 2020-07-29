@@ -84,7 +84,6 @@ const Designer = () => (
         buttonLabel="Open Designer"
         buttonHref="https://designer.grommet.io"
         direction="column"
-        buttonHref="https://designer.grommet.io"
       />
     </Main>
   </Box>
