@@ -52,9 +52,9 @@ const Home = (props) => (
           width="medium"
         >
           <Text size="xlarge">
-            A suite of tools to create even more with&nbsp;
+            A suite of tools to create even more with&#32;&#8203;
             <Anchor label="Grommet" href="https://v2.grommet.io/" />
-            &nbsp;components without the stress of handling code.
+            &#8203;&#32;components without the stress of handling code.
           </Text>
         </Box>
         <ResponsiveContext.Consumer>
