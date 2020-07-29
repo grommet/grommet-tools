@@ -51,7 +51,7 @@ const Home = (props) => (
           }}
           width="medium"
         >
-          <Text size="xlarge" wordBreak="break-word">
+          <Text size="xlarge">
             A suite of tools to create even more with&#32;&#8203;
             <Anchor label="Grommet" href="https://v2.grommet.io/" />
             &#8203;&#32;components without the stress of handling code.
