@@ -1,33 +1,15 @@
-import AppHeader from './AppHeader.js';
-import GridCard from './GridCard.js';
-import HomeGrid from './HomeGrid.js';
-import IconCard from './IconCard.js';
-import ScreenshotCard from './ScreenshotCard.js';
-import SmallCard from './SmallCard.js';
-import CapabilitiesLeft from './common/CapabilitiesLeft.js';
-import CapabilitiesRight from './common/CapabilitiesRight.js';
-import Description from './common/Description.js';
-import HeadingLarge from './common/HeadingLarge.js';
-import HeadingSmall from './common/HeadingSmall.js';
-import RotatedIcon from './common/RotatedIcon.js';
-import ScreenShotRow from './common/ScreenShotRow.js';
-import ToolFooter from './common/ToolFooter.js';
-import ToolHeader from './common/ToolHeader.js';
-
-export {
-  AppHeader,
-  GridCard,
-  HomeGrid,
-  IconCard,
-  ScreenshotCard,
-  SmallCard,
-  CapabilitiesLeft,
-  CapabilitiesRight,
-  Description,
-  HeadingLarge,
-  HeadingSmall,
-  RotatedIcon,
-  ScreenShotRow,
-  ToolFooter,
-  ToolHeader,
-};
+export { AppHeader } from './AppHeader.js';
+export { GridCard } from './GridCard.js';
+export { HomeGrid } from './HomeGrid.js';
+export { IconCard } from './IconCard.js';
+export { ScreenshotCard } from './ScreenshotCard.js';
+export { SmallCard } from './SmallCard.js';
+export { CapabilitiesLeft } from './common/CapabilitiesLeft.js';
+export { CapabilitiesRight } from './common/CapabilitiesRight.js';
+export { Description } from './common/Description.js';
+export { HeadingLarge } from './common/HeadingLarge.js';
+export { HeadingSmall } from './common/HeadingSmall.js';
+export { RotatedIcon } from './common/RotatedIcon.js';
+export { ScreenShotRow } from './common/ScreenShotRow.js';
+export { ToolFooter } from './common/ToolFooter.js';
+export { ToolHeader } from './common/ToolHeader.js';

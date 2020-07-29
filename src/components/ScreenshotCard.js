@@ -13,4 +13,4 @@ const ScreenshotCard = ({ label, src, a11yTitle }) => (
     </Text>
   </Box>
 );
-export default ScreenshotCard;
+export { ScreenshotCard };

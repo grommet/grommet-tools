@@ -17,4 +17,4 @@ const AppHeader = () => (
     </Box>
   </Header>
 );
-export default AppHeader;
+export { AppHeader };

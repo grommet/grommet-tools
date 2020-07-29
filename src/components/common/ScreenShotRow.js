@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box } from 'grommet';
-import ScreenshotCard from '../ScreenshotCard.js';
+import { ScreenshotCard } from '../index.js';
 
 const ScreenShotRow = ({ src, label, ...rest }) => (
   <Box direction="row-responsive" justify="center" gap="large" {...rest}>
@@ -9,4 +9,4 @@ const ScreenShotRow = ({ src, label, ...rest }) => (
     ))}
   </Box>
 );
-export default ScreenShotRow;
+export { ScreenShotRow };

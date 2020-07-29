@@ -1,8 +1,6 @@
 import React from 'react';
 import { ResponsiveContext } from 'grommet';
-
-import HeadingLarge from './HeadingLarge.js';
-import HeadingSmall from './HeadingSmall.js';
+import { HeadingLarge, HeadingSmall } from '../index.js';
 
 const ToolHeader = ({
   mainIcon,
@@ -45,4 +43,4 @@ const ToolHeader = ({
     }
   </ResponsiveContext.Consumer>
 );
-export default ToolHeader;
+export { ToolHeader };

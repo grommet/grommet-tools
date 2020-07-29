@@ -46,4 +46,4 @@ const ToolFooter = ({
   </Footer>
 );
 
-export default ToolFooter;
+export { ToolFooter };

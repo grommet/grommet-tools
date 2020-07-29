@@ -29,4 +29,4 @@ const HeadingSmall = ({ title, content, open, link, color }) => (
     </Box>
   </Box>
 );
-export default HeadingSmall;
+export { HeadingSmall };

@@ -9,9 +9,7 @@ import {
   Selection,
   BarChart,
 } from 'grommet-icons';
-
-import GridCard from './GridCard.js';
-import RotatedIcon from './common/RotatedIcon.js';
+import { GridCard, RotatedIcon } from './index.js';
 
 const HomeGrid = () => (
   <Grid
@@ -90,4 +88,4 @@ const HomeGrid = () => (
   </Grid>
 );
 
-export default HomeGrid;
+export { HomeGrid };
