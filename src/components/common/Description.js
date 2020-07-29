@@ -11,10 +11,18 @@ const Description = ({ title, content, color, images, labels }) => (
         bottom: 'medium',
       }}
     >
-      <Heading size="large" margin={{ top: 'xlarge', bottom: 'none' }}>
+      <Heading
+        size="large"
+        margin={{ top: 'xlarge', bottom: 'none', horizontal: 'large' }}
+        justify="around"
+      >
         {title}
       </Heading>
-      <Box width="large" margin={{ bottom: 'medium', top: 'none' }}>
+      <Box
+        width="large"
+        margin={{ bottom: 'medium', top: 'none', horizontal: 'large' }}
+        justify="around"
+      >
         <Paragraph fill size="xxlarge">
           {content}
         </Paragraph>
@@ -24,6 +32,7 @@ const Description = ({ title, content, color, images, labels }) => (
         gap="medium"
         src={images}
         label={labels}
+        justify="around"
       />
     </Box>
   </Box>
