@@ -3,6 +3,7 @@ import Home from './pages/Home/Home.js';
 import Feedback from './pages/Feedback/Feedback.js';
 import Designer from './pages/Designer/Designer.js';
 import Slides from './pages/Slides/Slides.js';
+import Tabular from './pages/Tabular/Tabular.js';
 import Themer from './pages/Themer/Themer.js';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { grommetToolsTheme } from './theme.js';
@@ -24,6 +25,9 @@ function App() {
           </Route>
           <Route path="/feedback">
             <Feedback />
+          </Route>
+          <Route path="/tabular">
+            <Tabular />
           </Route>
           <Route path="/">
             <Home />

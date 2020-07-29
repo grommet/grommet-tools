@@ -37,7 +37,7 @@ const CapabilitiesLeft = ({
         >
           Capabilities
         </Heading>
-        <Box width="medium">
+        <Box width="medium" margin={{ right: 'large' }}>
           <Paragraph size="xxlarge" color="darkGrey" fill>
             {mainContent}
           </Paragraph>
