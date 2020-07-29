@@ -20,6 +20,7 @@ const GridCard = ({
   text,
   learnLink,
   openLink,
+  a11yTitle,
 }) => (
   <Card background="rgb(255,255,255)">
     <Box margin={{ horizontal: 'medium', top: 'large' }} align="start">
@@ -56,6 +57,7 @@ const GridCard = ({
       <Anchor
         alignSelf="center"
         href={learnLink}
+        a11yTitle={a11yTitle}
         margin="small"
         label="Learn More"
       />

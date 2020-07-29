@@ -56,114 +56,142 @@ const Home = (props) => (
         >
           <Text size="xlarge">
             A suite of tools to create even more with&nbsp;
-            <Text size="xlarge" color="brand">
-              Grommet&nbsp;
-            </Text>
-            components without the stress of handling code.
+            <Anchor label="Grommet" />
+            &nbsp;components without the stress of handling code.
           </Text>
         </Box>
         <ResponsiveContext.Consumer>
           {(responsive) =>
-            responsive !== 'small' && responsive !== 'xsmall' ? (
+            responsive === 'medium' ||
+            responsive === 'large' ||
+            responsive === 'xlarge' ? (
               <Box
                 margin={
                   responsive === 'medium'
                     ? {
                         top: 'small',
                         left: 'small',
-                        right: 'xlarge',
+                        right: 'small',
                         bottom: 'large',
                       }
                     : {
                         top: 'small',
                         left: 'small',
-                        right: '300px',
+                        right: 'xlarge',
                         bottom: 'large',
                       }
                 }
                 pad={{ right: 'xlarge' }}
-                justify="around"
               >
                 <Box direction="row" gap={responsive}>
-                  <Card
-                    margin={
-                      responsive === 'medium'
-                        ? { right: 'large' }
-                        : { right: 'xlarge' }
-                    }
-                    animation={{ type: 'jiggle', duration: 1000 }}
-                    onClick={() =>
-                      window.open('https://designer.grommet.io', '_self')
-                    }
+                  <RotatedIcon
+                    rotate="rotate(-5.79deg)"
+                    margin="30px 0px -20px 0px"
                   >
-                    <CardBody margin="small">
-                      <ClearOption color="DesignerYellow" size="large" />
-                    </CardBody>
-                  </Card>
-                  <Card
-                    margin={{ left: 'large' }}
-                    animation={{ type: 'jiggle', duration: 1000, delay: 1000 }}
-                    onClick={() =>
-                      window.open('https://publisher.grommet.io', '_self')
-                    }
+                    <Card
+                      margin={
+                        responsive === 'medium'
+                          ? { right: 'large' }
+                          : { right: 'xlarge' }
+                      }
+                      animation={{ type: 'jiggle', duration: 2000 }}
+                      onClick={() =>
+                        window.open('https://designer.grommet.io', '_self')
+                      }
+                    >
+                      <CardBody margin="small">
+                        <ClearOption color="DesignerYellow" size="large" />
+                      </CardBody>
+                    </Card>
+                  </RotatedIcon>
+                  <RotatedIcon
+                    rotate="rotate(2.79deg)"
+                    margin="5px 0px 0px 0px"
                   >
-                    <CardBody margin="small">
-                      <Configure color="ThemerOrange" size="large" />
-                    </CardBody>
-                  </Card>
+                    <Card
+                      margin={{ left: 'large' }}
+                      animation={{
+                        type: 'jiggle',
+                        duration: 1100,
+                        delay: 1000,
+                      }}
+                      onClick={() =>
+                        window.open('https://publisher.grommet.io', '_self')
+                      }
+                    >
+                      <CardBody margin="small">
+                        <Configure color="ThemerOrange" size="large" />
+                      </CardBody>
+                    </Card>
+                  </RotatedIcon>
                 </Box>
                 <Box direction="row" pad={{ left: 'large', right: 'large' }}>
-                  <Card
-                    alignSelf="center"
-                    margin={{ horizontal: responsive }}
-                    animation={{ type: 'jiggle', duration: 1000, delay: 750 }}
-                    onClick={() =>
-                      window.open('https://theme-designer.grommet.io', '_self')
-                    }
+                  <RotatedIcon
+                    rotate="rotate(9.22deg)"
+                    margin="10px 0px 0px 30px"
                   >
-                    <CardBody margin="small">
-                      <CloudUpload color="PublisherPink" size="large" />
-                    </CardBody>
-                  </Card>
+                    <Card
+                      alignSelf="center"
+                      margin={{ horizontal: responsive }}
+                      animation={{ type: 'jiggle', duration: 2200, delay: 750 }}
+                      onClick={() =>
+                        window.open(
+                          'https://theme-designer.grommet.io',
+                          '_self',
+                        )
+                      }
+                    >
+                      <CardBody margin="small">
+                        <CloudUpload color="PublisherPink" size="large" />
+                      </CardBody>
+                    </Card>
+                  </RotatedIcon>
                 </Box>
                 <Box
                   direction="row"
                   gap={responsive}
                   margin={{ bottom: 'small' }}
                 >
-                  <Card
-                    animation={{ type: 'jiggle', duration: 1000, delay: 400 }}
-                    margin={{ right: 'large' }}
-                    onClick={() =>
-                      window.open('https://slides.grommet.io', '_self')
-                    }
+                  <RotatedIcon margin="10px 0px 0px -20px">
+                    <Card
+                      animation={{ type: 'jiggle', duration: 1000, delay: 400 }}
+                      margin={{ right: 'large' }}
+                      onClick={() =>
+                        window.open('https://tabular.grommet.io', '_self')
+                      }
+                    >
+                      <CardBody margin="small">
+                        <BarChart color="TabularGreen" size="large" />
+                      </CardBody>
+                    </Card>
+                  </RotatedIcon>
+                  <RotatedIcon
+                    rotate="rotate(-3.69deg)"
+                    margin="0px 0px 0px 60px"
                   >
-                    <CardBody margin="small">
-                      <RotatedIcon
-                        rotate="rotate(90deg)"
-                        margin="0px 2px 0px -3px"
-                      >
-                        <Selection color="SlidesBlue" size="large" />
-                      </RotatedIcon>
-                    </CardBody>
-                  </Card>
-                  <Card
-                    alignSelf="center"
-                    margin={{ left: 'large' }}
-                    animation={{ type: 'jiggle', duration: 1000, delay: 600 }}
-                    onClick={() =>
-                      window.open('https://tabular.grommet.io', '_self')
-                    }
-                  >
-                    <CardBody margin="small">
-                      <BarChart color="TabularGreen" size="large" />
-                    </CardBody>
-                  </Card>
+                    <Card
+                      alignSelf="center"
+                      margin={{ left: 'large' }}
+                      animation={{ type: 'jiggle', duration: 2300, delay: 600 }}
+                      onClick={() =>
+                        window.open('https://slides.grommet.io', '_self')
+                      }
+                    >
+                      <CardBody margin="small">
+                        <RotatedIcon
+                          rotate="rotate(90deg)"
+                          margin="0px 2px 0px -3px"
+                        >
+                          <Selection color="SlidesBlue" size="large" />
+                        </RotatedIcon>
+                      </CardBody>
+                    </Card>
+                  </RotatedIcon>
                 </Box>
                 <Box>
                   <Card
                     alignSelf="center"
-                    animation={{ type: 'jiggle', duration: 1000, delay: 550 }}
+                    animation={{ type: 'jiggle', duration: 1200, delay: 550 }}
                     onClick={() =>
                       window.open('https://images.grommet.io', '_self')
                     }
