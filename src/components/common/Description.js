@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Heading, Paragraph } from 'grommet';
-import ScreenShotRow from './ScreenShotRow';
+import { ScreenShotRow } from '../index.js';
 
 const Description = ({ title, content, color, images, labels }) => (
   <Box background={color} margin={{ veritcal: 'xlarge' }}>
@@ -29,4 +29,4 @@ const Description = ({ title, content, color, images, labels }) => (
   </Box>
 );
 
-export default Description;
+export { Description };

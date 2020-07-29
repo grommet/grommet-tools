@@ -64,4 +64,4 @@ const GridCard = ({
     </CardFooter>
   </Card>
 );
-export default GridCard;
+export { GridCard };

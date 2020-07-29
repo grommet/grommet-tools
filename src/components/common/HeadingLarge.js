@@ -1,8 +1,7 @@
 import React from 'react';
 
 import { Box, Button, Paragraph, Heading, Stack, Text } from 'grommet';
-import IconCard from '../IconCard.js';
-import RotatedIcon from './RotatedIcon';
+import { IconCard, RotatedIcon } from '../index.js';
 
 const HeadingLarge = ({
   mainIcon,
@@ -78,4 +77,4 @@ const HeadingLarge = ({
     </Box>
   </Box>
 );
-export default HeadingLarge;
+export { HeadingLarge };

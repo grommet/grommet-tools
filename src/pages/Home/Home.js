@@ -22,10 +22,7 @@ import {
   Github,
   Slack,
 } from 'grommet-icons';
-import HomeGrid from '../../components/HomeGrid.js';
-import SmallCard from '../../components/SmallCard.js';
-import AppHeader from '../../components/AppHeader.js';
-import RotatedIcon from '../../components/common/RotatedIcon.js';
+import { AppHeader, HomeGrid, SmallCard, RotatedIcon } from '../../components';
 
 const Home = (props) => (
   <Box>
