@@ -22,7 +22,7 @@ const GridCard = ({
   openLink,
   a11yTitle,
 }) => (
-  <Card background="rgb(255,255,255)">
+  <Card round="medium" background="rgb(255,255,255)">
     <Box margin={{ horizontal: 'medium', top: 'large' }} align="start">
       {icon}
     </Box>
