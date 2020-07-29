@@ -72,8 +72,8 @@ const HeadingLarge = ({
           {icon4}
         </RotatedIcon>
       </Box>
-      <Box margin={{ left: 'xlarge' }}>
-        <RotatedIcon margin="-30px 0px 0px 20px">{icon5}</RotatedIcon>
+      <Box margin={{ left: 'xlarge' }} direction="row">
+        <RotatedIcon margin="0px 0px 0px 0px">{icon5}</RotatedIcon>
       </Box>
     </Box>
   </Box>
