@@ -56,7 +56,7 @@ const Home = (props) => (
         >
           <Text size="xlarge">
             A suite of tools to create even more with&nbsp;
-            <Anchor label="Grommet" />
+            <Anchor label="Grommet" href="https://v2.grommet.io/" />
             &nbsp;components without the stress of handling code.
           </Text>
         </Box>
