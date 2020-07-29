@@ -15,13 +15,16 @@ import {
 const GridCard = ({
   buttonColor,
   heading,
+  buttonName,
   icon,
   text,
   learnLink,
   openLink,
 }) => (
   <Card background="rgb(255,255,255)">
-    <Box margin={{ horizontal: 'medium', top: 'large' }}>{icon}</Box>
+    <Box margin={{ horizontal: 'medium', top: 'large' }} align="start">
+      {icon}
+    </Box>
     <CardHeader>
       <Heading margin={{ horizontal: 'medium', vertical: 'xsmall' }}>
         {heading}
@@ -40,7 +43,7 @@ const GridCard = ({
       primary
       href={openLink}
       color={buttonColor}
-      label={heading}
+      label={buttonName}
       margin={{ horizontal: 'medium', vertical: 'small' }}
       alignSelf="start"
     ></Button>

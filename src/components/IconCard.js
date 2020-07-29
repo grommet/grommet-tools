@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardBody } from 'grommet';
+import { Card } from 'grommet';
 
 const IconCard = ({ margin, icon, size }) => (
   <Card
@@ -11,9 +11,7 @@ const IconCard = ({ margin, icon, size }) => (
     background="white"
     round="large"
   >
-    <CardBody align="center" justify="center">
-      {icon}
-    </CardBody>
+    {icon}
   </Card>
 );
 
