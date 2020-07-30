@@ -79,18 +79,19 @@ const Feedback = (props) => (
         columns={{ count: 'fill', size: 'medium' }}
         rows="auto"
         gap="xlarge"
+        margin={{ horizontal: 'small' }}
       >
         <Box>
           <Heading size="small">
             <Github color="headingGrey" /> Share feedback on Github
           </Heading>
 
-          <Paragraph fill pad={{ right: 'large' }}>
+          <Paragraph fill pad={{ horizontal: 'medium' }}>
             Submit feedback on Grommet Tools on Github. Here, you can help
             improve the tools and connect with other Grommet Tools lovers.
           </Paragraph>
 
-          <Box pad={{ right: 'large' }}>
+          <Box pad={{ horizontal: 'medium' }}>
             <Grid
               columns="small"
               gap={{ row: 'medium', column: 'medium' }}
