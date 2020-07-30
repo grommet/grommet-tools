@@ -7,7 +7,6 @@ import {
   CardBody,
   Heading,
   Image,
-  Main,
   Text,
 } from 'grommet';
 import {
