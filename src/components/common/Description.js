@@ -10,25 +10,26 @@ const Description = ({ title, content, color, images, labels }) => (
         horizontal: 'xlarge',
         bottom: 'medium',
       }}
+      align=""
     >
       <Heading
         size="large"
-        margin={{ top: 'xlarge', bottom: 'none', horizontal: 'large' }}
-        justify="around"
+        margin={{ top: 'xlarge', bottom: 'none', horizontal: 'xlarge' }}
+        alignSelf="start"
       >
         {title}
       </Heading>
       <Box
         width="large"
-        margin={{ bottom: 'medium', top: 'none', horizontal: 'large' }}
-        justify="around"
+        margin={{ bottom: 'medium', top: 'none', horizontal: 'xlarge' }}
+        alignSelf="start"
       >
         <Paragraph fill size="xxlarge">
           {content}
         </Paragraph>
       </Box>
       <ScreenShotRow
-        margin={{ top: 'large', bottom: '-160px' }}
+        margin={{ top: 'large', bottom: '-160px', horizontal: 'xlarge' }}
         gap="medium"
         src={images}
         label={labels}
