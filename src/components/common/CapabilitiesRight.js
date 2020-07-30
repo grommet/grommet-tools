@@ -30,13 +30,21 @@ const CapabilitiesRight = ({
         align="end"
         margin={{ left: 'xlarge', top: 'medium' }}
       >
-        <Heading
-          size="large"
-          margin={{ bottom: 'none', top: 'xlarge' }}
-          alignSelf="start"
-        >
-          Capabilities
-        </Heading>
+        <ResponsiveContext.Consumer>
+          {(responsive) => (
+            <Heading
+              size={
+                responsive === 'large' || responsive === 'xlarge'
+                  ? 'large'
+                  : 'medium'
+              }
+              margin={{ bottom: 'none', top: 'xlarge' }}
+              alignSelf="start"
+            >
+              Capabilities
+            </Heading>
+          )}
+        </ResponsiveContext.Consumer>
         <Box width="medium" margin={{ right: 'large' }}>
           <Paragraph size="xxlarge" color="darkGrey" fill>
             {mainContent}
