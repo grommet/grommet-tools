@@ -10,7 +10,6 @@ const Description = ({ title, content, color, images, labels }) => (
         horizontal: 'xlarge',
         bottom: 'medium',
       }}
-      align=""
     >
       <Heading
         size="large"
