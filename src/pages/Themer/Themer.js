@@ -8,11 +8,13 @@ import {
   Selection,
   BarChart,
 } from 'grommet-icons';
-import AppHeader from '../../components/AppHeader.js';
-import ToolHeader from '../../components/common/ToolHeader.js';
-import ToolFooter from '../../components/common/ToolFooter.js';
-import CapabilitiesRight from '../../components/common/CapabilitiesRight.js';
-import Description from '../../components/common/Description.js';
+import {
+  AppHeader,
+  ToolHeader,
+  ToolFooter,
+  CapabilitiesRight,
+  Description,
+} from '../../components';
 
 const Themer = () => (
   <Box>
