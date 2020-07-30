@@ -21,8 +21,7 @@ import {
   Grommet,
   Slack,
 } from 'grommet-icons';
-import AppHeader from '../../components/AppHeader.js';
-import RotatedIcon from '../../components/common/RotatedIcon.js';
+import { AppHeader, RotatedIcon } from '../../components';
 
 const githubCards = [
   {

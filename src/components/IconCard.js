@@ -15,4 +15,4 @@ const IconCard = ({ margin, icon, size }) => (
   </Card>
 );
 
-export default IconCard;
+export { IconCard };
