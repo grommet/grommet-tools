@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Box, Heading, Paragraph, Image } from 'grommet';
+import { Box, Heading, Paragraph, Image, ResponsiveContext } from 'grommet';
 
-import { ScreenShotRow } from '../index.js';
+import { ScreenShotRow } from '../';
 
 const CapabilitiesRight = ({
   mainContent,
