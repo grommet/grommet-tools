@@ -63,106 +63,102 @@ const githubCards = [
 const Feedback = (props) => (
   <Box background="gradient">
     <AppHeader />
-    <Main
-      align="center"
-      margin={{
-        left: 'xlarge',
-      }}
-    >
-      <Heading
-        level={1}
-        margin={{
-          top: 'xlarge',
-          right: 'xlarge',
-          bottom: 'large',
-        }}
-        size="xlarge"
-      >
-        Feedback
-      </Heading>
+    <Main>
+      <Box alignSelf="center" margin={{ horizontal: 'xlarge' }}>
+        <Heading
+          level={1}
+          margin={{
+            top: 'xlarge',
+            bottom: 'large',
+          }}
+          size="xlarge"
+        >
+          Feedback
+        </Heading>
 
-      <Grid
-        alignContent="center"
-        columns={{ count: 'fill', size: 'medium' }}
-        rows="auto"
-        gap="xlarge"
-      >
-        <Box>
-          <Heading size="small">
-            <Github color="headingGrey" /> Share feedback on Github
-          </Heading>
+        <Grid
+          alignContent="center"
+          columns={{ count: 'fill', size: 'medium' }}
+          rows="auto"
+          gap="xlarge"
+        >
+          <Box>
+            <Heading size="small">
+              <Github color="headingGrey" /> Share feedback on Github
+            </Heading>
 
-          <Paragraph fill pad={{ right: 'large' }}>
-            Submit feedback on Grommet Tools on Github. Here, you can help
-            improve the tools and connect with other Grommet Tools lovers.
-          </Paragraph>
+            <Paragraph fill pad={{ right: 'large' }}>
+              Submit feedback on Grommet Tools on Github. Here, you can help
+              improve the tools and connect with other Grommet Tools lovers.
+            </Paragraph>
 
-          <Box pad={{ right: 'large' }}>
-            <Grid
-              columns="small"
-              gap={{ row: 'medium', column: 'medium' }}
-              rows="auto"
+            <Box pad={{ right: 'large' }}>
+              <Grid
+                columns="small"
+                gap={{ row: 'medium', column: 'medium' }}
+                rows="auto"
+              >
+                {githubCards.map((item) => (
+                  <Card
+                    key={item.label}
+                    onClick={() => {
+                      window.open(item.link, '_self');
+                    }}
+                    background="white"
+                    pad="xsmall"
+                    direction="row"
+                    width={{ max: '200px' }}
+                  >
+                    <CardBody direction="row">
+                      {item.icon} &nbsp;
+                      <Text textAlign="center">
+                        <b>{item.label}</b> Github
+                      </Text>
+                    </CardBody>
+                  </Card>
+                ))}
+              </Grid>
+            </Box>
+          </Box>
+
+          <Box>
+            <Heading size="small">
+              <Slack color="headingGrey" /> Join Grommet's Slack Channel
+            </Heading>
+            <Paragraph fill={true} margin={{ right: 'small' }}>
+              Contribute to the discussion about Grommet and Grommet Tools and
+              see what others are up to by joining the Slack channel.
+            </Paragraph>
+
+            <Card
+              onClick={() => {
+                window.open('http://slackin.grommet.io/', '_self');
+              }}
+              background="white"
+              pad="xsmall"
+              direction="row"
+              width="small"
             >
-              {githubCards.map((item) => (
-                <Card
-                  key={item.label}
-                  onClick={() => {
-                    window.open(item.link, '_self');
-                  }}
-                  background="white"
-                  pad="xsmall"
-                  direction="row"
-                  width={{ max: '200px' }}
-                >
-                  <CardBody direction="row">
-                    {item.icon} &nbsp;
-                    <Text textAlign="center">
-                      <b>{item.label}</b> Github
-                    </Text>
-                  </CardBody>
-                </Card>
-              ))}
-            </Grid>
+              <CardBody direction="row">
+                <Grommet /> &nbsp;
+                <Text textAlign="center">
+                  <b>Grommet /</b> Slack
+                </Text>
+              </CardBody>
+            </Card>
+
+            <Box width="xlarge">
+              <Image
+                a11yTitle="Gremlin with a Face Mask"
+                width="xlarge"
+                fill="horizontal"
+                alignSelf="end"
+                src="GremlinFaceMask.svg"
+              />
+            </Box>
           </Box>
-        </Box>
-
-        <Box>
-          <Heading size="small">
-            <Slack color="headingGrey" /> Join Grommet's Slack Channel
-          </Heading>
-          <Paragraph fill={true} margin={{ right: 'small' }}>
-            Contribute to the discussion about Grommet and Grommet Tools and see
-            what others are up to by joining the Slack channel.
-          </Paragraph>
-
-          <Card
-            onClick={() => {
-              window.open('http://slackin.grommet.io/', '_self');
-            }}
-            background="white"
-            pad="xsmall"
-            direction="row"
-            width="small"
-          >
-            <CardBody direction="row">
-              <Grommet /> &nbsp;
-              <Text textAlign="center">
-                <b>Grommet /</b> Slack
-              </Text>
-            </CardBody>
-          </Card>
-
-          <Box width="xlarge">
-            <Image
-              a11yTitle="Gremlin with a Face Mask"
-              width="xlarge"
-              fill="horizontal"
-              alignSelf="end"
-              src="GremlinFaceMask.svg"
-            />
-          </Box>
-        </Box>
-      </Grid>
+        </Grid>
+      </Box>
     </Main>
   </Box>
 );
