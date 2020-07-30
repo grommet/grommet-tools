@@ -62,11 +62,17 @@ const githubCards = [
 const Feedback = (props) => (
   <Box background="gradient">
     <AppHeader />
-    <Box alignSelf="center" margin={{ horizontal: 'xlarge' }}>
+    <Box
+      alignSelf="center"
+      margin={{
+        horizontal: 'xlarge',
+      }}
+    >
       <Heading
         level={1}
         margin={{
           top: 'xlarge',
+          right: 'xlarge',
           bottom: 'large',
         }}
         size="xlarge"
@@ -79,19 +85,18 @@ const Feedback = (props) => (
         columns={{ count: 'fill', size: 'medium' }}
         rows="auto"
         gap="xlarge"
-        margin={{ horizontal: 'small' }}
       >
         <Box>
           <Heading size="small">
             <Github color="headingGrey" /> Share feedback on Github
           </Heading>
 
-          <Paragraph fill pad={{ horizontal: 'medium' }}>
+          <Paragraph fill pad={{ right: 'large' }}>
             Submit feedback on Grommet Tools on Github. Here, you can help
             improve the tools and connect with other Grommet Tools lovers.
           </Paragraph>
 
-          <Box pad={{ horizontal: 'medium' }}>
+          <Box pad={{ right: 'large' }}>
             <Grid
               columns="small"
               gap={{ row: 'medium', column: 'medium' }}
