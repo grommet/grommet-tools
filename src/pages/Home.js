@@ -27,14 +27,14 @@ import { AppHeader, HomeGrid, SmallCard, RotatedIcon } from '../components';
 const Home = (props) => (
   <Box>
     <AppHeader />
-    <Main margin={{ top: 'xlarge' }}>
+    <Main>
       <Heading
         level={1}
         margin={{
           top: 'xlarge',
           left: 'xlarge',
           right: 'xlarge',
-          bottom: 'none',
+          bottom: 'medium',
         }}
         size="xlarge"
       >
@@ -44,18 +44,17 @@ const Home = (props) => (
       <Box direction="row" justify="between">
         <Box
           margin={{
-            top: 'small',
+            // top: 'small',
             left: 'xlarge',
             right: 'medium',
-            bottom: 'medium',
+            bottom: 'large',
           }}
-          width="medium"
         >
-          <Text size="xlarge">
+          <Paragraph size="xxlarge">
             A suite of tools to create even more with&#32;&#8203;
             <Anchor label="Grommet" href="https://v2.grommet.io/" />
             &#8203;&#32;components without the stress of handling code.
-          </Text>
+          </Paragraph>
         </Box>
         <ResponsiveContext.Consumer>
           {(responsive) =>
@@ -210,7 +209,7 @@ const Home = (props) => (
           margin={{
             horizontal: 'xlarge',
             top: 'large',
-            bottom: 'small',
+            bottom: 'large',
           }}
           size="xlarge"
         >
@@ -229,8 +228,8 @@ const Home = (props) => (
         align="end"
         gap="xlarge"
       >
-        <Box alignSelf="center" margin={{ bottom: 'xlarge' }}>
-          <Heading level={2} size="xlarge">
+        <Box alignSelf="center" margin={{ top: 'xlarge', bottom: 'xlarge' }}>
+          <Heading level={2} size="xlarge" margin={{ bottom: 'medium' }}>
             What are Grommet Tools?
           </Heading>
           <Paragraph size="xlarge" margin={{ top: 'xsmall' }}>
