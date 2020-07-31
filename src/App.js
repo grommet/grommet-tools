@@ -1,10 +1,11 @@
 import React from 'react';
-import Home from './pages/Home/Home.js';
-import Feedback from './pages/Feedback/Feedback.js';
-import Designer from './pages/Designer/Designer.js';
-import Slides from './pages/Slides/Slides.js';
-import Tabular from './pages/Tabular/Tabular.js';
-import Themer from './pages/Themer/Themer.js';
+import Home from './pages/Home.js';
+import Feedback from './pages/Feedback.js';
+import Designer from './pages/Tools/Designer.js';
+import Slides from './pages/Tools/Slides.js';
+import Tabular from './pages/Tools/Tabular.js';
+import Themer from './pages/Tools/Themer.js';
+import Publisher from './pages/Tools/Publisher.js';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { grommetToolsTheme } from './theme.js';
 import { Grommet } from 'grommet';
@@ -19,6 +20,9 @@ function App() {
           </Route>
           <Route path="/slides">
             <Slides />
+          </Route>
+          <Route path="/publisher">
+            <Publisher />
           </Route>
           <Route path="/themer">
             <Themer />
