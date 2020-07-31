@@ -245,6 +245,12 @@ const Home = (props) => (
             direction="row"
             width="medium"
             pad="small"
+            onClick={() => {
+              window.open(
+                'https://medium.com/@marisakuberra/the-power-of-no-code-tools-24b9b0d5f97f',
+                '_self',
+              );
+            }}
           >
             <Paragraph
               margin={{
@@ -256,7 +262,6 @@ const Home = (props) => (
               Read about the power of Grommet and No Code Tools
             </Paragraph>
             <Anchor
-              href="#"
               icon={<FormNextLink color="brand" size="large" />}
               alignSelf="end"
               margin="xsmall"
