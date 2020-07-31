@@ -22,7 +22,7 @@ import {
   Github,
   Slack,
 } from 'grommet-icons';
-import { AppHeader, HomeGrid, SmallCard, RotatedIcon } from '../../components';
+import { AppHeader, HomeGrid, SmallCard, RotatedIcon } from '../components';
 
 const Home = (props) => (
   <Box>

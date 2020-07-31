@@ -20,7 +20,7 @@ import {
   Grommet,
   Slack,
 } from 'grommet-icons';
-import { AppHeader, RotatedIcon } from '../../components';
+import { AppHeader, RotatedIcon } from '../components';
 
 const githubCards = [
   {

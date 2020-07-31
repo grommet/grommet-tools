@@ -9,7 +9,7 @@ import {
   Selection,
   BarChart,
 } from 'grommet-icons';
-import { GridCard, RotatedIcon } from './index.js';
+import { GridCard, RotatedIcon } from '../index.js';
 
 const HomeGrid = () => (
   <Grid
