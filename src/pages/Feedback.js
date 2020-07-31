@@ -7,7 +7,6 @@ import {
   CardBody,
   Heading,
   Image,
-  Main,
   Text,
 } from 'grommet';
 import {
@@ -63,10 +62,10 @@ const githubCards = [
 const Feedback = (props) => (
   <Box background="gradient">
     <AppHeader />
-    <Main
-      align="center"
+    <Box
+      alignSelf="center"
       margin={{
-        left: 'xlarge',
+        horizontal: 'xlarge',
       }}
     >
       <Heading
@@ -163,7 +162,7 @@ const Feedback = (props) => (
           </Box>
         </Box>
       </Grid>
-    </Main>
+    </Box>
   </Box>
 );
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Box, Heading, Paragraph, Image } from 'grommet';
+import { Box, Heading, Paragraph, Image, ResponsiveContext } from 'grommet';
 
 import { ScreenShotRow } from '../index.js';
 
@@ -15,28 +15,34 @@ const CapabilitiesRight = ({
   <Box align="center" margin="xlarge">
     <Box direction="row-responsive">
       <Box margin={{ right: 'large', top: 'xlarge' }}>
-        <Box>
-          <Image
-            a11yTitle={mainLabel}
-            alignSelf="end"
-            src={mainImage}
-            fill="horizontal"
-            fit="contain"
-          />
-        </Box>
+        <Image
+          a11yTitle={mainLabel}
+          alignSelf="end"
+          src={mainImage}
+          fill="horizontal"
+          fit="contain"
+        />
       </Box>
       <Box
         alignSelf="end"
         align="end"
         margin={{ left: 'xlarge', top: 'medium' }}
       >
-        <Heading
-          size="large"
-          margin={{ bottom: 'none', top: 'xlarge' }}
-          alignSelf="start"
-        >
-          Capabilities
-        </Heading>
+        <ResponsiveContext.Consumer>
+          {(responsive) => (
+            <Heading
+              size={
+                responsive === 'large' || responsive === 'xlarge'
+                  ? 'large'
+                  : 'medium'
+              }
+              margin={{ bottom: 'none', top: 'xlarge' }}
+              alignSelf="start"
+            >
+              Capabilities
+            </Heading>
+          )}
+        </ResponsiveContext.Consumer>
         <Box width="medium" margin={{ right: 'large' }}>
           <Paragraph size="xxlarge" color="darkGrey" fill>
             {mainContent}
