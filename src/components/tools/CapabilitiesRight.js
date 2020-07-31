@@ -13,7 +13,7 @@ const CapabilitiesRight = ({
   labels,
 }) => (
   <Box align="center" margin="xlarge">
-    <Box direction="row-responsive">
+    <Box margin={{ top: 'xlarge' }} direction="row-responsive">
       <Box margin={{ right: 'large', top: 'xlarge' }}>
         <Image
           a11yTitle={mainLabel}
@@ -31,19 +31,20 @@ const CapabilitiesRight = ({
         <ResponsiveContext.Consumer>
           {(responsive) => (
             <Heading
+              level={2}
               size={
                 responsive === 'large' || responsive === 'xlarge'
-                  ? 'large'
-                  : 'medium'
+                  ? 'xlarge'
+                  : 'large'
               }
-              margin={{ bottom: 'none', top: 'xlarge' }}
+              margin={{ bottom: 'none' }}
               alignSelf="start"
             >
               Capabilities
             </Heading>
           )}
         </ResponsiveContext.Consumer>
-        <Box width="medium" margin={{ right: 'large' }}>
+        <Box width="medium">
           <Paragraph size="xxlarge" color="darkGrey" fill>
             {mainContent}
           </Paragraph>
@@ -53,6 +54,7 @@ const CapabilitiesRight = ({
         </Box>
       </Box>
     </Box>
+
     <ScreenShotRow margin={{ top: 'xlarge' }} src={images} label={labels} />
   </Box>
 );
