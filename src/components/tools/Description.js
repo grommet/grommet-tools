@@ -15,29 +15,29 @@ const Description = ({ title, content, color, images, labels }) => (
         >
           <Box
             margin={{
-              top: 'xlarge',
+              vertical: 'xsmall',
               horizontal: 'xlarge',
-              bottom: 'medium',
             }}
           >
             <Heading
+              margin={{ top: 'large', bottom: 'none' }}
               size="large"
-              margin={
-                responsive === 'large' || responsive === 'xlarge'
-                  ? { top: 'xlarge', bottom: 'none', horizontal: 'xlarge' }
-                  : { top: 'xlarge', bottom: 'none' }
-              }
+              // margin={
+              //   responsive === 'large' || responsive === 'xlarge'
+              //     ? { top: 'xlarge', bottom: 'none', horizontal: 'xlarge' }
+              //     : { top: 'xlarge', bottom: 'none' }
+              // }
               alignSelf="start"
             >
               {title}
             </Heading>
             <Box
               width="large"
-              margin={
-                responsive === 'large' || responsive === 'xlarge'
-                  ? { bottom: 'medium', top: 'none', horizontal: 'xlarge' }
-                  : { bottom: 'medium', top: 'none' }
-              }
+              // margin={
+              //   responsive === 'large' || responsive === 'xlarge'
+              //     ? { bottom: 'medium', top: 'none', horizontal: 'xlarge' }
+              //     : { bottom: 'medium', top: 'none' }
+              // }
               alignSelf="start"
             >
               <Paragraph fill size="xxlarge">
@@ -45,11 +45,7 @@ const Description = ({ title, content, color, images, labels }) => (
               </Paragraph>
             </Box>
             <ScreenShotRow
-              margin={
-                responsive === 'large' || responsive === 'xlarge'
-                  ? { top: 'large', bottom: '-160px', horizontal: 'xlarge' }
-                  : { top: 'large', bottom: '-160px' }
-              }
+              margin={{ top: 'large', bottom: '-160px' }}
               gap="medium"
               src={images}
               label={labels}
