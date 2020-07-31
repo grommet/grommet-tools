@@ -8,12 +8,14 @@ import {
   Selection,
   BarChart,
 } from 'grommet-icons';
-import AppHeader from '../../components/AppHeader.js';
-import ToolHeader from '../../components/common/ToolHeader.js';
-import ToolFooter from '../../components/common/ToolFooter.js';
-import CapabilitiesLeft from '../../components/common/CapabilitiesLeft.js';
-import Description from '../../components/common/Description.js';
-import RotatedIcon from '../../components/common/RotatedIcon.js';
+import {
+  AppHeader,
+  ToolHeader,
+  ToolFooter,
+  CapabilitiesLeft,
+  Description,
+  RotatedIcon,
+} from '../../components';
 
 const Designer = () => (
   <Box>
@@ -82,8 +84,8 @@ const Designer = () => (
         description="Open the Designer tool and get started by watching a tutorial or
         just jumping right in to your first design."
         buttonLabel="Open Designer"
-        buttonHref="https://designer.grommet.io"
         direction="column"
+        buttonHref="https://designer.grommet.io"
       />
     </Main>
   </Box>

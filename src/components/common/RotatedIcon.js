@@ -5,4 +5,4 @@ const RotatedIcon = styled.div`
   margin: ${(props) => props.margin};
 `;
 
-export default RotatedIcon;
+export { RotatedIcon };

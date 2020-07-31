@@ -8,12 +8,14 @@ import {
   Selection,
   BarChart,
 } from 'grommet-icons';
-import AppHeader from '../../components/AppHeader.js';
-import ToolHeader from '../../components/common/ToolHeader.js';
-import ToolFooter from '../../components/common/ToolFooter.js';
-import CapabilitiesLeft from '../../components/common/CapabilitiesLeft.js';
-import Description from '../../components/common/Description.js';
-import RotatedIcon from '../../components/common/RotatedIcon.js';
+import {
+  AppHeader,
+  ToolHeader,
+  ToolFooter,
+  CapabilitiesLeft,
+  Description,
+  RotatedIcon,
+} from '../../components';
 
 const Slides = () => (
   <Box>

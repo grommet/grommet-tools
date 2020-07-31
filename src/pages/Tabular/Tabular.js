@@ -8,11 +8,14 @@ import {
   Selection,
   BarChart,
 } from 'grommet-icons';
-import AppHeader from '../../components/AppHeader.js';
-import ToolHeader from '../../components/common/ToolHeader.js';
-import ToolFooter from '../../components/common/ToolFooter.js';
-import CapabilitiesRight from '../../components/common/CapabilitiesRight.js';
-import Description from '../../components/common/Description.js';
+import {
+  AppHeader,
+  ToolHeader,
+  ToolFooter,
+  CapabilitiesRight,
+  Description,
+  RotatedIcon,
+} from '../../components';
 
 const Tabular = () => (
   <Box>
@@ -20,13 +23,25 @@ const Tabular = () => (
     <Main>
       <ToolHeader
         mainIcon={<BarChart size="xxlarge" color="TabularGreen" />}
-        icon1={<Camera opacity="0.8" size="large" color="ImagerOrange" />}
-        icon2={<Configure opacity="0.9" size="large" color="ThemerOrange" />}
-        icon3={<CloudUpload opacity="0.7" size="large" color="PublisherPink" />}
-        icon4={
-          <ClearOption opacity="0.7" size="large" color="DesignerYellow" />
+        icon1={<Camera opacity="0.6" size="customLarge" color="ImagerOrange" />}
+        icon2={
+          <Configure opacity="0.7" size="customLarge" color="ThemerOrange" />
         }
-        icon5={<Selection opacity="0.5" size="large" color="SlidesBlue" />}
+        icon3={
+          <CloudUpload opacity="0.5" size="customLarge" color="PublisherPink" />
+        }
+        icon4={
+          <ClearOption
+            opacity="0.4"
+            size="customLarge"
+            color="DesignerYellow"
+          />
+        }
+        icon5={
+          <RotatedIcon rotate="rotate(90deg)" margin="0px 0px 0px 0px">
+            <Selection opacity="0.3" size="customLarge" color="SlidesBlue" />
+          </RotatedIcon>
+        }
         title="Tabular"
         content="Grommet Tabular is a tool used to build tables using data. Import a
         URL of JSON based on an endpoint, then customize the data to build endless table
@@ -58,7 +73,7 @@ const Tabular = () => (
         labels={[
           'Interact with data set as a table',
           'Simply provide URL of JSON based on endpoint',
-          'Add, remove, adn reorder columns to customize view',
+          'Add, remove, and reorder columns to customize view',
         ]}
       />
 

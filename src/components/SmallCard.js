@@ -28,4 +28,4 @@ function SmallCard({ size, link, icon, text }) {
     </Box>
   );
 }
-export default SmallCard;
+export { SmallCard };
