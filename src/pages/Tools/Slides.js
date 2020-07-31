@@ -86,6 +86,7 @@ const Slides = () => (
         tutorial or just jumping right in to your first publication."
         buttonLabel="Open Slides"
         direction="column"
+        buttonHref="https://slides.grommet.io/"
       />
     </Main>
   </Box>
