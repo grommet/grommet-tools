@@ -75,7 +75,7 @@ const Slides = () => (
         labels={[
           'Use Markup language to quickly generate content',
           'Easily import and use theme',
-          'Publish and share URL with anyone in just a couple clicks',
+          'Present, publish and share presentation URL',
         ]}
       />
 
