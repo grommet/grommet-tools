@@ -19,7 +19,9 @@ const HomeGrid = () => (
         gap="large"
         rows="auto"
         margin={{ horizontal: 'xlarge', top: 'small', bottom: '-30px' }}
-        alignSelf={responsive === 'small' ? 'center' : null}
+        alignSelf={
+          responsive === 'small' || responsive === 'xsmall' ? 'center' : null
+        }
       >
         <GridCard
           icon={<ClearOption color="DesignerYellow" size="xlarge" />}
