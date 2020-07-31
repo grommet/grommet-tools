@@ -8,12 +8,14 @@ import {
   Selection,
   BarChart,
 } from 'grommet-icons';
-import AppHeader from '../../components/AppHeader.js';
-import ToolHeader from '../../components/common/ToolHeader.js';
-import ToolFooter from '../../components/common/ToolFooter.js';
-import CapabilitiesLeft from '../../components/common/CapabilitiesLeft.js';
-import Description from '../../components/common/Description.js';
-import RotatedIcon from '../../components/common/RotatedIcon.js';
+import {
+  AppHeader,
+  ToolHeader,
+  ToolFooter,
+  CapabilitiesLeft,
+  Description,
+  RotatedIcon,
+} from '../../components';
 
 const Images = () => (
   <Box>
@@ -72,10 +74,10 @@ const Images = () => (
       <ToolFooter
         backgroundColor="ImagerOrange"
         headingText="Start Using Images Now"
-        description="Open the Slides tool and get started by watching a 
-        tutorial or just jumping right in to your first publication."
+        description="Open the Images tool and get started by uploading and managing your content."
         buttonLabel="Open Images"
         direction="column"
+        buttonHref="https://images.grommet.io/"
       />
     </Main>
   </Box>
