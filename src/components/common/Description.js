@@ -1,31 +1,64 @@
 import React from 'react';
-import { Box, Heading, Paragraph } from 'grommet';
+import { Box, Heading, Paragraph, ResponsiveContext } from 'grommet';
 import { ScreenShotRow } from '../index.js';
 
 const Description = ({ title, content, color, images, labels }) => (
   <Box background={color} margin={{ veritcal: 'xlarge' }}>
-    <Box
-      margin={{
-        top: 'xlarge',
-        horizontal: 'xlarge',
-        bottom: 'medium',
-      }}
-    >
-      <Heading size="large" margin={{ top: 'xlarge', bottom: 'none' }}>
-        {title}
-      </Heading>
-      <Box width="large" margin={{ bottom: 'medium', top: 'none' }}>
-        <Paragraph fill size="xxlarge">
-          {content}
-        </Paragraph>
-      </Box>
-      <ScreenShotRow
-        margin={{ top: 'large', bottom: '-160px' }}
-        gap="medium"
-        src={images}
-        label={labels}
-      />
-    </Box>
+    <ResponsiveContext.Consumer>
+      {(responsive) => (
+        <Box
+          margin={
+            responsive === 'large' || responsive === 'xlarge'
+              ? { horizontal: 'xlarge' }
+              : 'none'
+          }
+        >
+          <Box
+            margin={{
+              top: 'xlarge',
+              horizontal: 'xlarge',
+              bottom: 'medium',
+            }}
+          >
+            <Heading
+              size="large"
+              margin={
+                responsive === 'large' || responsive === 'xlarge'
+                  ? { top: 'xlarge', bottom: 'none', horizontal: 'xlarge' }
+                  : { top: 'xlarge', bottom: 'none' }
+              }
+              alignSelf="start"
+            >
+              {title}
+            </Heading>
+            <Box
+              width="large"
+              margin={
+                responsive === 'large' || responsive === 'xlarge'
+                  ? { bottom: 'medium', top: 'none', horizontal: 'xlarge' }
+                  : { bottom: 'medium', top: 'none' }
+              }
+              alignSelf="start"
+            >
+              <Paragraph fill size="xxlarge">
+                {content}
+              </Paragraph>
+            </Box>
+            <ScreenShotRow
+              margin={
+                responsive === 'large' || responsive === 'xlarge'
+                  ? { top: 'large', bottom: '-160px', horizontal: 'xlarge' }
+                  : { top: 'large', bottom: '-160px' }
+              }
+              gap="medium"
+              src={images}
+              label={labels}
+              justify="around"
+            />
+          </Box>
+        </Box>
+      )}
+    </ResponsiveContext.Consumer>
   </Box>
 );
 

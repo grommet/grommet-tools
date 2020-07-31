@@ -84,8 +84,8 @@ const Designer = () => (
         description="Open the Designer tool and get started by watching a tutorial or
         just jumping right in to your first design."
         buttonLabel="Open Designer"
-        buttonHref="https://designer.grommet.io"
         direction="column"
+        buttonHref="https://designer.grommet.io"
       />
     </Main>
   </Box>

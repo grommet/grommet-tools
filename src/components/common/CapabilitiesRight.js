@@ -15,15 +15,13 @@ const CapabilitiesRight = ({
   <Box align="center" margin="xlarge">
     <Box direction="row-responsive">
       <Box margin={{ right: 'large', top: 'xlarge' }}>
-        <Box>
-          <Image
-            a11yTitle={mainLabel}
-            alignSelf="end"
-            src={mainImage}
-            fill="horizontal"
-            fit="contain"
-          />
-        </Box>
+        <Image
+          a11yTitle={mainLabel}
+          alignSelf="end"
+          src={mainImage}
+          fill="horizontal"
+          fit="contain"
+        />
       </Box>
       <Box
         alignSelf="end"

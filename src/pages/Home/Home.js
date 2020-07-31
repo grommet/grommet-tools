@@ -27,11 +27,11 @@ import { AppHeader, HomeGrid, SmallCard, RotatedIcon } from '../../components';
 const Home = (props) => (
   <Box>
     <AppHeader />
-    <Main>
+    <Main margin={{ top: 'xlarge' }}>
       <Heading
         level={1}
         margin={{
-          top: 'marginXL',
+          top: 'xlarge',
           left: 'xlarge',
           right: 'xlarge',
           bottom: 'none',
