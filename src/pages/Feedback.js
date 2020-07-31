@@ -7,7 +7,6 @@ import {
   CardBody,
   Heading,
   Image,
-  Main,
   Text,
 } from 'grommet';
 import {
@@ -21,8 +20,7 @@ import {
   Grommet,
   Slack,
 } from 'grommet-icons';
-import AppHeader from '../../components/AppHeader.js';
-import RotatedIcon from '../../components/common/RotatedIcon.js';
+import { AppHeader, RotatedIcon } from '../components';
 
 const githubCards = [
   {
@@ -64,10 +62,10 @@ const githubCards = [
 const Feedback = (props) => (
   <Box background="gradient">
     <AppHeader />
-    <Main
-      align="center"
+    <Box
+      alignSelf="center"
       margin={{
-        left: 'xlarge',
+        horizontal: 'xlarge',
       }}
     >
       <Heading
@@ -164,7 +162,7 @@ const Feedback = (props) => (
           </Box>
         </Box>
       </Grid>
-    </Main>
+    </Box>
   </Box>
 );
 

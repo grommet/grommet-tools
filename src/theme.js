@@ -4,8 +4,6 @@ import { deepMerge } from 'grommet/utils';
 export const grommetToolsTheme = deepMerge(grommet, {
   global: {
     edgeSize: {
-      marginXL: '200px',
-      animationBox: '380px',
       none: '0px',
     },
     size: {

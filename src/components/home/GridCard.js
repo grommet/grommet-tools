@@ -10,6 +10,7 @@ import {
   CardBody,
   CardFooter,
   Heading,
+  ResponsiveContext,
 } from 'grommet';
 
 const GridCard = ({
@@ -20,16 +21,36 @@ const GridCard = ({
   text,
   learnLink,
   openLink,
+  a11yTitle,
 }) => (
-  <Card background="rgb(255,255,255)">
-    <Box margin={{ horizontal: 'medium', top: 'large' }} align="start">
-      {icon}
-    </Box>
-    <CardHeader>
-      <Heading margin={{ horizontal: 'medium', vertical: 'xsmall' }}>
-        {heading}
-      </Heading>
-    </CardHeader>
+  <Card round="medium" background="rgb(255,255,255)">
+    <ResponsiveContext.Consumer>
+      {(responsive) => (
+        <Box>
+          <Box
+            margin={
+              responsive === 'small' || responsive === 'xsmall'
+                ? { left: 'large', top: 'large' }
+                : { left: 'medium', top: 'large' }
+            }
+            align="start"
+          >
+            {icon}
+          </Box>
+          <CardHeader>
+            <Heading
+              margin={
+                responsive === 'small' || responsive === 'xsmall'
+                  ? { left: 'large', vertical: 'xsmall' }
+                  : { left: 'medium', vertical: 'xsmall' }
+              }
+            >
+              {heading}
+            </Heading>
+          </CardHeader>
+        </Box>
+      )}
+    </ResponsiveContext.Consumer>
     <CardBody>
       <Paragraph
         fill
@@ -56,10 +77,11 @@ const GridCard = ({
       <Anchor
         alignSelf="center"
         href={learnLink}
+        a11yTitle={a11yTitle}
         margin="small"
         label="Learn More"
       />
     </CardFooter>
   </Card>
 );
-export default GridCard;
+export { GridCard };

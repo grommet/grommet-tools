@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Box, Heading, Paragraph, Image } from 'grommet';
 
-import ScreenShotRow from '../../components/common/ScreenShotRow.js';
+import { ScreenShotRow } from '../index.js';
 
 const CapabilitiesLeft = ({
   mainContent,
@@ -46,4 +46,4 @@ const CapabilitiesLeft = ({
     <ScreenShotRow margin={{ top: 'xlarge' }} src={images} label={labels} />
   </Box>
 );
-export default CapabilitiesLeft;
+export { CapabilitiesLeft };
