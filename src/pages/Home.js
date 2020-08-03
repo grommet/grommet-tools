@@ -57,25 +57,14 @@ const Home = (props) => (
         </Box>
         <ResponsiveContext.Consumer>
           {(responsive) =>
-            responsive === 'medium' ||
-            responsive === 'large' ||
-            responsive === 'xlarge' ? (
+            responsive === 'large' || responsive === 'xlarge' ? (
               <Box
-                margin={
-                  responsive === 'medium'
-                    ? {
-                        top: 'small',
-                        left: 'small',
-                        right: 'small',
-                        bottom: 'large',
-                      }
-                    : {
-                        top: 'small',
-                        left: 'small',
-                        right: 'xlarge',
-                        bottom: 'large',
-                      }
-                }
+                margin={{
+                  top: 'small',
+                  left: 'small',
+                  right: 'xlarge',
+                  bottom: 'large',
+                }}
                 pad={{ right: 'xlarge' }}
               >
                 <Box direction="row" gap={responsive}>
@@ -185,6 +174,7 @@ const Home = (props) => (
                 </Box>
                 <Box>
                   <Card
+                    margin="none"
                     alignSelf="center"
                     animation={{ type: 'jiggle', duration: 1200, delay: 550 }}
                     onClick={() =>
@@ -317,37 +307,37 @@ const Home = (props) => (
               }}
             >
               <SmallCard
-                text={size === 'small' ? undefined : 'Designer'}
+                text={size === 'small' ? undefined : 'designer'}
                 link="https://designer.grommet.io"
                 size={size === 'small' ? undefined : 'xsmall'}
                 icon={<ClearOption size="large" color="DesignerYellow" />}
               />
               <SmallCard
-                text={size === 'small' ? undefined : 'Themer'}
+                text={size === 'small' ? undefined : 'themer'}
                 link="https://theme-designer.grommet.io"
                 size={size === 'small' ? undefined : 'xsmall'}
                 icon={<Configure size="large" color="ThemerOrange" />}
               />
               <SmallCard
-                text={size === 'small' ? undefined : 'Images'}
+                text={size === 'small' ? undefined : 'images'}
                 link="https://images.grommet.io"
                 size={size === 'small' ? undefined : 'xsmall'}
                 icon={<Camera size="large" color="ImagerOrange" />}
               />
               <SmallCard
-                text={size === 'small' ? undefined : 'Publisher'}
+                text={size === 'small' ? undefined : 'publisher'}
                 link="https://publisher.grommet.io"
                 size={size === 'small' ? undefined : 'xsmall'}
                 icon={<CloudUpload size="large" color="PublisherPink" />}
               />
               <SmallCard
-                text={size === 'small' ? undefined : 'Slides'}
+                text={size === 'small' ? undefined : 'slides'}
                 link="https://slides.grommet.io"
                 size={size === 'small' ? undefined : 'xsmall'}
                 icon={<Selection size="large" color="SlidesBlue" />}
               />
               <SmallCard
-                text={size === 'small' ? undefined : 'Tabular'}
+                text={size === 'small' ? undefined : 'tabular'}
                 link="https://tabular.grommet.io"
                 size={size === 'small' ? undefined : 'xsmall'}
                 icon={<BarChart size="large" color="TabularGreen" />}
