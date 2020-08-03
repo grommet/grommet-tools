@@ -54,6 +54,7 @@ const HomeGrid = () => (
           buttonColor="ImagerOrange"
           a11yTitle="learn more about Images"
           openLink="https://images.grommet.io/"
+          learnLink="/images"
           text="  Super simple image hosting for your Grommet-based
         projects. Works great with Publisher, Slides, and
         Designer."

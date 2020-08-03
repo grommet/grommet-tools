@@ -3,19 +3,7 @@ import React from 'react';
 import { Box, Button, Paragraph, Heading, Stack, Text } from 'grommet';
 import { IconCard, RotatedIcon } from '../index.js';
 
-const HeadingLarge = ({
-  mainIcon,
-  icon1,
-  icon2,
-  icon3,
-  icon4,
-  icon5,
-  title,
-  content,
-  open,
-  link,
-  color,
-}) => (
+const HeadingLarge = ({ icons, title, content, open, link, color }) => (
   <Box>
     <Box height="medium" margin={{ top: 'xlarge' }}>
       <Stack margin={{ top: 'xlarge' }} anchor="left">
@@ -24,7 +12,7 @@ const HeadingLarge = ({
           <RotatedIcon rotate="rotate(-5.79deg)">
             <IconCard
               size="medium"
-              icon={mainIcon}
+              icon={icons[0]}
               margin={{ left: 'xlarge', top: 'large' }}
             />
           </RotatedIcon>
@@ -36,11 +24,19 @@ const HeadingLarge = ({
               bottom: 'medium',
             }}
           >
-            <Text> Grommet Tools </Text>
-            <Heading level={1} size="xlarge" margin={{ top: 'none' }}>
+            <Text margin={{ top: 'medium' }}> Grommet Tools </Text>
+            <Heading
+              level={1}
+              size="xlarge"
+              margin={{ top: 'none', bottom: 'medium' }}
+            >
               {title}
             </Heading>
-            <Paragraph margin={{ top: 'none' }} size="xxlarge" color="darkGrey">
+            <Paragraph
+              margin={{ top: 'medium' }}
+              size="xxlarge"
+              color="darkGrey"
+            >
               {content}
             </Paragraph>
             <Button
@@ -56,23 +52,23 @@ const HeadingLarge = ({
     </Box>
     <Box gap="medium" margin={{ left: 'xlarge', bottom: 'large' }}>
       <Box direction="row" margin={{ left: 'xlarge' }} gap="xlarge">
-        <RotatedIcon rotate="rotate(7.95deg)">{icon1}</RotatedIcon>
+        <RotatedIcon rotate="rotate(7.95deg)">{icons[1]}</RotatedIcon>
         <RotatedIcon rotate="rotate(-9.18deg)" margin="-30px 0px 0px 30px">
-          {icon2}
+          {icons[2]}
         </RotatedIcon>
       </Box>
       <Box margin={{ left: 'xlarge' }} direction="row">
         <RotatedIcon rotate="rotate(-11.88deg)" margin="0px 0px 0px 80px">
-          {icon3}
+          {icons[3]}
         </RotatedIcon>
       </Box>
       <Box margin={{ left: 'xlarge' }} direction="row">
         <RotatedIcon rotate="rotate(8.83deg)" margin="-15px 0px 0px 160px">
-          {icon4}
+          {icons[4]}
         </RotatedIcon>
       </Box>
       <Box margin={{ left: 'xlarge' }} direction="row">
-        <RotatedIcon margin="-30px 0px 0px 20px">{icon5}</RotatedIcon>
+        <RotatedIcon margin="-30px 0px 0px 20px">{icons[5]}</RotatedIcon>
       </Box>
     </Box>
   </Box>

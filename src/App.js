@@ -6,6 +6,7 @@ import Slides from './pages/Tools/Slides.js';
 import Tabular from './pages/Tools/Tabular.js';
 import Themer from './pages/Tools/Themer.js';
 import Publisher from './pages/Tools/Publisher.js';
+import Images from './pages/Tools/Images.js';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { grommetToolsTheme } from './theme.js';
 import { Grommet } from 'grommet';
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route path="/slides">
             <Slides />
+          </Route>
+          <Route path="/images">
+            <Images />
           </Route>
           <Route path="/publisher">
             <Publisher />
