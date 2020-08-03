@@ -43,8 +43,7 @@ const CapabilitiesLeft = ({
             </Box>
           </Box>
           <Box
-            alignSelf="end"
-            align="end"
+            alignSelf="center"
             margin={{ horizontal: 'none', top: 'medium' }}
           >
             <Box>
