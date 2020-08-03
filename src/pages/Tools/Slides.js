@@ -14,7 +14,6 @@ import {
   ToolFooter,
   CapabilitiesLeft,
   Description,
-  RotatedIcon,
 } from '../../components';
 
 const Slides = () => (
@@ -22,64 +21,54 @@ const Slides = () => (
     <AppHeader />
     <Main>
       <ToolHeader
-        mainIcon={
-          <RotatedIcon rotate="rotate(90deg)" margin="0px 3px 0px -3px">
-            <Selection size="xxlarge" color="SlidesBlue" />
-          </RotatedIcon>
-        }
-        icon1={<Camera opacity="0.6" size="customLarge" color="ImagerOrange" />}
-        icon2={
+        icons={[
+          <Selection size="xxlarge" color="SlidesBlue" />,
+          <Camera opacity="0.6" size="customLarge" color="ImagerOrange" />,
           <ClearOption
             opacity="0.7"
             size="customLarge"
             color="DesignerYellow"
-          />
-        }
-        icon3={
-          <CloudUpload opacity="0.5" size="customLarge" color="PublisherPink" />
-        }
-        icon4={
-          <Configure opacity="0.4" size="customLarge" color="ThemerOrange" />
-        }
-        icon5={
-          <BarChart opacity="0.3" size="customLarge" color="TabularGreen" />
-        }
+          />,
+          <CloudUpload
+            opacity="0.5"
+            size="customLarge"
+            color="PublisherPink"
+          />,
+          <Configure opacity="0.4" size="customLarge" color="ThemerOrange" />,
+          <BarChart opacity="0.3" size="customLarge" color="TabularGreen" />,
+        ]}
         title="Slides"
-        content="Grommet Designer is a tool used to build experiences with Grommet
-       components; then publish and share your ideas with a simple wysiwg
-       interface"
+        content="Grommet Slides is a tool used to build simple and beautiful 
+        slide shows. Quickly generate content, add a theme, and present or 
+        share slides with anyone."
         open="Open Slides"
         link="https://slides.grommet.io/"
         color="SlidesBlue"
       />
       <Description
-        title="What is Slides?"
-        content="A free, web-based WSIWG component editor, Grommet Designer is a
-        themeable experience designer baked on top of react and java
-        framework. See some examples from Grommet designers below."
+        title="What is Grommet Slides?"
+        content="A free, web-based slides builder, Grommet Slides combines the 
+        freedom of markup language with the efficiency of thematic branding. 
+        See examples of Slides below."
         color="SlidesBlue"
         images={['Designer_1.svg', 'Designer_2.svg', 'Designer_3.svg']}
-        labels={[
-          'Deisgner File Name',
-          'Deisgner File Name',
-          'Deisgner File Name',
-        ]}
+        labels={['Slides File Name', 'Slides File Name', 'Slides File Name']}
       />
 
       <CapabilitiesLeft
         mainContent="Slides provides a space to quickly generate and publish 
-        content in minutes. Import a theme, logo, and add copyright details 
-        directly to your page."
+        slides in minutes. Import a theme, generate slides and add content, 
+        and then present slideshow."
         subContent="Just a few of Slides’ powerful capabilities include using 
         markup language to quickly create content, easily importing and using 
         a theme, and being able to publish and share a URL with anyone."
         mainImage="SlidesGremlin.svg"
         mainLabel="Gremlin with Slides Icon"
-        images={['Designer_4.svg', 'Designer_5.svg', 'Designer_6.svg']}
+        images={['Slides_4.svg', 'Designer_5.svg', 'Slides_6.svg']}
         labels={[
           'Use Markup language to quickly generate content',
           'Easily import and use theme',
-          'Publish and share URL with anyone in just a couple clicks',
+          'Present, publish and share presentation URL',
         ]}
       />
 
@@ -90,6 +79,7 @@ const Slides = () => (
         tutorial or just jumping right in to your first publication."
         buttonLabel="Open Slides"
         direction="column"
+        buttonHref="https://slides.grommet.io/"
       />
     </Main>
   </Box>

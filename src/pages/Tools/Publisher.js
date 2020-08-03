@@ -21,14 +21,18 @@ const Publisher = () => (
     <AppHeader />
     <Main>
       <ToolHeader
-        mainIcon={<CloudUpload size="xxlarge" color="PublisherPink" />}
-        icon1={<Camera opacity="0.8" size="large" color="ImagerOrange" />}
-        icon2={
-          <ClearOption opacity="0.9" size="large" color="DesignerYellow" />
-        }
-        icon3={<Configure opacity="0.7" size="large" color="ThemerOrange" />}
-        icon4={<Selection opacity="0.5" size="large" color="SlidesBlue" />}
-        icon5={<BarChart opacity="0.3" size="large" color="TabularGreen" />}
+        icons={[
+          <CloudUpload size="xxlarge" color="PublisherPink" />,
+          <Camera opacity="0.6" size="customLarge" color="ImagerOrange" />,
+          <ClearOption
+            opacity="0.7"
+            size="customLarge"
+            color="DesignerYellow"
+          />,
+          <Configure opacity="0.5" size="customLarge" color="ThemerOrange" />,
+          <Selection opacity="0.4" size="customLarge" color="SlidesBlue" />,
+          <BarChart opacity="0.3" size="customLarge" color="TabularGreen" />,
+        ]}
         title="Publisher"
         content="Grommet Publisher is a tools used to build simple and beautiful documentation.
         Quickly generate content, generate a themer, and share the site URL with anyone in just a few clicks"

@@ -162,12 +162,7 @@ const Home = (props) => (
                       }
                     >
                       <CardBody margin="small">
-                        <RotatedIcon
-                          rotate="rotate(90deg)"
-                          margin="0px 2px 0px -3px"
-                        >
-                          <Selection color="SlidesBlue" size="large" />
-                        </RotatedIcon>
+                        <Selection color="SlidesBlue" size="large" />
                       </CardBody>
                     </Card>
                   </RotatedIcon>

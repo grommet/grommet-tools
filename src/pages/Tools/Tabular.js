@@ -14,7 +14,6 @@ import {
   ToolFooter,
   CapabilitiesRight,
   Description,
-  RotatedIcon,
 } from '../../components';
 
 const Tabular = () => (
@@ -22,26 +21,22 @@ const Tabular = () => (
     <AppHeader />
     <Main>
       <ToolHeader
-        mainIcon={<BarChart size="xxlarge" color="TabularGreen" />}
-        icon1={<Camera opacity="0.6" size="customLarge" color="ImagerOrange" />}
-        icon2={
-          <Configure opacity="0.7" size="customLarge" color="ThemerOrange" />
-        }
-        icon3={
-          <CloudUpload opacity="0.5" size="customLarge" color="PublisherPink" />
-        }
-        icon4={
+        icons={[
+          <BarChart size="xxlarge" color="TabularGreen" />,
+          <Camera opacity="0.6" size="customLarge" color="ImagerOrange" />,
+          <Configure opacity="0.7" size="customLarge" color="ThemerOrange" />,
+          <CloudUpload
+            opacity="0.5"
+            size="customLarge"
+            color="PublisherPink"
+          />,
           <ClearOption
             opacity="0.4"
             size="customLarge"
             color="DesignerYellow"
-          />
-        }
-        icon5={
-          <RotatedIcon rotate="rotate(90deg)" margin="0px 0px 0px 0px">
-            <Selection opacity="0.3" size="customLarge" color="SlidesBlue" />
-          </RotatedIcon>
-        }
+          />,
+          <Selection opacity="0.3" size="customLarge" color="SlidesBlue" />,
+        ]}
         title="Tabular"
         content="Grommet Tabular is a tool used to build tables using data. Import a
         URL of JSON based on an endpoint, then customize the data to build endless table
