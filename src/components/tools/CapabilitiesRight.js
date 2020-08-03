@@ -26,13 +26,13 @@ const CapabilitiesRight = ({
       >
         <Box
           direction="row-responsive"
-          margin={{ horizontal: 'xlarge' }}
+          margin={{ horizontal: 'xlarge', vertical: 'xlarge' }}
           justify="between"
         >
-          <Box>
+          <Box margin={{ top: 'xlarge' }}>
             <Image
               a11yTitle={mainLabel}
-              alignSelf="end"
+              alignSelf="center"
               src={mainImage}
               fill="horizontal"
               fit="contain"
