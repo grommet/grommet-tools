@@ -319,48 +319,38 @@ const Home = (props) => (
               <SmallCard
                 text={size === 'small' ? undefined : 'Designer'}
                 link="https://designer.grommet.io"
-                size="xsmall"
+                size={size === 'small' ? undefined : 'xsmall'}
                 icon={<ClearOption size="large" color="DesignerYellow" />}
-                responsiveSize={size}
               />
               <SmallCard
                 text={size === 'small' ? undefined : 'Themer'}
                 link="https://theme-designer.grommet.io"
-                size="xsmall"
+                size={size === 'small' ? undefined : 'xsmall'}
                 icon={<Configure size="large" color="ThemerOrange" />}
-                responsiveSize={size}
               />
               <SmallCard
                 text={size === 'small' ? undefined : 'Images'}
                 link="https://images.grommet.io"
-                size="xsmall"
+                size={size === 'small' ? undefined : 'xsmall'}
                 icon={<Camera size="large" color="ImagerOrange" />}
-                responsiveSize={size}
               />
               <SmallCard
                 text={size === 'small' ? undefined : 'Publisher'}
                 link="https://publisher.grommet.io"
-                size="xsmall"
+                size={size === 'small' ? undefined : 'xsmall'}
                 icon={<CloudUpload size="large" color="PublisherPink" />}
-                responsiveSize={size}
               />
               <SmallCard
                 text={size === 'small' ? undefined : 'Slides'}
                 link="https://slides.grommet.io"
-                size="xsmall"
-                icon={
-                  <RotatedIcon rotate="rotate(90deg)" margin="0px 3px 0px -3px">
-                    <Selection size="large" color="SlidesBlue" />
-                  </RotatedIcon>
-                }
-                responsiveSize={size}
+                size={size === 'small' ? undefined : 'xsmall'}
+                icon={<Selection size="large" color="SlidesBlue" />}
               />
               <SmallCard
                 text={size === 'small' ? undefined : 'Tabular'}
                 link="https://tabular.grommet.io"
-                size="xsmall"
+                size={size === 'small' ? undefined : 'xsmall'}
                 icon={<BarChart size="large" color="TabularGreen" />}
-                responsiveSize={size}
               />
             </Box>
 

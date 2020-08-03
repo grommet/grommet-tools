@@ -1,13 +1,12 @@
 import React from 'react';
 import { Box, Text } from 'grommet';
 
-function SmallCard({ size, link, icon, text, responsiveSize }) {
-  console.log(responsiveSize);
+function SmallCard({ size, link, icon, text }) {
   return (
     <Box
       height={size}
       width={size}
-      pad={responsiveSize === 'small' ? 'xsmall' : 'medium'}
+      pad="medium"
       background="rgb(255,255,255)"
       round="medium"
       margin="small"
