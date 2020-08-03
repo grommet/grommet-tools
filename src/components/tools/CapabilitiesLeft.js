@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Box, Heading, Paragraph, Image } from 'grommet';
+import { Box, Heading, Paragraph, Image, ResponsiveContext } from 'grommet';
 
 import { ScreenShotRow } from '../index.js';
 
@@ -12,38 +12,62 @@ const CapabilitiesLeft = ({
   images,
   labels,
 }) => (
-  <Box align="center" margin="xlarge">
-    <Box direction="row-responsive">
-      <Box margin={{ right: 'large' }}>
-        <Heading size="large" margin={{ bottom: 'none', top: 'xlarge' }}>
-          Capabilities
-        </Heading>
-        <Box width="medium">
-          <Paragraph size="xxlarge" color="darkGrey" fill>
-            {mainContent}
-          </Paragraph>
-          <Paragraph size="large" fill>
-            {subContent}
-          </Paragraph>
-        </Box>
-      </Box>
+  <ResponsiveContext.Consumer>
+    {(responsive) => (
       <Box
-        alignSelf="end"
-        align="end"
-        margin={{ left: 'xlarge', top: 'medium' }}
+        margin={
+          responsive === 'large' || responsive === 'xlarge'
+            ? { vertical: 'xlarge', horizontal: 'xlarge' }
+            : {
+                vertical: 'xlarge',
+                horizontal: 'none',
+              }
+        }
       >
-        <Box>
-          <Image
-            a11yTitle={mainLabel}
-            alignSelf="end"
-            src={mainImage}
-            fill="horizontal"
-            fit="contain"
+        <Box
+          direction="row-responsive"
+          margin={{ horizontal: 'xlarge' }}
+          justify="between"
+        >
+          <Box>
+            <Heading size="large" margin={{ bottom: 'none', top: 'xlarge' }}>
+              Capabilities
+            </Heading>
+            <Box width="medium">
+              <Paragraph size="xxlarge" color="darkGrey" fill>
+                {mainContent}
+              </Paragraph>
+              <Paragraph size="large" fill>
+                {subContent}
+              </Paragraph>
+            </Box>
+          </Box>
+          <Box
+            alignSelf="center"
+            margin={{ horizontal: 'none', top: 'medium' }}
+          >
+            <Box>
+              <Image
+                a11yTitle={mainLabel}
+                alignSelf="end"
+                src={mainImage}
+                fill="horizontal"
+                fit="contain"
+              />
+            </Box>
+          </Box>
+        </Box>
+        <Box margin={{ horizontal: 'xlarge' }}>
+          <ScreenShotRow
+            margin={{ top: 'xlarge' }}
+            src={images}
+            label={labels}
+            gap="medium"
+            justify="around"
           />
         </Box>
       </Box>
-    </Box>
-    <ScreenShotRow margin={{ top: 'xlarge' }} src={images} label={labels} />
-  </Box>
+    )}
+  </ResponsiveContext.Consumer>
 );
 export { CapabilitiesLeft };
