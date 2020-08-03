@@ -6,25 +6,23 @@ function SmallCard({ size, link, icon, text }) {
     <Box
       height={size}
       width={size}
+      pad="medium"
       background="rgb(255,255,255)"
       round="medium"
+      margin="small"
       justify="center"
       align="center"
-      alignContent="center"
-      elevation="medium"
+      elevation="xsmall"
       onClick={() => {
         window.open(link, '_self');
       }}
     >
-      <Box
-        margin={{ horizontal: 'small', vertical: 'small' }}
-        alignSelf="center"
-      >
-        {icon}
+      {icon}
+      {text && (
         <Text alignSelf="center" size="xsmall" color="darkGrey">
           {text}
         </Text>
-      </Box>
+      )}
     </Box>
   );
 }

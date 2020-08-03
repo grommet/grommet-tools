@@ -109,9 +109,9 @@ const Feedback = (props) => (
                   direction="row"
                   width={{ max: '200px' }}
                 >
-                  <CardBody direction="row">
-                    {item.icon} &nbsp;
-                    <Text textAlign="center">
+                  <CardBody justify="center" align="center" direction="row">
+                    <Box pad="xsmall">{item.icon}</Box>
+                    <Text alignSelf="center">
                       <b>{item.label}</b> Github
                     </Text>
                   </CardBody>
@@ -139,9 +139,11 @@ const Feedback = (props) => (
             direction="row"
             width="small"
           >
-            <CardBody direction="row">
-              <Grommet /> &nbsp;
-              <Text textAlign="center">
+            <CardBody justify="center" align="center" direction="row">
+              <Box pad="xsmall">
+                <Grommet />
+              </Box>
+              <Text alignSelf="center">
                 <b>Grommet /</b> Slack
               </Text>
             </CardBody>

@@ -27,14 +27,14 @@ import { AppHeader, HomeGrid, SmallCard, RotatedIcon } from '../components';
 const Home = (props) => (
   <Box>
     <AppHeader />
-    <Main margin={{ top: 'xlarge' }}>
+    <Main>
       <Heading
         level={1}
         margin={{
           top: 'xlarge',
           left: 'xlarge',
           right: 'xlarge',
-          bottom: 'none',
+          bottom: 'medium',
         }}
         size="xlarge"
       >
@@ -44,40 +44,27 @@ const Home = (props) => (
       <Box direction="row" justify="between">
         <Box
           margin={{
-            top: 'small',
             left: 'xlarge',
             right: 'medium',
-            bottom: 'medium',
+            bottom: 'large',
           }}
-          width="medium"
         >
-          <Text size="xlarge">
+          <Paragraph size="xxlarge">
             A suite of tools to create even more with&#32;&#8203;
             <Anchor label="Grommet" href="https://v2.grommet.io/" />
             &#8203;&#32;components without the stress of handling code.
-          </Text>
+          </Paragraph>
         </Box>
         <ResponsiveContext.Consumer>
           {(responsive) =>
-            responsive === 'medium' ||
-            responsive === 'large' ||
-            responsive === 'xlarge' ? (
+            responsive === 'large' || responsive === 'xlarge' ? (
               <Box
-                margin={
-                  responsive === 'medium'
-                    ? {
-                        top: 'small',
-                        left: 'small',
-                        right: 'small',
-                        bottom: 'large',
-                      }
-                    : {
-                        top: 'small',
-                        left: 'small',
-                        right: 'xlarge',
-                        bottom: 'large',
-                      }
-                }
+                margin={{
+                  top: 'small',
+                  left: 'small',
+                  right: 'xlarge',
+                  bottom: 'large',
+                }}
                 pad={{ right: 'xlarge' }}
               >
                 <Box direction="row" gap={responsive}>
@@ -182,6 +169,7 @@ const Home = (props) => (
                 </Box>
                 <Box>
                   <Card
+                    margin="none"
                     alignSelf="center"
                     animation={{ type: 'jiggle', duration: 1200, delay: 550 }}
                     onClick={() =>
@@ -205,7 +193,7 @@ const Home = (props) => (
           margin={{
             horizontal: 'xlarge',
             top: 'large',
-            bottom: 'small',
+            bottom: 'large',
           }}
           size="xlarge"
         >
@@ -224,8 +212,8 @@ const Home = (props) => (
         align="end"
         gap="xlarge"
       >
-        <Box alignSelf="center" margin={{ bottom: 'xlarge' }}>
-          <Heading level={2} size="xlarge">
+        <Box alignSelf="center" margin={{ top: 'xlarge', bottom: 'xlarge' }}>
+          <Heading level={2} size="xlarge" margin={{ bottom: 'medium' }}>
             What are Grommet Tools?
           </Heading>
           <Paragraph size="xlarge" margin={{ top: 'xsmall' }}>
@@ -246,6 +234,7 @@ const Home = (props) => (
                 '_self',
               );
             }}
+            hoverIndicator
           >
             <Paragraph
               margin={{
@@ -276,140 +265,104 @@ const Home = (props) => (
 
       <Box background="gradient" pad="small" margin="none"></Box>
 
-      <Box background="noCodeBackground" direction="column" justify="center">
-        <Text
-          size="xxlarge"
-          level="2"
-          alignSelf="center"
-          weight={6}
-          color="darkGrey"
-          margin={{ top: 'xlarge' }}
-        >
-          Explore and Join the
-        </Text>
-        <Heading
-          level={2}
-          alignSelf="center"
-          margin="xsmall"
-          size="xlarge"
-          color="darkGrey"
-        >
-          #nocodemovement.
-        </Heading>
+      <ResponsiveContext.Consumer>
+        {(size) => (
+          <Box
+            background="noCodeBackground"
+            direction="column"
+            justify="center"
+          >
+            <Text
+              size="large"
+              level="2"
+              alignSelf="center"
+              weight={6}
+              color="darkGrey"
+              margin={{ top: 'xlarge' }}
+            >
+              Explore and join the
+            </Text>
+            <Text
+              alignSelf="center"
+              margin="xsmall"
+              size={size === 'small' ? 'xxlarge' : 'xxxlarge'}
+              color="darkGrey"
+              weight="bold"
+            >
+              #nocodemovement.
+            </Text>
 
-        <ResponsiveContext.Consumer>
-          {(responsive) =>
-            responsive === 'small' ? (
-              <Box
-                justify="center"
-                align="center"
-                direction="row"
-                gap="small"
-                margin={{
-                  horizontal: 'small',
-                  top: 'small',
-                  bottom: 'large',
-                }}
-              >
-                <SmallCard
-                  link="https://designer.grommet.io"
-                  icon={
-                    <ClearOption size="customSmall" color="DesignerYellow" />
-                  }
-                />
-                <SmallCard
-                  link="https://theme-designer.grommet.io"
-                  icon={<Configure size="customSmall" color="ThemerOrange" />}
-                />
-                <SmallCard
-                  link="https://images.grommet.io"
-                  icon={<Camera size="customSmall" color="ImagerOrange" />}
-                />
-                <SmallCard
-                  link="https://publisher.grommet.io"
-                  icon={
-                    <CloudUpload size="customSmall" color="PublisherPink" />
-                  }
-                />
-                <SmallCard
-                  link="https://slides.grommet.io"
-                  icon={<Selection size="customSmall" color="SlidesBlue" />}
-                />
-                <SmallCard
-                  link="https://tabular.grommet.io"
-                  icon={<BarChart size="customSmall" color="TabularGreen" />}
-                />
-              </Box>
-            ) : (
-              <Box
-                justify="center"
-                align="center"
-                direction="row"
-                gap="large"
-                margin={{
-                  horizontal: 'small',
-                  vertical: 'medium',
-                }}
-              >
-                <SmallCard
-                  text="Designer"
-                  link="https://designer.grommet.io"
-                  size="xsmall"
-                  icon={<ClearOption size="large" color="DesignerYellow" />}
-                />
-                <SmallCard
-                  text="Themer"
-                  link="https://theme-designer.grommet.io"
-                  size="xsmall"
-                  icon={<Configure size="large" color="ThemerOrange" />}
-                />
-                <SmallCard
-                  text="Images"
-                  link="https://images.grommet.io"
-                  size="xsmall"
-                  icon={<Camera size="large" color="ImagerOrange" />}
-                />
-                <SmallCard
-                  text="Publisher"
-                  link="https://publisher.grommet.io"
-                  size="xsmall"
-                  icon={<CloudUpload size="large" color="PublisherPink" />}
-                />
-                <SmallCard
-                  text="Slides"
-                  link="https://slides.grommet.io"
-                  size="xsmall"
-                  icon={<Selection size="large" color="SlidesBlue" />}
-                />
-                <SmallCard
-                  text="Tabular"
-                  link="https://tabular.grommet.io"
-                  size="xsmall"
-                  icon={<BarChart size="large" color="TabularGreen" />}
-                />
-              </Box>
-            )
-          }
-        </ResponsiveContext.Consumer>
+            <Box
+              justify="center"
+              align="center"
+              direction="row"
+              margin={{
+                horizontal: 'small',
+                vertical: 'medium',
+              }}
+            >
+              <SmallCard
+                text={size === 'small' ? undefined : 'designer'}
+                link="https://designer.grommet.io"
+                size={size === 'small' ? undefined : 'xsmall'}
+                icon={<ClearOption size="large" color="DesignerYellow" />}
+              />
+              <SmallCard
+                text={size === 'small' ? undefined : 'themer'}
+                link="https://theme-designer.grommet.io"
+                size={size === 'small' ? undefined : 'xsmall'}
+                icon={<Configure size="large" color="ThemerOrange" />}
+              />
+              <SmallCard
+                text={size === 'small' ? undefined : 'images'}
+                link="https://images.grommet.io"
+                size={size === 'small' ? undefined : 'xsmall'}
+                icon={<Camera size="large" color="ImagerOrange" />}
+              />
+              <SmallCard
+                text={size === 'small' ? undefined : 'publisher'}
+                link="https://publisher.grommet.io"
+                size={size === 'small' ? undefined : 'xsmall'}
+                icon={<CloudUpload size="large" color="PublisherPink" />}
+              />
+              <SmallCard
+                text={size === 'small' ? undefined : 'slides'}
+                link="https://slides.grommet.io"
+                size={size === 'small' ? undefined : 'xsmall'}
+                icon={<Selection size="large" color="SlidesBlue" />}
+              />
+              <SmallCard
+                text={size === 'small' ? undefined : 'tabular'}
+                link="https://tabular.grommet.io"
+                size={size === 'small' ? undefined : 'xsmall'}
+                icon={<BarChart size="large" color="TabularGreen" />}
+              />
+            </Box>
 
-        <Box
-          margin={{ bottom: 'xlarge' }}
-          justify="center"
-          direction="row"
-          gap="large"
-        >
-          <Anchor
-            href="https://slackin.grommet.io/"
-            icon={<Slack />}
-            label="Grommet on Slack"
-          />
-          <Anchor
-            href="https://github.com/grommet/"
-            icon={<Github />}
-            label="Share feedback on Github"
-          />
-        </Box>
-      </Box>
+            <Box
+              margin={{ bottom: 'xlarge' }}
+              justify="center"
+              direction="row-responsive"
+              alignSelf="center"
+              gap={size === 'small' ? 'medium' : 'large'}
+              pad="medium"
+            >
+              <Anchor
+                alignSelf="center"
+                href="https://slackin.grommet.io/"
+                icon={<Slack />}
+                label="Grommet on Slack"
+              />
+              <Anchor
+                alignSelf="center"
+                href="https://github.com/grommet/"
+                icon={<Github />}
+                label="Share feedback on Github"
+              />
+            </Box>
+          </Box>
+        )}
+      </ResponsiveContext.Consumer>
     </Main>
   </Box>
 );
