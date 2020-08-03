@@ -21,14 +21,22 @@ const Themer = () => (
     <AppHeader />
     <Main>
       <ToolHeader
-        mainIcon={<Configure size="xxlarge" color="ThemerOrange" />}
-        icon1={<Camera opacity="0.8" size="large" color="ImagerOrange" />}
-        icon2={
-          <ClearOption opacity="0.9" size="large" color="DesignerYellow" />
-        }
-        icon3={<CloudUpload opacity="0.7" size="large" color="PublisherPink" />}
-        icon4={<Selection opacity="0.5" size="large" color="SlidesBlue" />}
-        icon5={<BarChart opacity="0.3" size="large" color="TabularGreen" />}
+        icons={[
+          <Configure size="xxlarge" color="ThemerOrange" />,
+          <Camera opacity="0.6" size="customLarge" color="ImagerOrange" />,
+          <ClearOption
+            opacity="0.7"
+            size="customLarge"
+            color="DesignerYellow"
+          />,
+          <CloudUpload
+            opacity="0.5"
+            size="customLarge"
+            color="PublisherPink"
+          />,
+          <Selection opacity="0.4" size="customLarge" color="SlidesBlue" />,
+          <BarChart opacity="0.3" size="customLarge" color="TabularGreen" />,
+        ]}
         title="Themer"
         content="Grommet Themer is a tool used to build themes with specified features
         such as colors and fonts; then publish and distrubite them across multiple Grommet
