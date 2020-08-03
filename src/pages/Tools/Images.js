@@ -14,7 +14,6 @@ import {
   ToolFooter,
   CapabilitiesLeft,
   Description,
-  RotatedIcon,
 } from '../../components';
 
 const Images = () => (
@@ -22,18 +21,14 @@ const Images = () => (
     <AppHeader />
     <Main>
       <ToolHeader
-        mainIcon={<Camera size="xxlarge" color="ImagerOrange" />}
-        icon1={
-          <RotatedIcon rotate="rotate(90deg)">
-            <Selection opacity="0.8" size="large" color="SlidesBlue" />
-          </RotatedIcon>
-        }
-        icon2={
-          <ClearOption opacity="0.9" size="large" color="DesignerYellow" />
-        }
-        icon3={<CloudUpload opacity="0.7" size="large" color="PublisherPink" />}
-        icon4={<Configure opacity="0.5" size="large" color="ThemerOrange" />}
-        icon5={<BarChart opacity="0.3" size="large" color="TabularGreen" />}
+        icons={[
+          <Camera size="xxlarge" color="ImagerOrange" />,
+          <Selection opacity="0.6" size="large" color="SlidesBlue" />,
+          <ClearOption opacity="0.7" size="large" color="DesignerYellow" />,
+          <CloudUpload opacity="0.5" size="large" color="PublisherPink" />,
+          <Configure opacity="0.4" size="large" color="ThemerOrange" />,
+          <BarChart opacity="0.3" size="large" color="TabularGreen" />,
+        ]}
         title="Images"
         content="Grommet Images is a tool used to host 
         images and videos. Easily upload and use 
