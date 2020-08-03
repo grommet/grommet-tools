@@ -9,7 +9,7 @@ import {
   Selection,
   BarChart,
 } from 'grommet-icons';
-import { GridCard, RotatedIcon } from '../index.js';
+import { GridCard } from '../index.js';
 
 const HomeGrid = () => (
   <ResponsiveContext.Consumer>
@@ -72,11 +72,7 @@ const HomeGrid = () => (
         from Grommet to make it all come together."
         />
         <GridCard
-          icon={
-            <RotatedIcon rotate="rotate(90deg)">
-              <Selection size="xlarge" color="SlidesBlue" />
-            </RotatedIcon>
-          }
+          icon={<Selection size="xlarge" color="SlidesBlue" />}
           heading="Slides"
           buttonName="Open Slides"
           buttonColor="SlidesBlue"

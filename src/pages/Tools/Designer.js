@@ -31,7 +31,7 @@ const Designer = () => (
             color="PublisherPink"
           />,
           <Selection opacity="0.4" size="customLarge" color="SlidesBlue" />,
-          <BarChart opacity="0.3" size="large" color="TabularGreen" />,
+          <BarChart opacity="0.3" size="customLarge" color="TabularGreen" />,
         ]}
         title="Designer"
         content="Grommet Designer is a tool used to build experiences with Grommet

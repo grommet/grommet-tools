@@ -175,12 +175,7 @@ const Home = (props) => (
                       }
                     >
                       <CardBody margin="small">
-                        <RotatedIcon
-                          rotate="rotate(90deg)"
-                          margin="0px 2px 0px -3px"
-                        >
-                          <Selection color="SlidesBlue" size="large" />
-                        </RotatedIcon>
+                        <Selection color="SlidesBlue" size="large" />
                       </CardBody>
                     </Card>
                   </RotatedIcon>
@@ -338,14 +333,7 @@ const Home = (props) => (
                 />
                 <SmallCard
                   link="https://slides.grommet.io"
-                  icon={
-                    <RotatedIcon
-                      rotate="rotate(90deg)"
-                      margin="-3px 3px -3px -3px"
-                    >
-                      <Selection size="customSmall" color="SlidesBlue" />
-                    </RotatedIcon>
-                  }
+                  icon={<Selection size="customSmall" color="SlidesBlue" />}
                 />
                 <SmallCard
                   link="https://tabular.grommet.io"
@@ -391,14 +379,7 @@ const Home = (props) => (
                   text="Slides"
                   link="https://slides.grommet.io"
                   size="xsmall"
-                  icon={
-                    <RotatedIcon
-                      rotate="rotate(90deg)"
-                      margin="0px 3px 0px -3px"
-                    >
-                      <Selection size="large" color="SlidesBlue" />
-                    </RotatedIcon>
-                  }
+                  icon={<Selection size="large" color="SlidesBlue" />}
                 />
                 <SmallCard
                   text="Tabular"
