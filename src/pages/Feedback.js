@@ -20,7 +20,7 @@ import {
   Grommet,
   Slack,
 } from 'grommet-icons';
-import { AppHeader, RotatedIcon } from '../components';
+import { AppHeader } from '../components';
 
 const githubCards = [
   {
@@ -49,11 +49,7 @@ const githubCards = [
     link: 'https://github.com/grommet/grommet-tabular',
   },
   {
-    icon: (
-      <RotatedIcon rotate="rotate(90deg)">
-        <Selection />
-      </RotatedIcon>
-    ),
+    icon: <Selection />,
     label: 'Slides /',
     link: 'https://github.com/grommet/grommet-slides',
   },

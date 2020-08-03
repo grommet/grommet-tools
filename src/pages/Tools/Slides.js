@@ -14,7 +14,6 @@ import {
   ToolFooter,
   CapabilitiesLeft,
   Description,
-  RotatedIcon,
 } from '../../components';
 
 const Slides = () => (
@@ -22,28 +21,22 @@ const Slides = () => (
     <AppHeader />
     <Main>
       <ToolHeader
-        mainIcon={
-          <RotatedIcon rotate="rotate(90deg)" margin="0px 3px 0px -3px">
-            <Selection size="xxlarge" color="SlidesBlue" />
-          </RotatedIcon>
-        }
-        icon1={<Camera opacity="0.6" size="customLarge" color="ImagerOrange" />}
-        icon2={
+        icons={[
+          <Selection size="xxlarge" color="SlidesBlue" />,
+          <Camera opacity="0.6" size="customLarge" color="ImagerOrange" />,
           <ClearOption
             opacity="0.7"
             size="customLarge"
             color="DesignerYellow"
-          />
-        }
-        icon3={
-          <CloudUpload opacity="0.5" size="customLarge" color="PublisherPink" />
-        }
-        icon4={
-          <Configure opacity="0.4" size="customLarge" color="ThemerOrange" />
-        }
-        icon5={
-          <BarChart opacity="0.3" size="customLarge" color="TabularGreen" />
-        }
+          />,
+          <CloudUpload
+            opacity="0.5"
+            size="customLarge"
+            color="PublisherPink"
+          />,
+          <Configure opacity="0.4" size="customLarge" color="ThemerOrange" />,
+          <BarChart opacity="0.3" size="customLarge" color="TabularGreen" />,
+        ]}
         title="Slides"
         content="Grommet Slides is a tool used to build simple and beautiful 
         slide shows. Quickly generate content, add a theme, and present or 
