@@ -14,7 +14,6 @@ import {
   ToolFooter,
   CapabilitiesLeft,
   Description,
-  RotatedIcon,
 } from '../../components';
 
 const Designer = () => (
@@ -31,9 +30,7 @@ const Designer = () => (
           <CloudUpload opacity="0.5" size="customLarge" color="PublisherPink" />
         }
         icon4={
-          <RotatedIcon rotate="rotate(90deg)">
-            <Selection opacity="0.4" size="customLarge" color="SlidesBlue" />
-          </RotatedIcon>
+          <Selection opacity="0.4" size="customLarge" color="SlidesBlue" />
         }
         icon5={
           <BarChart opacity="0.3" size="customLarge" color="TabularGreen" />

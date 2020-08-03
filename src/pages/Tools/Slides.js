@@ -14,7 +14,6 @@ import {
   ToolFooter,
   CapabilitiesLeft,
   Description,
-  RotatedIcon,
 } from '../../components';
 
 const Slides = () => (
@@ -22,11 +21,7 @@ const Slides = () => (
     <AppHeader />
     <Main>
       <ToolHeader
-        mainIcon={
-          <RotatedIcon rotate="rotate(90deg)" margin="0px 3px 0px -3px">
-            <Selection size="xxlarge" color="SlidesBlue" />
-          </RotatedIcon>
-        }
+        mainIcon={<Selection size="xxlarge" color="SlidesBlue" />}
         icon1={<Camera opacity="0.6" size="customLarge" color="ImagerOrange" />}
         icon2={
           <ClearOption

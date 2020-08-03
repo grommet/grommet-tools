@@ -14,7 +14,6 @@ import {
   ToolFooter,
   CapabilitiesRight,
   Description,
-  RotatedIcon,
 } from '../../components';
 
 const Tabular = () => (
@@ -38,9 +37,7 @@ const Tabular = () => (
           />
         }
         icon5={
-          <RotatedIcon rotate="rotate(90deg)" margin="0px 0px 0px 0px">
-            <Selection opacity="0.3" size="customLarge" color="SlidesBlue" />
-          </RotatedIcon>
+          <Selection opacity="0.3" size="customLarge" color="SlidesBlue" />
         }
         title="Tabular"
         content="Grommet Tabular is a tool used to build tables using data. Import a
