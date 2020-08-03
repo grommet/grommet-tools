@@ -24,11 +24,19 @@ const HeadingLarge = ({ icons, title, content, open, link, color }) => (
               bottom: 'medium',
             }}
           >
-            <Text> Grommet Tools </Text>
-            <Heading level={1} size="xlarge" margin={{ top: 'none' }}>
+            <Text margin={{ top: 'medium' }}> Grommet Tools </Text>
+            <Heading
+              level={1}
+              size="xlarge"
+              margin={{ top: 'none', bottom: 'medium' }}
+            >
               {title}
             </Heading>
-            <Paragraph margin={{ top: 'none' }} size="xxlarge" color="darkGrey">
+            <Paragraph
+              margin={{ top: 'medium' }}
+              size="xxlarge"
+              color="darkGrey"
+            >
               {content}
             </Paragraph>
             <Button
