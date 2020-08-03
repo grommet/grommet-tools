@@ -28,6 +28,7 @@ const CapabilitiesRight = ({
           direction="row-responsive"
           margin={{ horizontal: 'xlarge', vertical: 'xlarge' }}
           justify="between"
+          gap="medium"
         >
           <Box margin={{ top: 'xlarge' }}>
             <Image
@@ -39,7 +40,10 @@ const CapabilitiesRight = ({
             />
           </Box>
           <Box>
-            <Heading size="large" margin={{ bottom: 'none', top: 'xlarge' }}>
+            <Heading
+              size={responsive === 'large' ? 'large' : 'medium'}
+              margin={{ bottom: 'none', top: 'xlarge' }}
+            >
               Capabilities
             </Heading>
             <Box width="medium">
