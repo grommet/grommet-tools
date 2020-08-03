@@ -13,25 +13,17 @@ function SmallCard({ size, link, icon, text, responsiveSize }) {
       margin="small"
       justify="center"
       align="center"
-      // alignContent="center"
       elevation="xsmall"
       onClick={() => {
         window.open(link, '_self');
       }}
-      // flex={false}
     >
-      {/* <Box
-        // margin={{ horizontal: 'small', vertical: 'small' }}
-        // alignSelf="center"
-        a11yTitle={text}
-      > */}
       {icon}
       {text && (
         <Text alignSelf="center" size="xsmall" color="darkGrey">
           {text}
         </Text>
       )}
-      {/* </Box> */}
     </Box>
   );
 }

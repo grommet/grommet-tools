@@ -44,7 +44,6 @@ const Home = (props) => (
       <Box direction="row" justify="between">
         <Box
           margin={{
-            // top: 'small',
             left: 'xlarge',
             right: 'medium',
             bottom: 'large',
@@ -312,18 +311,14 @@ const Home = (props) => (
               justify="center"
               align="center"
               direction="row"
-              // responsive={false}
-              // gap="large"
               margin={{
                 horizontal: 'small',
                 vertical: 'medium',
               }}
-              // fill
             >
               <SmallCard
                 text={size === 'small' ? undefined : 'Designer'}
                 link="https://designer.grommet.io"
-                // size={size === "small" ? 'xxsmall' : 'xsmall'}
                 size="xsmall"
                 icon={<ClearOption size="large" color="DesignerYellow" />}
                 responsiveSize={size}

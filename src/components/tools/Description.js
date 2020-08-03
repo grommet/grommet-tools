@@ -22,24 +22,11 @@ const Description = ({ title, content, color, images, labels }) => (
             <Heading
               margin={{ top: 'large', bottom: 'none' }}
               size="large"
-              // margin={
-              //   responsive === 'large' || responsive === 'xlarge'
-              //     ? { top: 'xlarge', bottom: 'none', horizontal: 'xlarge' }
-              //     : { top: 'xlarge', bottom: 'none' }
-              // }
               alignSelf="start"
             >
               {title}
             </Heading>
-            <Box
-              width="large"
-              // margin={
-              //   responsive === 'large' || responsive === 'xlarge'
-              //     ? { bottom: 'medium', top: 'none', horizontal: 'xlarge' }
-              //     : { bottom: 'medium', top: 'none' }
-              // }
-              alignSelf="start"
-            >
+            <Box width="large" alignSelf="start">
               <Paragraph fill size="xxlarge">
                 {content}
               </Paragraph>
