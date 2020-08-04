@@ -26,7 +26,10 @@ const CapabilitiesLeft = ({
       >
         <Box
           direction="row-responsive"
-          margin={{ horizontal: 'xlarge', top: 'xlarge' }}
+          margin={{
+            horizontal: responsive === 'small' ? 'medium' : 'xlarge',
+            top: 'xlarge',
+          }}
           justify="between"
         >
           <Box margin={{ top: 'large' }}>
@@ -62,7 +65,9 @@ const CapabilitiesLeft = ({
             </Box>
           </Box>
         </Box>
-        <Box margin={{ horizontal: 'xlarge' }}>
+        <Box
+          margin={{ horizontal: responsive === 'small' ? 'medium' : 'xlarge' }}
+        >
           <ScreenShotRow
             margin={{ top: 'large' }}
             src={images}

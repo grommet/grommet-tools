@@ -16,7 +16,7 @@ const Description = ({ title, content, color, images, labels }) => (
           <Box
             margin={{
               vertical: 'xsmall',
-              horizontal: 'xlarge',
+              horizontal: responsive === 'small' ? 'medium' : 'xlarge',
             }}
           >
             <Heading
