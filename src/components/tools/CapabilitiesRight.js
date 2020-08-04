@@ -26,7 +26,11 @@ const CapabilitiesRight = ({
       >
         <Box
           direction="row-responsive"
-          margin={{ horizontal: 'xlarge', top: 'xlarge', bottom: 'small' }}
+          margin={{
+            horizontal: responsive === 'small' ? 'medium' : 'xlarge',
+            top: 'xlarge',
+            bottom: 'small',
+          }}
           justify="between"
           gap="medium"
         >
@@ -65,7 +69,9 @@ const CapabilitiesRight = ({
             margin={{ horizontal: 'none', top: 'medium' }}
           ></Box>
         </Box>
-        <Box margin={{ horizontal: 'xlarge' }}>
+        <Box
+          margin={{ horizontal: responsive === 'small' ? 'medium' : 'xlarge' }}
+        >
           <ScreenShotRow
             margin={{ top: 'large' }}
             src={images}
