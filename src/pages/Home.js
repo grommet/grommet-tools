@@ -78,7 +78,7 @@ const Home = (props) => (
                       }
                       animation={{ type: 'jiggle', duration: 2000 }}
                       onClick={() =>
-                        window.open('https://designer.grommet.io', '_self')
+                        window.open('https://designer.grommet.io', '_blank')
                       }
                     >
                       <CardBody margin="small">
@@ -98,7 +98,7 @@ const Home = (props) => (
                         delay: 1000,
                       }}
                       onClick={() =>
-                        window.open('https://publisher.grommet.io', '_self')
+                        window.open('https://publisher.grommet.io', '_blank')
                       }
                     >
                       <CardBody margin="small">
@@ -119,7 +119,7 @@ const Home = (props) => (
                       onClick={() =>
                         window.open(
                           'https://theme-designer.grommet.io',
-                          '_self',
+                          '_blank',
                         )
                       }
                     >
@@ -139,7 +139,7 @@ const Home = (props) => (
                       animation={{ type: 'jiggle', duration: 1000, delay: 400 }}
                       margin={{ right: 'large' }}
                       onClick={() =>
-                        window.open('https://tabular.grommet.io', '_self')
+                        window.open('https://tabular.grommet.io', '_blank')
                       }
                     >
                       <CardBody margin="small">
@@ -156,7 +156,7 @@ const Home = (props) => (
                       margin={{ left: 'large' }}
                       animation={{ type: 'jiggle', duration: 2300, delay: 600 }}
                       onClick={() =>
-                        window.open('https://slides.grommet.io', '_self')
+                        window.open('https://slides.grommet.io', '_blank')
                       }
                     >
                       <CardBody margin="small">
@@ -171,7 +171,7 @@ const Home = (props) => (
                     alignSelf="center"
                     animation={{ type: 'jiggle', duration: 1200, delay: 550 }}
                     onClick={() =>
-                      window.open('https://images.grommet.io', '_self')
+                      window.open('https://images.grommet.io', '_blank')
                     }
                   >
                     <CardBody margin="small">
@@ -230,7 +230,7 @@ const Home = (props) => (
                 onClick={() => {
                   window.open(
                     'https://medium.com/@marisakuberra/the-power-of-no-code-tools-24b9b0d5f97f',
-                    '_self',
+                    '_blank',
                   );
                 }}
                 hoverIndicator
@@ -302,37 +302,67 @@ const Home = (props) => (
                 text={responsive === 'small' ? undefined : 'designer'}
                 link="https://designer.grommet.io"
                 size={responsive === 'small' ? undefined : 'xsmall'}
-                icon={<ClearOption size="large" color="DesignerYellow" />}
+                icon={
+                  <ClearOption
+                    size={responsive === 'small' ? 'medium' : 'large'}
+                    color="DesignerYellow"
+                  />
+                }
               />
               <SmallCard
                 text={responsive === 'small' ? undefined : 'themer'}
                 link="https://theme-designer.grommet.io"
                 size={responsive === 'small' ? undefined : 'xsmall'}
-                icon={<Configure size="large" color="ThemerOrange" />}
+                icon={
+                  <Configure
+                    responsive={responsive === 'small' ? 'medium' : 'large'}
+                    color="ThemerOrange"
+                  />
+                }
               />
               <SmallCard
                 text={responsive === 'small' ? undefined : 'images'}
                 link="https://images.grommet.io"
                 size={responsive === 'small' ? undefined : 'xsmall'}
-                icon={<Camera size="large" color="ImagerOrange" />}
+                icon={
+                  <Camera
+                    size={responsive === 'small' ? 'medium' : 'large'}
+                    color="ImagerOrange"
+                  />
+                }
               />
               <SmallCard
                 text={responsive === 'small' ? undefined : 'publisher'}
                 link="https://publisher.grommet.io"
                 size={responsive === 'small' ? undefined : 'xsmall'}
-                icon={<CloudUpload size="large" color="PublisherPink" />}
+                icon={
+                  <CloudUpload
+                    size={responsive === 'small' ? 'medium' : 'large'}
+                    color="PublisherPink"
+                  />
+                }
               />
               <SmallCard
                 text={responsive === 'small' ? undefined : 'slides'}
                 link="https://slides.grommet.io"
                 size={responsive === 'small' ? undefined : 'xsmall'}
-                icon={<Selection size="large" color="SlidesBlue" />}
+                icon={
+                  <Selection
+                    size={responsive === 'small' ? 'medium' : 'large'}
+                    color="SlidesBlue"
+                  />
+                }
               />
               <SmallCard
                 text={responsive === 'small' ? undefined : 'tabular'}
                 link="https://tabular.grommet.io"
                 size={responsive === 'small' ? undefined : 'xsmall'}
-                icon={<BarChart size="large" color="TabularGreen" />}
+                icon={
+                  <BarChart
+                    size={responsive === 'small' ? 'medium' : 'large'}
+                    color="TabularGreen"
+                  />
+                }
               />
             </Box>
 
@@ -349,12 +379,14 @@ const Home = (props) => (
                 href="https://slackin.grommet.io/"
                 icon={<Slack />}
                 label="Grommet on Slack"
+                target="_blank"
               />
               <Anchor
                 alignSelf="center"
                 href="https://github.com/grommet/"
                 icon={<Github />}
                 label="Share feedback on Github"
+                target="_blank"
               />
             </Box>
           </Box>

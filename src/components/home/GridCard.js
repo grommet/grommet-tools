@@ -67,6 +67,7 @@ const GridCard = ({
       label={buttonName}
       margin={{ horizontal: 'medium', vertical: 'small' }}
       alignSelf="start"
+      target="_blank"
     ></Button>
     <CardFooter
       background="light-2"
