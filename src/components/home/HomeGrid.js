@@ -18,11 +18,17 @@ const HomeGrid = () => (
         columns={
           responsive === 'large'
             ? { count: 3, size: 'medium' }
-            : { count: 'fill', size: 'medium' }
+            : responsive === 'medium'
+            ? { count: 'fill', size: 'medium' }
+            : { count: 1, size: 'small' }
         }
         gap="large"
         rows="auto"
-        margin={{ horizontal: 'xlarge', top: 'small', bottom: '-30px' }}
+        margin={{
+          horizontal: responsive === 'small' ? 'medium' : 'xlarge',
+          top: 'small',
+          bottom: '-30px',
+        }}
         alignSelf={
           responsive === 'small' || responsive === 'xsmall' ? 'center' : null
         }
