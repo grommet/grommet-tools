@@ -12,7 +12,11 @@ const AppHeader = () => (
     </Box>
 
     <Box margin={{ right: 'large' }} justify="end" direction="row" gap="medium">
-      <Anchor href="https://v2.grommet.io/" label="Grommet.io" />
+      <Anchor
+        href="https://v2.grommet.io/"
+        target="_blank"
+        label="Grommet.io"
+      />
       <Anchor href="/feedback" label="Feedback" />
     </Box>
   </Header>
