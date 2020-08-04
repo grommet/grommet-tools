@@ -42,31 +42,19 @@ const Home = (props) => (
       </Heading>
       <Box pad="xsmall" background="gradient"></Box>
       <Box direction="row" justify="between">
-        <ResponsiveContext.Consumer>
-          {(responsive) => (
-            <Box
-              margin={
-                responsive === 'large' || responsive === 'xlarge'
-                  ? {
-                      left: 'xlarge',
-                      right: 'medium',
-                      bottom: 'large',
-                    }
-                  : {
-                      left: 'none',
-                      right: 'none',
-                      bottom: 'large',
-                    }
-              }
-            >
-              <Paragraph size="xxlarge">
-                A suite of tools to create even more with&#32;&#8203;
-                <Anchor label="Grommet" href="https://v2.grommet.io/" />
-                &#8203;&#32;components without the stress of handling code.
-              </Paragraph>
-            </Box>
-          )}
-        </ResponsiveContext.Consumer>
+        <Box
+          margin={{
+            left: 'xlarge',
+            right: 'medium',
+            bottom: 'large',
+          }}
+        >
+          <Paragraph size="xxlarge">
+            A suite of tools to create even more with&#32;&#8203;
+            <Anchor label="Grommet" href="https://v2.grommet.io/" />
+            &#8203;&#32;components without the stress of handling code.
+          </Paragraph>
+        </Box>
         <ResponsiveContext.Consumer>
           {(responsive) =>
             responsive === 'large' || responsive === 'xlarge' ? (
