@@ -16,7 +16,7 @@ const HomeGrid = () => (
     {(responsive) => (
       <Grid
         columns={
-          responsive === 'xlarge' || responsive === 'large'
+          responsive === 'large'
             ? { count: 3, size: 'medium' }
             : { count: 'fill', size: 'medium' }
         }
@@ -24,11 +24,7 @@ const HomeGrid = () => (
         rows="auto"
         margin={{ horizontal: 'xlarge', top: 'small', bottom: '-30px' }}
         alignSelf={
-          responsive === 'small' ||
-          responsive === 'xsmall' ||
-          responsive === 'xlarge'
-            ? 'center'
-            : null
+          responsive === 'small' || responsive === 'xsmall' ? 'center' : null
         }
       >
         <GridCard
