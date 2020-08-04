@@ -8,6 +8,7 @@ import {
   Heading,
   Image,
   Text,
+  ResponsiveContext,
 } from 'grommet';
 import {
   ClearOption,
@@ -68,98 +69,106 @@ const Feedback = (props) => (
         level={1}
         margin={{
           top: 'xlarge',
-          right: 'xlarge',
           bottom: 'large',
+          horizontal: 'medium',
         }}
         size="xlarge"
       >
         Feedback
       </Heading>
-
-      <Grid
-        alignContent="center"
-        columns={{ count: 'fill', size: 'medium' }}
-        rows="auto"
-        gap="xlarge"
-      >
-        <Box>
-          <Heading size="small" margin={{ bottom: 'none' }}>
-            <Github color="headingGrey" /> Share feedback on Github
-          </Heading>
-
-          <Paragraph fill pad={{ right: 'large' }}>
-            Submit feedback on Grommet Tools on Github. Here, you can help
-            improve the tools and connect with other Grommet Tools lovers.
-          </Paragraph>
-
-          <Box pad={{ right: 'large' }}>
-            <Grid
-              columns="small"
-              gap={{ row: 'medium', column: 'medium' }}
-              rows="auto"
-            >
-              {githubCards.map((item) => (
-                <Card
-                  key={item.label}
-                  onClick={() => {
-                    window.open(item.link, '_blank');
-                  }}
-                  background="white"
-                  pad="xsmall"
-                  direction="row"
-                  width={{ max: '200px' }}
-                >
-                  <CardBody justify="center" align="center" direction="row">
-                    <Box pad="xsmall">{item.icon}</Box>
-                    <Text alignSelf="center">
-                      <b>{item.label}</b> Github
-                    </Text>
-                  </CardBody>
-                </Card>
-              ))}
-            </Grid>
-          </Box>
-        </Box>
-
-        <Box>
-          <Heading size="small" margin={{ bottom: 'none' }}>
-            <Slack color="headingGrey" /> Join Grommet's Slack Channel
-          </Heading>
-          <Paragraph fill={true} margin={{ right: 'small' }}>
-            Contribute to the discussion about Grommet and Grommet Tools and see
-            what others are up to by joining the Slack channel.
-          </Paragraph>
-
-          <Card
-            onClick={() => {
-              window.open('http://slackin.grommet.io/', '_blank');
-            }}
-            background="white"
-            pad="xsmall"
-            direction="row"
-            width="small"
+      <ResponsiveContext.Consumer>
+        {(responsive) => (
+          <Grid
+            alignContent="center"
+            columns={
+              responsive === 'small'
+                ? { count: 1, size: 'small' }
+                : { count: 'fill', size: 'medium' }
+            }
+            rows="auto"
+            gap="xlarge"
+            margin={{ horizontal: 'medium' }}
           >
-            <CardBody justify="center" align="center" direction="row">
-              <Box pad="xsmall">
-                <Grommet />
-              </Box>
-              <Text alignSelf="center">
-                <b>Grommet /</b> Slack
-              </Text>
-            </CardBody>
-          </Card>
+            <Box>
+              <Heading size="small" margin={{ bottom: 'none' }}>
+                <Github color="headingGrey" /> Share feedback on Github
+              </Heading>
 
-          <Box width="xlarge">
-            <Image
-              a11yTitle="Gremlin with a Face Mask"
-              width="xlarge"
-              fill="horizontal"
-              alignSelf="end"
-              src="GremlinFaceMask.svg"
-            />
-          </Box>
-        </Box>
-      </Grid>
+              <Paragraph fill pad={{ right: 'large' }}>
+                Submit feedback on Grommet Tools on Github. Here, you can help
+                improve the tools and connect with other Grommet Tools lovers.
+              </Paragraph>
+
+              <Box pad={{ right: 'large' }}>
+                <Grid
+                  columns="small"
+                  gap={{ row: 'medium', column: 'medium' }}
+                  rows="auto"
+                >
+                  {githubCards.map((item) => (
+                    <Card
+                      key={item.label}
+                      onClick={() => {
+                        window.open(item.link, '_blank');
+                      }}
+                      background="white"
+                      pad="xsmall"
+                      direction="row"
+                      width={{ max: '200px' }}
+                    >
+                      <CardBody justify="center" align="center" direction="row">
+                        <Box pad="xsmall">{item.icon}</Box>
+                        <Text alignSelf="center">
+                          <b>{item.label}</b> Github
+                        </Text>
+                      </CardBody>
+                    </Card>
+                  ))}
+                </Grid>
+              </Box>
+            </Box>
+
+            <Box>
+              <Heading size="small" margin={{ bottom: 'none' }}>
+                <Slack color="headingGrey" /> Join Grommet's Slack Channel
+              </Heading>
+              <Paragraph fill margin={{ right: 'small' }}>
+                Contribute to the discussion about Grommet and Grommet Tools and
+                see what others are up to by joining the Slack channel.
+              </Paragraph>
+
+              <Card
+                onClick={() => {
+                  window.open('http://slackin.grommet.io/', '_blank');
+                }}
+                background="white"
+                pad="xsmall"
+                direction="row"
+                width="small"
+              >
+                <CardBody justify="center" align="center" direction="row">
+                  <Box pad="xsmall">
+                    <Grommet />
+                  </Box>
+                  <Text alignSelf="center">
+                    <b>Grommet /</b> Slack
+                  </Text>
+                </CardBody>
+              </Card>
+
+              <Box width="xlarge">
+                <Image
+                  a11yTitle="Gremlin with a Face Mask"
+                  width="xlarge"
+                  fill="horizontal"
+                  alignSelf="end"
+                  src="GremlinFaceMask.svg"
+                />
+              </Box>
+            </Box>
+          </Grid>
+        )}
+      </ResponsiveContext.Consumer>
     </Box>
   </Box>
 );
