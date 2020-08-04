@@ -16,7 +16,7 @@ const HomeGrid = () => (
     {(responsive) => (
       <Grid
         columns={
-          responsive === 'xlarge'
+          responsive === 'xlarge' || responsive === 'large'
             ? { count: 3, size: 'medium' }
             : { count: 'fill', size: 'medium' }
         }
