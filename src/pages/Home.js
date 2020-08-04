@@ -27,37 +27,35 @@ import { AppHeader, HomeGrid, SmallCard, RotatedIcon } from '../components';
 const Home = (props) => (
   <Box>
     <AppHeader />
-    <Main>
-      <Heading
-        level={1}
-        margin={{
-          top: 'xlarge',
-          left: 'xlarge',
-          right: 'xlarge',
-          bottom: 'medium',
-        }}
-        size="xlarge"
-      >
-        Grommet Tools
-      </Heading>
-      <Box pad="xsmall" background="gradient"></Box>
-      <Box direction="row" justify="between">
-        <Box
-          margin={{
-            left: 'xlarge',
-            right: 'medium',
-            bottom: 'large',
-          }}
-        >
-          <Paragraph size="xxlarge">
-            A suite of tools to create even more with&#32;&#8203;
-            <Anchor label="Grommet" href="https://v2.grommet.io/" />
-            &#8203;&#32;components without the stress of handling code.
-          </Paragraph>
-        </Box>
-        <ResponsiveContext.Consumer>
-          {(responsive) =>
-            responsive === 'large' || responsive === 'xlarge' ? (
+    <ResponsiveContext.Consumer>
+      {(responsive) => (
+        <Main>
+          <Heading
+            level={1}
+            margin={{
+              top: 'xlarge',
+              horizontal: responsive === 'small' ? 'medium' : 'xlarge',
+              bottom: 'medium',
+            }}
+            size="xlarge"
+          >
+            Grommet Tools
+          </Heading>
+          <Box pad="xsmall" background="gradient"></Box>
+          <Box direction="row" justify="between">
+            <Box
+              margin={{
+                horizontal: responsive === 'small' ? 'medium' : 'xlarge',
+                bottom: 'large',
+              }}
+            >
+              <Paragraph size="xxlarge">
+                A suite of tools to create even more with&#32;&#8203;
+                <Anchor label="Grommet" href="https://v2.grommet.io/" />
+                &#8203;&#32;components without the stress of handling code.
+              </Paragraph>
+            </Box>
+            {responsive === 'large' || responsive === 'xlarge' ? (
               <Box
                 margin={{
                   top: 'small',
@@ -182,91 +180,90 @@ const Home = (props) => (
                   </Card>
                 </Box>
               </Box>
-            ) : null
-          }
-        </ResponsiveContext.Consumer>
-      </Box>
-
-      <Box background="gradient">
-        <Heading
-          level={2}
-          margin={{
-            horizontal: 'xlarge',
-            top: 'large',
-            bottom: 'large',
-          }}
-          size="xlarge"
-        >
-          Grommet Tool Suite
-        </Heading>
-        <HomeGrid />
-      </Box>
-
-      <Box
-        margin={{
-          top: 'xlarge',
-          horizontal: 'xlarge',
-          bottom: 'none',
-        }}
-        direction="row-responsive"
-        align="end"
-        gap="xlarge"
-      >
-        <Box alignSelf="center" margin={{ top: 'xlarge', bottom: 'xlarge' }}>
-          <Heading level={2} size="xlarge" margin={{ bottom: 'medium' }}>
-            What are Grommet Tools?
-          </Heading>
-          <Paragraph size="xlarge" margin={{ top: 'xsmall' }}>
-            Grommet's "No-Code" Tools assist your development experience by
-            offering easy access to Grommet components with powerful branding
-            capabilities.
-          </Paragraph>
-          <Box
-            margin={{ top: 'small' }}
-            elevation="large"
-            round="medium"
-            direction="row"
-            width="medium"
-            pad="small"
-            onClick={() => {
-              window.open(
-                'https://medium.com/@marisakuberra/the-power-of-no-code-tools-24b9b0d5f97f',
-                '_self',
-              );
-            }}
-            hoverIndicator
-          >
-            <Paragraph
-              margin={{
-                top: 'medium',
-                left: 'small',
-              }}
-              size="large"
-            >
-              Read about the power of Grommet and No Code Tools
-            </Paragraph>
-            <Anchor
-              icon={<FormNextLink color="brand" size="large" />}
-              alignSelf="end"
-              margin="xsmall"
-            />
+            ) : null}
           </Box>
-        </Box>
-        <Box>
-          <Image
-            a11yTitle="Rockin Gremlin"
-            fill="horizontal"
-            alignSelf="end"
-            src="RockinGremlin.svg"
-            fit="contain"
-          />
-        </Box>
-      </Box>
 
-      <Box background="gradient" pad="small" margin="none"></Box>
+          <Box background="gradient">
+            <Heading
+              level={2}
+              margin={{
+                horizontal: responsive === 'small' ? 'medium' : 'xlarge',
+                top: 'large',
+                bottom: 'large',
+              }}
+              size="xlarge"
+            >
+              Grommet Tool Suite
+            </Heading>
+            <HomeGrid />
+          </Box>
 
-      <ResponsiveContext.Consumer>
-        {(size) => (
+          <Box
+            margin={{
+              top: 'xlarge',
+              horizontal: responsive === 'small' ? 'medium' : 'xlarge',
+              bottom: 'none',
+            }}
+            direction="row-responsive"
+            align="end"
+            gap="xlarge"
+          >
+            <Box
+              alignSelf="center"
+              margin={{ top: 'xlarge', bottom: 'xlarge' }}
+            >
+              <Heading level={2} size="xlarge" margin={{ bottom: 'medium' }}>
+                What are Grommet Tools?
+              </Heading>
+              <Paragraph size="xlarge" margin={{ top: 'xsmall' }}>
+                Grommet's "No-Code" Tools assist your development experience by
+                offering easy access to Grommet components with powerful
+                branding capabilities.
+              </Paragraph>
+              <Box
+                margin={{ top: 'small' }}
+                elevation="large"
+                round="medium"
+                direction="row"
+                width="medium"
+                pad="small"
+                onClick={() => {
+                  window.open(
+                    'https://medium.com/@marisakuberra/the-power-of-no-code-tools-24b9b0d5f97f',
+                    '_self',
+                  );
+                }}
+                hoverIndicator
+              >
+                <Paragraph
+                  margin={{
+                    top: 'medium',
+                    left: 'small',
+                  }}
+                  size="large"
+                >
+                  Read about the power of Grommet and No Code Tools
+                </Paragraph>
+                <Anchor
+                  icon={<FormNextLink color="brand" size="large" />}
+                  alignSelf="end"
+                  margin="xsmall"
+                />
+              </Box>
+            </Box>
+            <Box>
+              <Image
+                a11yTitle="Rockin Gremlin"
+                fill="horizontal"
+                alignSelf="end"
+                src="RockinGremlin.svg"
+                fit="contain"
+              />
+            </Box>
+          </Box>
+
+          <Box background="gradient" pad="small" margin="none"></Box>
+
           <Box
             background="noCodeBackground"
             direction="column"
@@ -285,7 +282,7 @@ const Home = (props) => (
             <Text
               alignSelf="center"
               margin="xsmall"
-              size={size === 'small' ? 'xxlarge' : 'xxxlarge'}
+              size={responsive === 'small' ? 'xxlarge' : 'xxxlarge'}
               color="darkGrey"
               weight="bold"
             >
@@ -302,39 +299,39 @@ const Home = (props) => (
               }}
             >
               <SmallCard
-                text={size === 'small' ? undefined : 'designer'}
+                text={responsive === 'small' ? undefined : 'designer'}
                 link="https://designer.grommet.io"
-                size={size === 'small' ? undefined : 'xsmall'}
+                size={responsive === 'small' ? undefined : 'xsmall'}
                 icon={<ClearOption size="large" color="DesignerYellow" />}
               />
               <SmallCard
-                text={size === 'small' ? undefined : 'themer'}
+                text={responsive === 'small' ? undefined : 'themer'}
                 link="https://theme-designer.grommet.io"
-                size={size === 'small' ? undefined : 'xsmall'}
+                size={responsive === 'small' ? undefined : 'xsmall'}
                 icon={<Configure size="large" color="ThemerOrange" />}
               />
               <SmallCard
-                text={size === 'small' ? undefined : 'images'}
+                text={responsive === 'small' ? undefined : 'images'}
                 link="https://images.grommet.io"
-                size={size === 'small' ? undefined : 'xsmall'}
+                size={responsive === 'small' ? undefined : 'xsmall'}
                 icon={<Camera size="large" color="ImagerOrange" />}
               />
               <SmallCard
-                text={size === 'small' ? undefined : 'publisher'}
+                text={responsive === 'small' ? undefined : 'publisher'}
                 link="https://publisher.grommet.io"
-                size={size === 'small' ? undefined : 'xsmall'}
+                size={responsive === 'small' ? undefined : 'xsmall'}
                 icon={<CloudUpload size="large" color="PublisherPink" />}
               />
               <SmallCard
-                text={size === 'small' ? undefined : 'slides'}
+                text={responsive === 'small' ? undefined : 'slides'}
                 link="https://slides.grommet.io"
-                size={size === 'small' ? undefined : 'xsmall'}
+                size={responsive === 'small' ? undefined : 'xsmall'}
                 icon={<Selection size="large" color="SlidesBlue" />}
               />
               <SmallCard
-                text={size === 'small' ? undefined : 'tabular'}
+                text={responsive === 'small' ? undefined : 'tabular'}
                 link="https://tabular.grommet.io"
-                size={size === 'small' ? undefined : 'xsmall'}
+                size={responsive === 'small' ? undefined : 'xsmall'}
                 icon={<BarChart size="large" color="TabularGreen" />}
               />
             </Box>
@@ -344,7 +341,7 @@ const Home = (props) => (
               justify="center"
               direction="row-responsive"
               alignSelf="center"
-              gap={size === 'small' ? 'medium' : 'large'}
+              gap={responsive === 'small' ? 'medium' : 'large'}
               pad="medium"
             >
               <Anchor
@@ -361,9 +358,9 @@ const Home = (props) => (
               />
             </Box>
           </Box>
-        )}
-      </ResponsiveContext.Consumer>
-    </Main>
+        </Main>
+      )}
+    </ResponsiveContext.Consumer>
   </Box>
 );
 
