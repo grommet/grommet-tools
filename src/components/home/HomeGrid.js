@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Grid, ResponsiveContext } from 'grommet';
+import { Box, Grid, ResponsiveContext } from 'grommet';
 import {
   ClearOption,
   Configure,
@@ -15,7 +15,11 @@ const HomeGrid = () => (
   <ResponsiveContext.Consumer>
     {(responsive) => (
       <Grid
-        columns={{ count: 'fill', size: 'medium' }}
+        columns={
+          responsive === 'xlarge'
+            ? { count: 3, size: 'medium' }
+            : { count: 'fill', size: 'medium' }
+        }
         gap="large"
         rows="auto"
         margin={{ horizontal: 'xlarge', top: 'small', bottom: '-30px' }}
