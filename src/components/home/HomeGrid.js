@@ -20,7 +20,11 @@ const HomeGrid = () => (
         rows="auto"
         margin={{ horizontal: 'xlarge', top: 'small', bottom: '-30px' }}
         alignSelf={
-          responsive === 'small' || responsive === 'xsmall' ? 'center' : null
+          responsive === 'small' ||
+          responsive === 'xsmall' ||
+          responsive === 'xlarge'
+            ? 'center'
+            : null
         }
       >
         <GridCard
