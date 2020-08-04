@@ -35,9 +35,8 @@ const HomeGrid = () => (
           learnLink="/designer"
           a11yTitle="learn more about Designer"
           openLink="https://designer.grommet.io/"
-          text="Grommet web-based WSIWG component editor. Use
-        pubilshed themes by entering the URL in the context
-        of editing the design details."
+          text="Easily create experiences in a simple, 
+          straightforward approach to building your application."
         />
         <GridCard
           icon={<Configure size="xlarge" color="ThemerOrange" />}
@@ -46,9 +45,8 @@ const HomeGrid = () => (
           buttonColor="ThemerOrange"
           a11yTitle="learn more about Themer"
           openLink="https://theme-designer.grommet.io/"
-          text="Grommet web-based WSIWG component editor. Use
-        pubilshed themes by entering the URL in the context
-        of editing the design details."
+          text="Create Grommet themes by changing colors, fonts, 
+          and sizing to personalize your apps."
           learnLink="/themer"
         />
         <GridCard
@@ -59,9 +57,8 @@ const HomeGrid = () => (
           a11yTitle="learn more about Images"
           openLink="https://images.grommet.io/"
           learnLink="/images"
-          text="  Super simple image hosting for your Grommet-based
-        projects. Works great with Publisher, Slides, and
-        Designer."
+          text="Super simple image file hosting for your 
+          Grommet-based projects."
         />
         <GridCard
           icon={<CloudUpload size="xlarge" color="PublisherPink" />}
@@ -71,9 +68,8 @@ const HomeGrid = () => (
           a11yTitle="learn more about Publisher"
           openLink="https://publisher.grommet.io/"
           learnLink="/publisher"
-          text="Think one part lightweight CMS,
-        one part Markdown, and some special sauce
-        from Grommet to make it all come together."
+          text="Think lightweight CMS, Markdown, and some 
+          Grommet to make it all come together."
         />
         <GridCard
           icon={<Selection size="xlarge" color="SlidesBlue" />}
@@ -83,9 +79,8 @@ const HomeGrid = () => (
           learnLink="/Slides"
           a11yTitle="learn more about Slides"
           openLink="https://slides.grommet.io/"
-          text="Similar to the Grommet Publisher and using
-        Markdown and some shortcuts to make presenting easy,
-        Slides makes presentations a breeze."
+          text="Similar to the Publisher by using Markdown 
+          and some shortcuts to make presenting easy."
         />
         <GridCard
           icon={<BarChart size="xlarge" color="TabularGreen" />}
@@ -94,9 +89,8 @@ const HomeGrid = () => (
           buttonColor="TabularGreen"
           a11yTitle="learn more about Tabular"
           openLink="https://tabular.grommet.io/"
-          text="  If you need a table and have an API or data source,
-        choose your columns and create content that is integrated
-        with Grommet and the Grommet Designer."
+          text="Uses API or data sources for tables and 
+          integrates Grommet with the Grommet Designer."
           learnLink="/tabular"
         />
       </Grid>
