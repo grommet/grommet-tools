@@ -13,7 +13,7 @@ import { Grommet } from 'grommet';
 
 function App() {
   return (
-    <Grommet className="App" theme={grommetToolsTheme}>
+    <Grommet full className="App" theme={grommetToolsTheme}>
       <Router>
         <Switch>
           <Route path="/designer">
