@@ -26,7 +26,7 @@ const CapabilitiesRight = ({
       >
         <Box
           direction="row-responsive"
-          margin={{ horizontal: 'xlarge', vertical: 'xlarge' }}
+          margin={{ horizontal: 'xlarge', top: 'xlarge', bottom: 'small' }}
           justify="between"
           gap="medium"
         >
@@ -47,10 +47,15 @@ const CapabilitiesRight = ({
               Capabilities
             </Heading>
             <Box width="medium">
-              <Paragraph size="xxlarge" color="darkGrey" fill>
+              <Paragraph
+                size="xxlarge"
+                color="darkGrey"
+                fill
+                margin={{ bottom: 'small' }}
+              >
                 {mainContent}
               </Paragraph>
-              <Paragraph size="large" fill>
+              <Paragraph size="large" fill margin={{ top: 'small' }}>
                 {subContent}
               </Paragraph>
             </Box>
@@ -62,7 +67,7 @@ const CapabilitiesRight = ({
         </Box>
         <Box margin={{ horizontal: 'xlarge' }}>
           <ScreenShotRow
-            margin={{ top: 'xlarge' }}
+            margin={{ top: 'large' }}
             src={images}
             label={labels}
             gap="medium"

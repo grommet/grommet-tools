@@ -5,7 +5,7 @@ const ScreenshotCard = ({ label, src, a11yTitle }) => (
   <Box>
     <Image src={src} a11yTitle={a11yTitle} />
     <Text
-      alignSelf="center"
+      textAlign="center"
       color="dark-2"
       margin={{ top: 'none', bottom: 'large' }}
     >

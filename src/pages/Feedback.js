@@ -83,7 +83,7 @@ const Feedback = (props) => (
         gap="xlarge"
       >
         <Box>
-          <Heading size="small">
+          <Heading size="small" margin={{ bottom: 'none' }}>
             <Github color="headingGrey" /> Share feedback on Github
           </Heading>
 
@@ -122,7 +122,7 @@ const Feedback = (props) => (
         </Box>
 
         <Box>
-          <Heading size="small">
+          <Heading size="small" margin={{ bottom: 'none' }}>
             <Slack color="headingGrey" /> Join Grommet's Slack Channel
           </Heading>
           <Paragraph fill={true} margin={{ right: 'small' }}>
