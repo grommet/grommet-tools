@@ -26,18 +26,23 @@ const CapabilitiesLeft = ({
       >
         <Box
           direction="row-responsive"
-          margin={{ horizontal: 'xlarge' }}
+          margin={{ horizontal: 'xlarge', top: 'xlarge' }}
           justify="between"
         >
-          <Box>
+          <Box margin={{ top: 'large' }}>
             <Heading size="large" margin={{ bottom: 'none', top: 'xlarge' }}>
               Capabilities
             </Heading>
             <Box width="medium">
-              <Paragraph size="xxlarge" color="darkGrey" fill>
+              <Paragraph
+                size="xxlarge"
+                color="darkGrey"
+                fill
+                margin={{ bottom: 'small' }}
+              >
                 {mainContent}
               </Paragraph>
-              <Paragraph size="large" fill>
+              <Paragraph size="large" fill margin={{ top: 'small' }}>
                 {subContent}
               </Paragraph>
             </Box>
@@ -46,10 +51,10 @@ const CapabilitiesLeft = ({
             alignSelf="center"
             margin={{ horizontal: 'none', top: 'medium' }}
           >
-            <Box>
+            <Box margin={{ top: 'large', bottom: 'large' }}>
               <Image
                 a11yTitle={mainLabel}
-                alignSelf="end"
+                alignSelf="center"
                 src={mainImage}
                 fill="horizontal"
                 fit="contain"
@@ -59,7 +64,7 @@ const CapabilitiesLeft = ({
         </Box>
         <Box margin={{ horizontal: 'xlarge' }}>
           <ScreenShotRow
-            margin={{ top: 'xlarge' }}
+            margin={{ top: 'large' }}
             src={images}
             label={labels}
             gap="medium"
