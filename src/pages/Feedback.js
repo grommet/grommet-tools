@@ -102,7 +102,7 @@ const Feedback = (props) => (
                 <Card
                   key={item.label}
                   onClick={() => {
-                    window.open(item.link, '_self');
+                    window.open(item.link, '_blank');
                   }}
                   background="white"
                   pad="xsmall"
@@ -132,7 +132,7 @@ const Feedback = (props) => (
 
           <Card
             onClick={() => {
-              window.open('http://slackin.grommet.io/', '_self');
+              window.open('http://slackin.grommet.io/', '_blank');
             }}
             background="white"
             pad="xsmall"
