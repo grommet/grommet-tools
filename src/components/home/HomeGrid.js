@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Box, Grid, ResponsiveContext } from 'grommet';
+import { Grid, ResponsiveContext } from 'grommet';
 import {
   ClearOption,
   Configure,
