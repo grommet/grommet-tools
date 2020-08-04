@@ -51,7 +51,11 @@ const Home = (props) => (
         >
           <Paragraph size="xxlarge">
             A suite of tools to create even more with&#32;&#8203;
-            <Anchor label="Grommet" href="https://v2.grommet.io/" />
+            <Anchor
+              label="Grommet"
+              target="_blank"
+              href="https://v2.grommet.io/"
+            />
             &#8203;&#32;components without the stress of handling code.
           </Paragraph>
         </Box>
@@ -80,7 +84,7 @@ const Home = (props) => (
                       }
                       animation={{ type: 'jiggle', duration: 2000 }}
                       onClick={() =>
-                        window.open('https://designer.grommet.io', '_self')
+                        window.open('https://designer.grommet.io', '_blank')
                       }
                     >
                       <CardBody margin="small">
@@ -100,7 +104,7 @@ const Home = (props) => (
                         delay: 1000,
                       }}
                       onClick={() =>
-                        window.open('https://publisher.grommet.io', '_self')
+                        window.open('https://publisher.grommet.io', '_blank')
                       }
                     >
                       <CardBody margin="small">
@@ -121,7 +125,7 @@ const Home = (props) => (
                       onClick={() =>
                         window.open(
                           'https://theme-designer.grommet.io',
-                          '_self',
+                          '_blank',
                         )
                       }
                     >
@@ -141,7 +145,7 @@ const Home = (props) => (
                       animation={{ type: 'jiggle', duration: 1000, delay: 400 }}
                       margin={{ right: 'large' }}
                       onClick={() =>
-                        window.open('https://tabular.grommet.io', '_self')
+                        window.open('https://tabular.grommet.io', '_blank')
                       }
                     >
                       <CardBody margin="small">
@@ -158,7 +162,7 @@ const Home = (props) => (
                       margin={{ left: 'large' }}
                       animation={{ type: 'jiggle', duration: 2300, delay: 600 }}
                       onClick={() =>
-                        window.open('https://slides.grommet.io', '_self')
+                        window.open('https://slides.grommet.io', '_blank')
                       }
                     >
                       <CardBody margin="small">
@@ -173,7 +177,7 @@ const Home = (props) => (
                     alignSelf="center"
                     animation={{ type: 'jiggle', duration: 1200, delay: 550 }}
                     onClick={() =>
-                      window.open('https://images.grommet.io', '_self')
+                      window.open('https://images.grommet.io', '_blank')
                     }
                   >
                     <CardBody margin="small">
@@ -231,7 +235,7 @@ const Home = (props) => (
             onClick={() => {
               window.open(
                 'https://medium.com/@marisakuberra/the-power-of-no-code-tools-24b9b0d5f97f',
-                '_self',
+                '_blank',
               );
             }}
             hoverIndicator
@@ -382,12 +386,14 @@ const Home = (props) => (
                 href="https://slackin.grommet.io/"
                 icon={<Slack />}
                 label="Grommet on Slack"
+                target="_blank"
               />
               <Anchor
                 alignSelf="center"
                 href="https://github.com/grommet/"
                 icon={<Github />}
                 label="Share feedback on Github"
+                target="_blank"
               />
             </Box>
           </Box>
