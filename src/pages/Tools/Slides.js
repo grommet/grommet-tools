@@ -38,8 +38,8 @@ const Slides = () => (
           <BarChart opacity="0.3" size="customLarge" color="TabularGreen" />,
         ]}
         title="Slides"
-        content="Grommet Slides is a tool used to build simple and beautiful 
-        slide shows. Quickly generate content, add a theme, and present or 
+        content="Grommet Slides is a tool used to build simple and beautiful
+        slide shows. Quickly generate content, add a theme, and present or
         share slides with anyone."
         open="Open Slides"
         link="https://slides.grommet.io/"
@@ -47,20 +47,19 @@ const Slides = () => (
       />
       <Description
         title="What is Grommet Slides?"
-        content="A free, web-based slides builder, Grommet Slides combines the 
-        freedom of markup language with the efficiency of thematic branding. 
+        content="A free, web-based slides builder, Grommet Slides combines the
+        freedom of markup language with the efficiency of thematic branding.
         See examples of Slides below."
         color="SlidesBlue"
         images={['Designer_1.svg', 'Designer_2.svg', 'Designer_3.svg']}
-        labels={['Slides File Name', 'Slides File Name', 'Slides File Name']}
       />
 
       <CapabilitiesLeft
-        mainContent="Slides provides a space to quickly generate and publish 
-        slides in minutes. Import a theme, generate slides and add content, 
+        mainContent="Slides provides a space to quickly generate and publish
+        slides in minutes. Import a theme, generate slides and add content,
         and then present slideshow."
-        subContent="Just a few of Slides’ powerful capabilities include using 
-        markup language to quickly create content, easily importing and using 
+        subContent="Just a few of Slides’ powerful capabilities include using
+        markup language to quickly create content, easily importing and using
         a theme, and being able to publish and share a URL with anyone."
         mainImage="SlidesGremlin.svg"
         mainLabel="Gremlin with Slides Icon"
@@ -75,7 +74,7 @@ const Slides = () => (
       <ToolFooter
         backgroundColor="SlidesBlue"
         headingText="Start Using Slides Now"
-        description="Open the Slides tool and get started by watching a 
+        description="Open the Slides tool and get started by watching a
         tutorial or just jumping right in to your first publication."
         buttonLabel="Open Slides"
         direction="column"

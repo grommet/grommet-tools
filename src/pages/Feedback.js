@@ -109,16 +109,16 @@ const Feedback = (props) => (
                     <Card
                       key={item.label}
                       onClick={() => {
-                        window.open(item.link, '_blank');
+                        window.open(item.link, '_blank', 'noreferrer');
                       }}
                       background="white"
                       pad="xsmall"
                       direction="row"
                       width={{ max: '200px' }}
                     >
-                      <CardBody justify="center" align="center" direction="row">
+                      <CardBody align="center" direction="row">
                         <Box pad="xsmall">{item.icon}</Box>
-                        <Text alignSelf="center">
+                        <Text>
                           <b>{item.label}</b> Github
                         </Text>
                       </CardBody>
@@ -139,18 +139,22 @@ const Feedback = (props) => (
 
               <Card
                 onClick={() => {
-                  window.open('http://slackin.grommet.io/', '_blank');
+                  window.open(
+                    'http://slackin.grommet.io/',
+                    '_blank',
+                    'noreferrer',
+                  );
                 }}
                 background="white"
                 pad="xsmall"
                 direction="row"
                 width="small"
               >
-                <CardBody justify="center" align="center" direction="row">
+                <CardBody align="center" direction="row">
                   <Box pad="xsmall">
                     <Grommet />
                   </Box>
-                  <Text alignSelf="center">
+                  <Text>
                     <b>Grommet /</b> Slack
                   </Text>
                 </CardBody>

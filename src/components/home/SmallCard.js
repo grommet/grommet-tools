@@ -14,7 +14,7 @@ function SmallCard({ size, link, icon, text }) {
       align="center"
       elevation="xsmall"
       onClick={() => {
-        window.open(link, '_blank');
+        window.open(link, '_blank', 'noreferrer');
       }}
     >
       {icon}
