@@ -45,6 +45,8 @@ const HeadingLarge = ({ icons, title, content, open, link, color }) => (
               color={color}
               label={open}
               alignSelf="start"
+              target="_blank"
+              rel="noreferrer"
             />
           </Box>
         </Box>
