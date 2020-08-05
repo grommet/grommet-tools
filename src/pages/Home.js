@@ -51,7 +51,12 @@ const Home = (props) => (
             >
               <Paragraph size="xxlarge">
                 A suite of tools to create even more with&#32;&#8203;
-                <Anchor label="Grommet" href="https://v2.grommet.io/" />
+                <Anchor
+                  label="Grommet"
+                  href="https://v2.grommet.io/"
+                  rel="noreferrer"
+                  target="_blank"
+                />
                 &#8203;&#32;components without the stress of handling code.
               </Paragraph>
             </Box>
@@ -78,7 +83,11 @@ const Home = (props) => (
                       }
                       animation={{ type: 'jiggle', duration: 2000 }}
                       onClick={() =>
-                        window.open('https://designer.grommet.io', '_blank')
+                        window.open(
+                          'https://designer.grommet.io',
+                          '_blank',
+                          'noreferrer',
+                        )
                       }
                     >
                       <CardBody margin="small">
@@ -98,7 +107,11 @@ const Home = (props) => (
                         delay: 1000,
                       }}
                       onClick={() =>
-                        window.open('https://publisher.grommet.io', '_blank')
+                        window.open(
+                          'https://publisher.grommet.io',
+                          '_blank',
+                          'noreferrer',
+                        )
                       }
                     >
                       <CardBody margin="small">
@@ -120,6 +133,7 @@ const Home = (props) => (
                         window.open(
                           'https://theme-designer.grommet.io',
                           '_blank',
+                          'noreferrer',
                         )
                       }
                     >
@@ -139,7 +153,11 @@ const Home = (props) => (
                       animation={{ type: 'jiggle', duration: 1000, delay: 400 }}
                       margin={{ right: 'large' }}
                       onClick={() =>
-                        window.open('https://tabular.grommet.io', '_blank')
+                        window.open(
+                          'https://tabular.grommet.io',
+                          '_blank',
+                          'noreferrer',
+                        )
                       }
                     >
                       <CardBody margin="small">
@@ -156,7 +174,11 @@ const Home = (props) => (
                       margin={{ left: 'large' }}
                       animation={{ type: 'jiggle', duration: 2300, delay: 600 }}
                       onClick={() =>
-                        window.open('https://slides.grommet.io', '_blank')
+                        window.open(
+                          'https://slides.grommet.io',
+                          '_blank',
+                          'noreferrer',
+                        )
                       }
                     >
                       <CardBody margin="small">
@@ -171,7 +193,11 @@ const Home = (props) => (
                     alignSelf="center"
                     animation={{ type: 'jiggle', duration: 1200, delay: 550 }}
                     onClick={() =>
-                      window.open('https://images.grommet.io', '_blank')
+                      window.open(
+                        'https://images.grommet.io',
+                        '_blank',
+                        'noreferrer',
+                      )
                     }
                   >
                     <CardBody margin="small">
@@ -231,6 +257,7 @@ const Home = (props) => (
                   window.open(
                     'https://medium.com/@marisakuberra/the-power-of-no-code-tools-24b9b0d5f97f',
                     '_blank',
+                    'noreferrer',
                   );
                 }}
                 hoverIndicator
@@ -380,6 +407,7 @@ const Home = (props) => (
                 icon={<Slack />}
                 label="Grommet on Slack"
                 target="_blank"
+                rel="noreferrer"
               />
               <Anchor
                 alignSelf="center"
@@ -387,6 +415,7 @@ const Home = (props) => (
                 icon={<Github />}
                 label="Share feedback on Github"
                 target="_blank"
+                rel="noreferrer"
               />
             </Box>
           </Box>
