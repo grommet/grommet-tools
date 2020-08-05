@@ -28,7 +28,10 @@ const AppHeader = () => (
                   label: <Box pad="small">Grommet.io</Box>,
                   href: 'https://v2.grommet.io',
                 },
-                { label: <Box pad="small">Feedback</Box>, href: '/feedback' },
+                {
+                  label: <Box pad="small">Feedback</Box>,
+                  href: '/feedback',
+                },
               ]}
             />
           </Box>
