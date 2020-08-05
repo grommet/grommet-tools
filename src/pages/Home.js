@@ -315,7 +315,7 @@ const Home = (props) => (
                 size={responsive === 'small' ? undefined : 'xsmall'}
                 icon={
                   <Configure
-                    responsive={responsive === 'small' ? 'medium' : 'large'}
+                    size={responsive === 'small' ? 'medium' : 'large'}
                     color="ThemerOrange"
                   />
                 }
