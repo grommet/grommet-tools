@@ -18,11 +18,18 @@ const AppHeader = () => (
           </Box>
           <Box alignSelf="end" margin="large">
             <Menu
+              justifyContent="end"
+              margin="large"
+              dropProps={{ align: { top: 'bottom', right: 'right' } }}
               icon={<MenuIcon color="brand" size="customSmall" />}
+              pad="small"
               items={[
-                { label: 'Grommet Tools', href: '/' },
-                { label: 'Grommet.io', href: 'https://v2.grommet.io' },
-                { label: 'Feedback', href: '/feedback' },
+                { label: <Box pad="small">Grommet Tools </Box>, href: '/' },
+                {
+                  label: <Box pad="small">Grommet.io</Box>,
+                  href: 'https://v2.grommet.io',
+                },
+                { label: <Box pad="small">Feedback</Box>, href: '/feedback' },
               ]}
               margin={{ top: 'none' }}
             ></Menu>
