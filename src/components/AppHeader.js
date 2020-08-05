@@ -56,7 +56,11 @@ const AppHeader = () => (
             direction="row"
             gap="medium"
           >
-            <Anchor href="https://v2.grommet.io/" label="Grommet.io" />
+            <Anchor
+              href="https://v2.grommet.io/"
+              label="Grommet.io"
+              target="_blank"
+            />
             <Anchor href="/feedback" label="Feedback" />
           </Box>
         </Header>

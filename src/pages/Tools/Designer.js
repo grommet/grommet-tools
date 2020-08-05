@@ -49,9 +49,9 @@ const Designer = () => (
         color="DesignerYellow"
         images={['Designer_1.svg', 'Designer_2.svg', 'Designer_3.svg']}
         labels={[
-          'Deisgner File Name',
-          'Deisgner File Name',
-          'Deisgner File Name',
+          'Designer File Name',
+          'Designer File Name',
+          'Designer File Name',
         ]}
       />
 
