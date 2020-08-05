@@ -45,7 +45,6 @@ const Images = () => (
         examples from Grommet Images below."
         color="ImagerOrange"
         images={['Designer_1.svg', 'Designer_2.svg', 'Designer_3.svg']}
-        labels={[null, null, null]}
       />
 
       <CapabilitiesLeft

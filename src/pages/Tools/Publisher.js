@@ -47,7 +47,6 @@ const Publisher = () => (
          See examples of the Publisher below."
         color="PublisherPink"
         images={['Designer_1.svg', 'Designer_2.svg', 'Designer_3.svg']}
-        labels={[null, null, null]}
       />
 
       <CapabilitiesRight
