@@ -40,6 +40,7 @@ const ToolFooter = ({
         color="white"
         label={buttonLabel}
         href={buttonHref}
+        target="_blank"
       />
     </Box>
     <Box pad="xsmall" background="gradient" fill="horizontal" />
