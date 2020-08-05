@@ -19,7 +19,6 @@ const AppHeader = () => (
           <Box alignSelf="end" margin="large">
             <Menu
               justifyContent="end"
-              margin="large"
               dropProps={{ align: { top: 'bottom', right: 'right' } }}
               icon={<MenuIcon color="brand" size="customSmall" />}
               pad="small"
@@ -31,8 +30,7 @@ const AppHeader = () => (
                 },
                 { label: <Box pad="small">Feedback</Box>, href: '/feedback' },
               ]}
-              margin={{ top: 'none' }}
-            ></Menu>
+            />
           </Box>
         </Header>
       ) : (
@@ -56,7 +54,11 @@ const AppHeader = () => (
             direction="row"
             gap="medium"
           >
-            <Anchor href="https://v2.grommet.io/" label="Grommet.io" />
+            <Anchor
+              href="https://v2.grommet.io/"
+              label="Grommet.io"
+              target="_blank"
+            />
             <Anchor href="/feedback" label="Feedback" />
           </Box>
         </Header>
