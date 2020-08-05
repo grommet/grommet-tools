@@ -30,8 +30,8 @@ const Images = () => (
           <BarChart opacity="0.3" size="large" color="TabularGreen" />,
         ]}
         title="Images"
-        content="Grommet Images is a tool used to host 
-        images and videos. Easily upload and use 
+        content="Grommet Images is a tool used to host
+        images and videos. Easily upload and use
         seamlessly with all Grommet Tools."
         open="Open Images"
         link="https://images.grommet.io/"
@@ -39,22 +39,22 @@ const Images = () => (
       />
       <Description
         title="What is Images?"
-        content="A free, web-based image host, Grommet Images is 
-        a storage and distribution platform. Grommet Images 
-        supports image, video, and gif files. See some 
+        content="A free, web-based image host, Grommet Images is
+        a storage and distribution platform. Grommet Images
+        supports image, video, and gif files. See some
         examples from Grommet Images below."
         color="ImagerOrange"
         images={['Designer_1.svg', 'Designer_2.svg', 'Designer_3.svg']}
-        labels={['Images File Name', 'Images File Name', 'Images File Name']}
+        labels={[null, null, null]}
       />
 
       <CapabilitiesLeft
-        mainContent="Grommet Images puts the power in your hands to upload 
-        visual files in any format and manage them to aide in creating in 
+        mainContent="Grommet Images puts the power in your hands to upload
+        visual files in any format and manage them to aide in creating in
         any Grommet Tool."
-        subContent="Just a few of Grommet Images’ capabilities include 
-        supporting image, video, and gif formats, the ability to use the 
-        image URL for use across the Grommet Tools ecosystem, and an 
+        subContent="Just a few of Grommet Images’ capabilities include
+        supporting image, video, and gif formats, the ability to use the
+        image URL for use across the Grommet Tools ecosystem, and an
         easy-going UI."
         mainImage="ImagesGremlin.svg"
         mainLabel="Gremlin with Images Icon"

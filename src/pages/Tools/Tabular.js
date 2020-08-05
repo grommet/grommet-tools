@@ -52,7 +52,7 @@ const Tabular = () => (
         integrating Gromemt with the Grommet Designer . See examples below."
         color="TabularGreen"
         images={['Designer_1.svg', 'Designer_2.svg', 'Designer_3.svg']}
-        labels={['Tabular File Name', 'Tabular File Name', 'Tabular File Name']}
+        labels={[null, null, null]}
       />
 
       <CapabilitiesRight

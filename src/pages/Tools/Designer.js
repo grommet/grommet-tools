@@ -48,11 +48,7 @@ const Designer = () => (
         framework. See some examples from Grommet designers below."
         color="DesignerYellow"
         images={['Designer_1.svg', 'Designer_2.svg', 'Designer_3.svg']}
-        labels={[
-          'Designer File Name',
-          'Designer File Name',
-          'Designer File Name',
-        ]}
+        labels={[null, null, null]}
       />
 
       <CapabilitiesLeft
