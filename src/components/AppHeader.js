@@ -18,6 +18,7 @@ const AppHeader = () => (
           </Box>
           <Box alignSelf="end" margin="large">
             <Menu
+              a11yTitle="Navigation Menu"
               justifyContent="end"
               dropProps={{ align: { top: 'bottom', right: 'right' } }}
               icon={<MenuIcon color="brand" size="customSmall" />}
